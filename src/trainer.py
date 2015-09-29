@@ -1,25 +1,41 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+from __future__ import absolute_import
+from __future__ import print_function
+
 from gensim.models import Word2Vec
 import logging
+import sys
+
+
 
 def main():
-	infile = '/Users/king96/Documents/Data/Wiki/ar_wiki_lemmas_norm.txt'
-	outfile = '/Users/king96/Documents/Word2Vec/Models/ar_wiki_lemmas_norm_cconf_100.bin'
+    if (len(sys.argv) < 2):
+        print("Please use this script with an input path and output path as args.")
+        print("In: Text file with 1 sentence per line")
+        print("Out: Binary word vector file")
 
-	# set up logging
-	logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
+    infile = sys.argv[1]
+    outfile = sys.argv[2]
 
-	class MySentences(object):
-	    def __init__(self, fname):
-	        self.fname = fname
-	        self.errors = 0
+    print("Files opened!")
+    
+    # set up logging
+    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
-	    def __iter__(self):
-	        for line in open(self.fname):
-	            yield line.split()
+    class MySentences(object):
+        def __init__(self, fname):
+            self.fname = fname
+            self.errors = 0
 
-	sentences = MySentences(infile)
+        def __iter__(self):
+            for line in open(self.fname):
+                yield line.split()
 
-	"""
+    sentences = MySentences(infile)
+
+    """
     Initialize the model from an iterable of `sentences`. Each sentence is a
     list of words (unicode strings) that will be used for training.
 
@@ -62,11 +78,13 @@ def main():
 
     `iter` = number of iterations (epochs) over the corpus.
     """
-	model = Word2Vec(sentences, sg = 0, size = 100, window = 8, min_count = 5, hs = 0, workers = 4, sample = 1e-4, negative = 25, iter = 15)
+    model = Word2Vec(sentences, sg = 0, size = 100, window = 8, 
+                     min_count = 5, hs = 0, workers = 4, sample = 1e-4, 
+                     negative = 25, iter = 15)
 
-	#model.save(outfile + '.pbin')
+    #model.save(outfile + '.pbin')
 
-	model.save_word2vec_format(outfile,binary = True)
+    model.save_word2vec_format(outfile, binary = True)
 
 if __name__ == "__main__":
-	main()
+    main()

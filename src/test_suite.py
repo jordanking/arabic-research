@@ -4,7 +4,7 @@ import logging
 def main():
     output_spacing = 25
 
-    modelfile = raw_input('Please enter the binary model file path (or gn/en/ar): ')
+    modelfile = raw_input('Please enter the binary model file path: ')# (or gn/en/ar): ')
     modelfile = modelfile.strip()
 
     if modelfile == 'gn':
