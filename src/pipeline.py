@@ -5,7 +5,6 @@ from __future__ import print_function
 import sys
 sys.path.insert(0,"/home/jordan/Documents/Projects/")
 
-
 from arapy.arwiki import parse_arwiki_dump
 from arapy.arwiki import normalize_arwiki_parse
 from arapy.normalization import normalize
@@ -18,6 +17,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=log
 wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
 
 ar_only = True
+digits = True
 alif = True
 hamza = True
 yaa = True
@@ -38,6 +38,7 @@ parse_file = parse_arwiki_dump(wiki_file)
 logging.info("Normalizing dump")
 normalized_file = normalize_arwiki_parse(parse_file, 
                                          ar_only = ar_only, 
+                                         digits = digits,
                                          alif = alif,
                                          hamza = hamza,
                                          yaa = yaa,
