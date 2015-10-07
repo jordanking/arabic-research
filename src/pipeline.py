@@ -9,7 +9,8 @@ import sys
 sys.path.insert(0,"/home/jordan/Documents/Projects/")
 
 from arapy.arwiki import parse_arwiki_dump
-from arapy.arwiki import normalize_arwiki_parse
+from arapy.madamira import transform_sentence_file
+from arapy.normalization import normalize_sentence_file
 from arapy.normalization import normalize
 from arapy.word2vec import train_embeddings
 import logging
@@ -36,11 +37,15 @@ negative = 25
 iterations = 15
 
 logging.info("Parsing dump.")
-parse_file = parse_arwiki_dump(wiki_file)
+parse_file = parse_arwiki_dump(wiki_file, True)
+
+logging.info("Obtaining Lemmas, POS, and Tokens")
+lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
+
 
 logging.info("Normalizing dump")
-normalized_file = normalize_arwiki_parse(parse_file, 
-                                         ar_only = ar_only, 
+normalized_file = normalize_sentence_file(parse_file, 
+                                         ar_only = ar_only,
                                          digits = digits,
                                          alif = alif,
                                          hamza = hamza,
