@@ -6,7 +6,8 @@ from __future__ import absolute_import
 from __future__ import print_function
 
 import sys
-sys.path.insert(0,"/home/jordan/Documents/Projects/")
+# sys.path.insert(0,"/home/jordan/Documents/Projects/")
+sys.path.insert(0,"/Users/jordanking/Documents/")
 
 from arapy.arwiki import parse_arwiki_dump
 from arapy.madamira import transform_sentence_file
@@ -18,7 +19,8 @@ import logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
 
-wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
+# wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
+wiki_file = "/Users/jordanking/Documents/data/arwiki-20150901-pages-articles.xml"
 
 ar_only = True
 digits = True
