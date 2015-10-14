@@ -1,16 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# add the path of arapy
 from __future__ import absolute_import
 from __future__ import print_function
 
-import sys
 import gensim
 import logging
-
-import re
-from collections import Counter
+import sys
 
 sys.path.insert(0,"/Users/jordanking/Documents/")
 import arapy.thesaurus as thes
@@ -19,11 +15,14 @@ import arapy.thesaurus as thes
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
 # file to extract most common from
-# sourcefile = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles_parsed.txt"
-sourcefile = "/Users/jordanking/Documents/data/arwiki/arwiki4k.txt"
+sourcefile = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles_parsed.txt"
+# sourcefile = "/Users/jordanking/Documents/data/arwiki/arwiki4k.txt"
 
 # max words to draw from in the task
 top_n = 4000
+
+# percent of sentences a word must be in to be ignored as a stop word
+stopword_thresh = 0.05
 
 # number of words to output for task
 synonym_target = 800
@@ -38,7 +37,7 @@ document = gensim.corpora.dictionary.Dictionary()
 with open(sourcefile, 'r') as doc_file:
     for line in doc_file:
         document.doc2bow(line.split(), allow_update=True)
-document.filter_extremes(no_below=5, no_above=0.05, keep_n=top_n)
+document.filter_extremes(no_below=5, no_above=stopword_thresh, keep_n=top_n)
 word_list = document.values()
 
 # # word_list = most_common_words(text_source, top_n, skip_stop_words)
