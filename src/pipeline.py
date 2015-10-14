@@ -41,8 +41,6 @@ iterations = 15
 logging.info("Parsing dump.")
 parse_file = parse_arwiki_dump(wiki_file, split_at_punc=True, remove_non_arabic=True)
 
-
-
 # logging.info("Obtaining Lemmas, POS, and Tokens")
 # lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
 
