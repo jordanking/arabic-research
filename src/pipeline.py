@@ -20,7 +20,7 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=log
 
 
 # wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
-wiki_file = "/Users/jordanking/Documents/data/arwiki-20150901-pages-articles.xml"
+wiki_file = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles.xml"
 
 ar_only = True
 digits = True
@@ -39,30 +39,32 @@ negative = 25
 iterations = 15
 
 logging.info("Parsing dump.")
-parse_file = parse_arwiki_dump(wiki_file, True)
-
-logging.info("Obtaining Lemmas, POS, and Tokens")
-lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
+parse_file = parse_arwiki_dump(wiki_file, split_at_punc=True, remove_non_arabic=True)
 
 
-logging.info("Normalizing dump")
-normalized_file = normalize_sentence_file(parse_file, 
-                                         ar_only = ar_only,
-                                         digits = digits,
-                                         alif = alif,
-                                         hamza = hamza,
-                                         yaa = yaa,
-                                         tashkil = tashkil)
 
-logging.info("Generating word vectors")
-embeddings_file = train_embeddings(normalized_file,
-                                   sg = sg,
-                                   size = size,
-                                   window = window,
-                                   min_count = min_count,
-                                   sample = sample,
-                                   hs = hs,
-                                   negative = negative,
-                                   iter = iterations)
+# logging.info("Obtaining Lemmas, POS, and Tokens")
+# lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
+
+
+# logging.info("Normalizing dump")
+# normalized_file = normalize_sentence_file(parse_file, 
+#                                          ar_only = ar_only,
+#                                          digits = digits,
+#                                          alif = alif,
+#                                          hamza = hamza,
+#                                          yaa = yaa,
+#                                          tashkil = tashkil)
+
+# logging.info("Generating word vectors")
+# embeddings_file = train_embeddings(normalized_file,
+#                                    sg = sg,
+#                                    size = size,
+#                                    window = window,
+#                                    min_count = min_count,
+#                                    sample = sample,
+#                                    hs = hs,
+#                                    negative = negative,
+#                                    iter = iterations)
 
 logging.info("Done!")
