@@ -43,51 +43,38 @@ word_list = document.values()
 for val in word_list:
     print(val)
 
-
-# logging.info("Counting top words")
-# with open(sourcefile) as f:
-#     passage = f.read()
-
-# words = re.findall(r'\w+', passage)
-
-# # cap_words = [word.upper() for word in words]
-
-# word_counts = Counter(words)
-# word_list = [word for word, count in word_counts.most_common(top_n)]
-# print(word_list)
-
-
 # # word_list = most_common_words(text_source, top_n, skip_stop_words)
 current_word = 0
 
 lhs = []
 rhs = []
-
-while current_word < top_n:
-
-    if synonym_count < synonym_target:
-        lookup = thes.thesaurus(word_list[current_word].encode('utf-8'), 'syn', ngram=1, ar=True, trans_with_google=True, target_result_count=1)
-        if 'syn' in lookups:
-            if len(lookups['syn']) > 0:
-                lhs.append(word_list[current_word])
-                rhs.append(lookups['syn'][0])
-                synonym_count += 1
-
-    elif antonym_count < antonym_target:
-        lookup = thes.thesaurus(word_list[current_word], 'ant', ngram=1, ar=True, trans_with_google=True, target_result_count=1) 
-        if 'ant' in lookups:
-            if len(lookups['ant']) > 0:
-                lhs.append(word_list[current_word])
-                rhs.append(lookups['ant'][0])
-                antonym_count += 1
-    else:
-        # we have all our words!
-        break
-
-    current_word += 1
-
 with open('synonym_task.txt', 'w') as task_file:
-    task_file.write("Left,Right,Similarity")
+    task_file.write("Left,Right,Similarity\n")
 
-    for i in range(len(lhs)):
-        task_file.write(lhs[i] + ', ' + rhs[i] + ', ')
+
+    while current_word < top_n:
+
+        if synonym_count < synonym_target:
+            lookups = thes.thesaurus(word_list[current_word].encode('utf-8'), 'syn', ngram=1, ar=True, trans_with_google=True, target_result_count=1)
+            if 'syn' in lookups:
+                if len(lookups['syn']) > 0:
+                    # lhs.append(word_list[current_word])
+                    task_file.write(word_list[current_word].encode('utf-8') + ', ')
+                    # rhs.append(lookups['syn'][0])
+                    task_file.write(lookups['syn'].encode('utf-8')+', \n')
+                    synonym_count += 1
+
+        elif antonym_count < antonym_target:
+            lookups = thes.thesaurus(word_list[current_word].encode('utf-8'), 'ant', ngram=1, ar=True, trans_with_google=True, target_result_count=1) 
+            if 'ant' in lookups:
+                if len(lookups['ant']) > 0:
+                    task_file.write(word_list[current_word].encode('utf-8') + ', ')
+                    task_file.write(lookups['ant'].encode('utf-8')+', \n')
+                    # lhs.append(word_list[current_word])
+                    # rhs.append(lookups['ant'][0])
+                    antonym_count += 1
+        else:
+            # we have all our words!
+            break
+
+        current_word += 1
