@@ -10,6 +10,7 @@ import sys
 
 sys.path.insert(0,"/Users/jordanking/Documents/")
 import arapy.thesaurus as thes
+import arapy.normalization as norm
 
 # set up logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
@@ -19,14 +20,14 @@ sourcefile = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-arti
 # sourcefile = "/Users/jordanking/Documents/data/arwiki/arwiki4k.txt"
 
 # max words to draw from in the task
-top_n = 4000
+top_n = 8000
 
 # percent of sentences a word must be in to be ignored as a stop word
 stopword_thresh = 0.05
 
 # number of words to output for task
-synonym_target = 800
-antonym_part = 200
+synonym_target = 1200
+antonym_target = 300
 
 synonym_count = 0
 antonym_count = 0
@@ -45,34 +46,48 @@ current_word = 0
 
 lhs = []
 rhs = []
-with open('synonym_task.txt', 'w') as task_file:
-    task_file.write("Left,Right,Similarity\n")
+with open('synonym_task2.txt', 'w') as task_file:
+    task_file.write("Type,Left,Right,Similarity\n")
 
     while current_word < top_n:
 
-        if synonym_count < synonym_target:
-            lookups = thes.thesaurus(word_list[current_word].encode('utf-8'), 'syn', ngram=1, ar=True, target_result_count=1)
-            if 'syn' in lookups:
-                if len(lookups['syn']) > 0:
-                    task_file.write(word_list[current_word].encode('utf-8') + ', ')
-                    task_file.write(lookups['syn'][0].encode('utf-8')+', \n')
-                    # lhs.append(word_list[current_word])
-                    # rhs.append(lookups['syn'][0])
-                    synonym_count += 1
+        if len(norm.normalize(word_list[current_word], ar_only=True, digits=True, alif=False, hamza=False, yaa=False, tashkil=False).strip('#')) > 0:
 
-        elif antonym_count < antonym_target:
-            lookups = thes.thesaurus(word_list[current_word].encode('utf-8'), 'ant', ngram=1, ar=True, target_result_count=1) 
-            if 'ant' in lookups:
-                if len(lookups['ant']) > 0:
-                    task_file.write(word_list[current_word].encode('utf-8') + ', ')
-                    task_file.write(lookups['ant'][0].encode('utf-8')+', \n')
-                    # lhs.append(word_list[current_word])
-                    # rhs.append(lookups['ant'][0])
-                    antonym_count += 1
-        else:
-            # we have all our words!
-            break
+            if synonym_count < synonym_target:
+                lookups = thes.thesaurus(word_list[current_word].encode('utf-8'), 'syn', ngram=1, ar=True, target_result_count=1)
+                if 'syn' in lookups:
+                    if len(lookups['syn']) > 0:
+                        if len(norm.normalize(lookups['syn'][0], ar_only=True, digits=True, alif=False, hamza=False, yaa=False, tashkil=False).strip('#')) > 0:
+                            if word_list[current_word] != lookups['syn'][0]:
+                                task_file.write('syn, ')
+                                task_file.write(word_list[current_word].encode('utf-8') + ', ')
+                                task_file.write(lookups['syn'][0].encode('utf-8')+', \n')
+                                logging.info("Found syn number:"+ str(synonym_count))
+                                # lhs.append(word_list[current_word])
+                                # rhs.append(lookups['syn'][0])
+                                synonym_count += 1
+
+            elif antonym_count < antonym_target:
+                lookups = thes.thesaurus(word_list[current_word].encode('utf-8'), 'ant', ngram=1, ar=True, target_result_count=1) 
+                if 'ant' in lookups:
+                    if len(lookups['ant']) > 0:
+                        if len(norm.normalize(lookups['ant'][0], ar_only=True, digits=True, alif=False, hamza=False, yaa=False, tashkil=False).strip('#')) > 0:
+                            if word_list[current_word] != lookups['ant'][0]:
+                                task_file.write('ant, ')
+                                task_file.write(word_list[current_word].encode('utf-8') + ', ')
+                                task_file.write(lookups['ant'][0].encode('utf-8')+', \n')
+                                logging.info("Found ant number:", str(antonym_count))
+                                # lhs.append(word_list[current_word])
+                                # rhs.append(lookups['ant'][0])
+                                antonym_count += 1
+            else:
+                # we have all our words!
+                break
 
         current_word += 1
 
-    logging.info("Ran out of words to draw from")
+    if antonym_count < antonym_target or synonym_count < synonym_target:
+        logging.info("Ran out of words to draw from")
+    else:
+        logging.info("Used " + str(current_word) + " of the most frequent words.")
+        logging.info("Done!")
