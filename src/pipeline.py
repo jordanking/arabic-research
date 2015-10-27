@@ -21,48 +21,75 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=log
 
 # wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
 wiki_file = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles.xml"
+parse_file = ""
+lemma_file = ""
+token_file = ""
+pos_file = ""
 
+# if NLP options should be reparsed
+preprocessed = False
+
+# Normalization options
 ar_only = True
-digits = True
+digits = [True, False]
 alif = True
 hamza = True
 yaa = True
-tashkil = True
+tashkil = [True, False]
 
-sg = 0
-size = 100
-window = 8
+# Word2Vec parameter options
+sg = [0, 1]
+size = [100, 200]
+window = [4,7]
 min_count = 5
-sample = 1e-4
-hs = 0
-negative = 25
-iterations = 15
+sample = 1e-5
+seed = 18
+hs = 1
+negative = 0
+iterations = 5
 
-logging.info("Parsing dump.")
-parse_file = parse_arwiki_dump(wiki_file, split_at_punc=True, remove_non_arabic=True)
+if not preprocessed:
+    logging.info("Parsing dump.")
+    parse_file = parse_arwiki_dump(wiki_file, split_at_punc=True, remove_non_arabic=True)
 
-# logging.info("Obtaining Lemmas, POS, and Tokens")
-# lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
+    logging.info("Obtaining Lemmas, POS, and Tokens")
+    lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
 
+nlp_types = [parse_file, lemma_file, token_file]
 
-# logging.info("Normalizing dump")
-# normalized_file = normalize_sentence_file(parse_file, 
-#                                          ar_only = ar_only,
-#                                          digits = digits,
-#                                          alif = alif,
-#                                          hamza = hamza,
-#                                          yaa = yaa,
-#                                          tashkil = tashkil)
+for nlp_option in nlp_types:
+    for digit_option in digits:
+        for tashkil_option in tashkil:
 
-# logging.info("Generating word vectors")
-# embeddings_file = train_embeddings(normalized_file,
-#                                    sg = sg,
-#                                    size = size,
-#                                    window = window,
-#                                    min_count = min_count,
-#                                    sample = sample,
-#                                    hs = hs,
-#                                    negative = negative,
-#                                    iter = iterations)
+            logging.info("Normalizing dump")
+            normalized_file = normalize_sentence_file(nlp_option, 
+                                                     ar_only = ar_only,
+                                                     digits = digit_option,
+                                                     alif = alif,
+                                                     hamza = hamza,
+                                                     yaa = yaa,
+                                                     tashkil = tashkil_option)
+
+            for model_option in sg:
+                for size_option in size:
+                    for window_option in window:
+
+                    logging.info("Generating word vectors")
+                    embeddings_file = train_embeddings(normalized_file,
+                                                       sg = model_option,
+                                                       size = size_option,
+                                                       window = window_option,
+                                                       min_count = min_count,
+                                                       sample = sample,
+                                                       seed = seed,
+                                                       hs = hs,
+                                                       negative = negative,
+                                                       iter = iterations)
+
+                    # pos evaluation
+
+                    # semantic task
+
+                    # other task?
 
 logging.info("Done!")
