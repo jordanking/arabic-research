@@ -1,0 +1,13 @@
+\section*{Abstract}
+
+There is a lot of work done on training English word vectors.
+However, Arabic is much more morphologically complex than English, and due to the many conjugations, suffixes, articles, and more, an Arabic word might not be a single word in the sense that it is in English.
+However, there isn’t a single clear answer as to how these Arabic “words” can be broken apart.
+Some options are to tokenize the words by breaking off articles and affixes, to obtain the root word lemma (not the actual Arabic root…), or just to leave the words be to preserve the full meaning.
+We are going to test all of these methods and more, but it doesn’t do much good to test them without some evaluation.
+That is what this task is for.
+In order to evaluate the word embeddings that we get from some methodology, we would like to have a list of accurate and diverse similarity scores for word pairs.
+This way, we can use the embeddings from a given method to obtain a similarity score, and compare that against this human truth.
+The method that performs most similarly to the human truth will be considered the best at semantic similarity.
+Additionally, we hope to publish this list of word pairs so others can conduct similar research.
+There is little published that is even similar to the list we hope to create, and we hope this will help others further research Arabic natural language processing.

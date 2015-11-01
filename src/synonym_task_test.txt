@@ -1,5 +1,0 @@
-Type,Left,Right,Similarity
-syn, بالماء, سقى, 
-syn, بلغت, يصل, 
-syn, جنوب, حلف, 
-syn, بلغة, خطاب, 
