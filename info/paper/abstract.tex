@@ -1,16 +1,15 @@
 \section*{Abstract}
 
 Word embeddings are an increasingly important tool for NLP tasks, especially those that require semantic understanding of words.
-Methodologies and properties of word embeddings have been researched in English language tasks, and tasks with English-like languages.
-However, little attention has been given to the training of Arabic word embeddings.
-Arabic is much more morphologically complex than English, and due to the many conjugations, suffixes, articles, and more, an Arabic word might not be a single word in the sense that it is in English.
-While there are a number of techniques to break down Arabic words through lemmatization and tokenization, it is not clear how the quality of resulting word embeddings would be affected.
-We investigate a number of preprocessing methods and training parameterizations to find the optimal strategies to train embeddings with.
-Additionally, we required tasks to evaluate the Arabic word embeddings.
-There is little work done in providing a semantic similarity task for Arabic.
-To remedy this, we created a list of human supplied similarity scores for given Arabic word pairs.
-We evaluated all training methods by using the embeddings from a given method to obtain a similarity score, and compare that against our semantic similarity task.
-Additionally, we evaluated the word embeddings ability to capture syntactic properties using a part of speech tagging task.
-Using these tasks, we are able to identify the training strategies that perform best on each task.
+Methodologies and properties of English word embeddings have been extensively researched, however little attention has been given to the production and application of Arabic word embeddings.
+Arabic is significantly more morphologically complex than English, and due to the many conjugations, suffixes, articles, and other grammar constructs, an Arabic word might not be a single word in the sense that it is in English.
+This has a significant effect on the training and application of Arabic word embeddings, as the embeddings are trained on unigram tokens.
+While there are a number of techniques to break down Arabic words through lemmatization and tokenization, the quality of resulting word embeddings must be investigated to understand the effects of these transformations.
+In this work, we investigate a number of preprocessing methods and training parameterizations to establish best practice strategies for training Arabic word embeddings.
+To enable this research, we required a semantic similarity task to evaluate the Arabic word embeddings.
+There is little work done to provide a large semantic similarity task in Arabic so we created a list of 1000 similarity scores for given Arabic word pairs using native Arabic speakers.
+With this semantic similarity task, we evaluated all training parameterizations by using the embeddings from a given method to obtain a similarity score to evaluate against the task.
+Additionally, we evaluated the word embeddings' ability to capture syntactic properties of words using a part of speech tagging task.
+Using these tasks, we were able to identify the training strategies that produce the best results for each task.
 We also offer a suite of Arabic NLP tools that we developed alongside this work that attempts to fill the void of accessible open source Arabic NLP tools.
 Altogether, this work provides best practices for training Arabic word vectors, an open semantic similarity task developed by native Arabic speakers, and a python package of Arabic NLP tools.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 NOV 2015 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 NOV 2015 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,16 +721,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `arabic-research.out' has not changed.
 (rerunfilecheck)             Checksum: 86E036146B4D5A8F0DAA9E869BCF5F31;191.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
  10384 strings out of 493089
  152791 string characters out of 6134842
- 224084 words of memory out of 5000000
+ 225084 words of memory out of 5000000
  13687 multiletter control sequences out of 15000+600000
  21545 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -738,7 +734,7 @@ Here is how much of TeX's memory you used:
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on arabic-research.pdf (3 pages, 32167 bytes).
+Output written on arabic-research.pdf (3 pages, 32286 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
