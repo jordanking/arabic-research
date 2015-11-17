@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 NOV 2015 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  16 NOV 2015 23:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -708,36 +708,43 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-) (./literature.tex) (./experiments.tex) (./conclusion.tex)
+) (./literature.tex [2]) (./experiments.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+ [3] [4])
+(./arapy.tex) (./conclusion.tex)
 No file arabic-research.bbl.
 \tf@thm=\write5
 \openout5 = `arabic-research.thm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
-[2] [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (./arabic-research.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `arabic-research.out' has not changed.
-(rerunfilecheck)             Checksum: 86E036146B4D5A8F0DAA9E869BCF5F31;191.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
+(rerunfilecheck)             Checksum: 4D60882901CA20ED774955AC26E58E6A;653.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 10384 strings out of 493089
- 152791 string characters out of 6134842
- 225084 words of memory out of 5000000
- 13687 multiletter control sequences out of 15000+600000
- 21545 words of font info for 60 fonts, out of 8000000 for 9000
+ 10470 strings out of 493089
+ 153863 string characters out of 6134842
+ 225115 words of memory out of 5000000
+ 13736 multiletter control sequences out of 15000+600000
+ 36090 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,38p,288b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,38p,957b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on arabic-research.pdf (3 pages, 32286 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/times/utmri8a.pfb>
+Output written on arabic-research.pdf (5 pages, 64393 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
