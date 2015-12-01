@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{finkelstein:2001}
+L.~Finkelstein, E.~Gabrilovich, Y.~Matias, E.~Rivlin, Z.~Solan, G.~Wolfman, and
+  E.~Ruppin.
+\newblock Placing search in context: The concept revisited.
+\newblock In {\em Proceedings of the 10th international conference on World
+  Wide Web}, pages 406--414. ACM, 2001.
+
+\bibitem{hassan:2009}
+S.~Hassan and R.~Mihalcea.
+\newblock Cross-lingual semantic relatedness using encyclopedic knowledge.
+\newblock In {\em Proceedings of the 2009 Conference on Empirical Methods in
+  Natural Language Processing: Volume 3-Volume 3}, pages 1192--1201.
+  Association for Computational Linguistics, 2009.
+
+\bibitem{pasha:2014}
+A.~Pasha, M.~Al-Badrashiny, M.~Diab, A.~El~Kholy, R.~Eskander, N.~Habash,
+  M.~Pooleery, O.~Rambow, and R.~M. Roth.
+\newblock Madamira: A fast, comprehensive tool for morphological analysis and
+  disambiguation of arabic.
+\newblock In {\em Proceedings of the Language Resources and Evaluation
+  Conference (LREC), Reykjavik, Iceland}, 2014.
+
+\end{thebibliography}
