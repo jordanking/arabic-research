@@ -6,8 +6,8 @@ from __future__ import absolute_import
 from __future__ import print_function
 
 import sys
-# sys.path.insert(0,"/home/jordan/Documents/Projects/")
-sys.path.insert(0,"/Users/jordanking/Documents/")
+sys.path.insert(0,"/home/jordan/Documents/Projects/")
+# sys.path.insert(0,"/Users/jordanking/Documents/")
 
 from arapy.arwiki import parse_arwiki_dump
 from arapy.madamira import transform_sentence_file
@@ -19,10 +19,9 @@ import logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
 
-embeddings_destination = "/Users/jordan/Documents/Projects/arabic-research/vecs/"
 
-# wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
-wiki_file = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles.xml"
+wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
+# wiki_file = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles.xml"
 parse_file = ""
 lemma_file = ""
 token_file = ""
@@ -55,7 +54,7 @@ if not preprocessed:
     parse_file = parse_arwiki_dump(wiki_file, split_at_punc=True, remove_non_arabic=True)
 
     logging.info("Obtaining Lemmas, POS, and Tokens")
-    lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
+    # lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
 
 nlp_types = [parse_file]#, lemma_file, token_file]
 
@@ -78,7 +77,6 @@ for nlp_option in nlp_types:
 
                       logging.info("Generating word vectors")
                       embeddings_file = train_embeddings(normalized_file, 
-                                                         embeddings_destination,
                                                          sg = model_option,
                                                          size = size_option,
                                                          window = window_option,

@@ -13,7 +13,7 @@ import plotly.plotly as py
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
-OUTPUT_FILE = 'similiarity_task_merged.csv'
+OUTPUT_FILE = 'similarity_task_merged.csv'
 IN_HEADER = ['Word 1', 'Word 2', 'Similarity (0-5)', 'Nonsense (Optional)']
 SIMILARITY_OPT = 'Similarity (0-10)'
 OUT_HEADER = ['Word 1', 'Word 2', 'Similarity']
