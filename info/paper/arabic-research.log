@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 JAN 2016 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 JAN 2016 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,13 +783,7 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 71.
  (./abstract.tex)
-(./introduction.tex
-Overfull \hbox (14.19327pt too wide) in paragraph at lines 3--1
-\T1/ptm/m/n/9 es-pe-cially those that re-quire se-man-tic un-der-stand-ing of w
-ords. Method-
- []
-
-) (./literature.tex
+(./introduction.tex) (./literature.tex
 Overfull \hbox (3.61899pt too wide) in paragraph at lines 4--1
 \T1/ptm/m/n/9 High qual-ity word em-bed-dings pro-vide a rep-re-sen-ta-tion of 
 the mean-
@@ -801,29 +795,60 @@ Overfull \hbox (1.90894pt too wide) in paragraph at lines 4--1
 gs. Writ-
  []
 
-) (./experiments.tex [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updm
-ap/pdftex.map}
+) (./training.tex [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/
+pdftex.map}
 
 
 ]
-Overfull \hbox (3.90628pt too wide) in paragraph at lines 15--16
+Overfull \hbox (15.31926pt too wide) in paragraph at lines 1--1
+[]\secfnt TRAINING WORD EM-BED-DINGS IN ARA-
+ []
+
+
+Overfull \hbox (6.51682pt too wide) in paragraph at lines 7--10
+[]\T1/ptm/m/n/9 Preprocessing is very im-por-tant when an-a-lyz-ing Ara-bic tex
+t. Much
+ []
+
+) (./evaluation.texpdfTeX warning (ext4): destination with the same identifier 
+(name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 
+      [2]) (./experiments.tex
+Overfull \hbox (3.90628pt too wide) in paragraph at lines 15--1
 \T1/ptm/m/n/9 ments were first tagged with part-of-speech val-ues us-ing Madami
 ra's
  []
 
-
-Overfull \hbox (5.18446pt too wide) in paragraph at lines 21--22
-[]\T1/ptm/m/n/9 Further con-sid-ered pre-pro-cess-ing pa-ram-e-ters are nor-mal
--iz-ing Ara-
+) (./recommendations.tex
+Overfull \hbox (26.14409pt too wide) in paragraph at lines 1--1
+[]\secfnt RECOMMENDATIONS FOR ARA-BIC WORD
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 \subsection
-                {Results} [2]) (./arapy.tex) (./conclusion.tex)
-(./arabic-research.bbl
+) (./arapy.tex) (./conclusion.tex
+Overfull \hbox (5.14012pt too wide) in paragraph at lines 4--1
+\T1/ptm/m/n/9 work-ing with Ara-bic. The first is a mod-ule pro-vid-ing a MADAM
+IRA
+ []
+
+
+Overfull \hbox (31.43744pt too wide) in paragraph at lines 4--1
+\T1/ptm/m/n/9 phrase chunk-ing, to-k-eniza-tion, and lemma-ti-za-tion fea-tures
+ of MADAMIRA.
+ []
+
+
+Overfull \hbox (12.63661pt too wide) in paragraph at lines 4--1
+\T1/ptm/m/n/9 MADAMIRA jar and a li-cense for MADAMIRA, gen-sim for word2vec
+ []
+
+
+Overfull \hbox (20.50389pt too wide) in paragraph at lines 1--1
+[]\secfnt CONCLUSION AND FU-TURE DI-REC-TIONS 
+ []
+
+) (./arabic-research.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 44.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
@@ -831,33 +856,40 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 44.
-)
-\tf@thm=\write5
-\openout5 = `arabic-research.thm'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 \end{document}
-                    [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+l.71 
+      [3])
+\tf@thm=\write5
+\openout5 = `arabic-research.thm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.88 \end{document}
+                    [4
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./arabic-research.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `arabic-research.out' has not changed.
-(rerunfilecheck)             Checksum: 4D60882901CA20ED774955AC26E58E6A;653.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
+(rerunfilecheck)             Checksum: 5088C812483AC4A6B4F21237505B7914;843.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 10870 strings out of 493089
- 158274 string characters out of 6134842
- 237159 words of memory out of 5000000
- 14097 multiletter control sequences out of 15000+600000
+ 10883 strings out of 493089
+ 158433 string characters out of 6134842
+ 238187 words of memory out of 5000000
+ 14099 multiletter control sequences out of 15000+600000
  57719 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,38p,1615b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,38p,1707b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
@@ -867,10 +899,10 @@ st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on arabic-research.pdf (3 pages, 104513 bytes).
+Output written on arabic-research.pdf (4 pages, 110743 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
