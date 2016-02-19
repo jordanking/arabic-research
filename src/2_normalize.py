@@ -6,8 +6,8 @@ from __future__ import absolute_import
 from __future__ import print_function
 
 import sys
-# sys.path.insert(0,"/home/jordan/Documents/Projects/")
-sys.path.insert(0,"/Users/jordanking/Documents/")
+sys.path.insert(0,"/home/jordan/Documents/Projects/")
+# sys.path.insert(0,"/Users/jordanking/Documents/")
 
 from arapy.arwiki import parse_arwiki_dump
 from arapy.madamira import transform_sentence_file
@@ -19,8 +19,9 @@ import logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
 
-# wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
-wiki_file = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles.xml"
+
+wiki_file = "/media/jordan/Media/data/arabic/arwiki-20150901-pages-articles.xml"
+# wiki_file = "/Users/jordanking/Documents/data/arwiki/arwiki-20150901-pages-articles.xml"
 parse_file = ""
 lemma_file = ""
 token_file = ""
@@ -31,16 +32,16 @@ preprocessed = False
 
 # Normalization options
 ar_only = True
-digits = [True, False]
+digits = [True]#, False]
 alif = True
 hamza = True
 yaa = True
-tashkil = [True, False]
+tashkil = [True]#, False]
 
 # Word2Vec parameter options
-sg = [0, 1]
-size = [100, 200]
-window = [4,7]
+sg = [0]#, 1]
+size = [100]#, 200]
+window = [4]#,7]
 min_count = 5
 sample = 1e-5
 seed = 18
@@ -53,9 +54,9 @@ if not preprocessed:
     parse_file = parse_arwiki_dump(wiki_file, split_at_punc=True, remove_non_arabic=True)
 
     logging.info("Obtaining Lemmas, POS, and Tokens")
-    lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
+    # lemma_file, pos_file, token_file = transform_sentence_file(parse_file, lemmas=True, pos=True, tokens=True)
 
-nlp_types = [parse_file, lemma_file, token_file]
+nlp_types = [parse_file]#, lemma_file, token_file]
 
 for nlp_option in nlp_types:
     for digit_option in digits:
@@ -74,17 +75,17 @@ for nlp_option in nlp_types:
                 for size_option in size:
                     for window_option in window:
 
-                    logging.info("Generating word vectors")
-                    embeddings_file = train_embeddings(normalized_file,
-                                                       sg = model_option,
-                                                       size = size_option,
-                                                       window = window_option,
-                                                       min_count = min_count,
-                                                       sample = sample,
-                                                       seed = seed,
-                                                       hs = hs,
-                                                       negative = negative,
-                                                       iter = iterations)
+                      logging.info("Generating word vectors")
+                      embeddings_file = train_embeddings(normalized_file, 
+                                                         sg = model_option,
+                                                         size = size_option,
+                                                         window = window_option,
+                                                         min_count = min_count,
+                                                         sample = sample,
+                                                         seed = seed,
+                                                         hs = hs,
+                                                         negative = negative,
+                                                         iter = iterations)
 
                     # pos evaluation
 
