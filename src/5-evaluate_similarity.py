@@ -24,12 +24,14 @@ import os
 import numpy as np
 from gensim.models import Word2Vec
 from scipy.stats.stats import pearsonr  
+import sys
+sys.path.insert(0,ARAPY_PATH)
+from arapy.madamira import Madamira
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
-
 embeddings = os.listdir(EMBEDDINGS_DIR)
 
-# load task
+# load base task
 pairs = {}
 with open(TASK_FILE, 'rb') as csvfile:
     reader = csv.DictReader(csvfile)
@@ -44,50 +46,50 @@ with open(TASK_FILE, 'rb') as csvfile:
 
 # run task
 means = np.zeros(len(embeddings))
-for m in range(len(embeddings)):
+with Madamira() as mada:
+    for m in range(len(embeddings)):
 
-    modelfile = embeddings[m]
-    model = Word2Vec.load_word2vec_format(modelfile, binary=True)
+        modelfile = embeddings[m]
+        params = parseParameters(modelfile)
+        model = Word2Vec.load_word2vec_format(EMBEDDINGS_DIR + '/' + modelfile, binary=True)
 
-    total_diff = 0
-    hits = 0
-    misses = 0
+        total_diff = 0
+        hits = 0
+        misses = 0
 
-    print("Evaluating " + str(len(pairs)) + " pairs")
-    
-    scores = []
-    values = []
+        #print("Evaluating " + str(len(pairs)) + " pairs")
+        
+        scores = []
+        values = []
 
-    for key in pairs:
+        for key in pairs:
 
-        try:
-           
-            # print(model[key[0].decode('UTF-8', 'replace')])
-            # print(np.dot(model[key[0].decode('UTF-8', 'replace')], model[key[1].decode('UTF-8', 'replace')]))
-            # print(model.similarity(key[0].decode('UTF-8', 'replace'),
-                                   # key[1].decode('UTF-8', 'replace')))
-            pairs[key]['scores'][m] = abs(model.similarity(key[0].decode('UTF-8', 'replace'),
-                                                       key[1].decode('UTF-8', 'replace')))
-            pairs[key]['diffs'][m] = abs(pairs[key]['scores'][m] - pairs[key]['value'])
+            try:
+                
+                key1 = preprocessKey(key[0], params, mada)
+                key2 = preprocessKey(key[1], params, mada)
+               
+                # TODO get the scores via combination of token vecs, etc
+                pairs[key]['scores'][m] = abs(model.similarity(key1.decode('UTF-8', 'replace'),
+                                                           key2.decode('UTF-8', 'replace')))
+                pairs[key]['diffs'][m] = abs(pairs[key]['scores'][m] - pairs[key]['value'])
+                
+                scores.append(pairs[key]['scores'][m])
+                values.append(pairs[key]['value'])
+                print(str(scores[-1]) + " " + str(values[-1]))
+                
+                total_diff += pairs[key]['diffs'][m]
+                hits += 1
+            except KeyError as ke:
+                #print(str(misses) + ke.message.encode('utf-8','replace'))
+                misses += 1
+                continue
 
-            # print(str(pairs[key]['scores'][m]) + " vs " + str(pairs[key]['value']))
-            
-            scores.append(pairs[key]['scores'][m])
-            values.append(pairs[key]['value'])
-            print(str(scores[-1]) + " " + str(values[-1]))
-            
-            total_diff += pairs[key]['diffs'][m]
-            hits += 1
-        except KeyError as ke:
-            #print(str(misses) + ke.message.encode('utf-8','replace'))
-            misses += 1
-            continue
-
-    
-    print(pearsonr(scores, values))    
-    print("Hits: " + str(hits))
-    print("Misses: " + str(misses))
-    means[m] = total_diff / max(hits, 1)
+        
+        print(pearsonr(scores, values))    
+        print("Hits: " + str(hits))
+        print("Misses: " + str(misses))
+        means[m] = total_diff / max(hits, 1)
 
 # save results
 with open(OUTPUT_FILE, 'wb') as csvfile:
@@ -95,3 +97,38 @@ with open(OUTPUT_FILE, 'wb') as csvfile:
     writer.writerow(OUT_HEADER)
     for m in range(len(embeddings)):
         writer.writerow([embeddings[m], means[m]])
+
+def parseParameters(filename):
+    #controldigTruetashTruemod1size200wind7.txt
+    params = {}
+
+    preprocessing_options = ['control', 'lemmas', 'tokens']
+    for opt in preprocessing_options:
+        if filename.startswith(opt):
+            params['preprocessing'] = opt
+            filename = filename[len(opt):]
+
+    normalization_options = ['dig', 'tash']
+    for opt in normalization_options:
+        filename = filename[len(opt):]
+        if filename.startswith('True'):
+            params[opt] = True
+        else:
+            params[opt] = False
+
+    model_options = ['mod', 'size', 'wind']
+    for opt in model_options:
+        filename = filename[len(opt):]
+        value = ''
+        for char in filename:
+            if char.isdigit():
+                value += char
+            else:
+                break
+        params[opt] = int(value)
+
+    return params
+
+def preprocessKey(key, params, mada):
+    if params['preprocessing'] == 'lemmas':
+        key = 

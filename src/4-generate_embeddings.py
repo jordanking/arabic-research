@@ -35,10 +35,10 @@ for normalized in os.listdir(NORMALIZED_DIR):
             for window_option in window:
 
                 logging.info("Generating word vectors")
-                outfile = EMBEDDING_DIR+normalized[:-4]+"mod"+str(model_option)+"size"+str(size_option)+"wind"+str(window_option)+".txt"
+                outfile = EMBEDDING_DIR+"/"+normalized[:-4]+"mod"+str(model_option)+"size"+str(size_option)+"wind"+str(window_option)+".txt"
 
-                embeddings_file = train_embeddings(normalized,
-                                                   outfile_path = outfile, 
+                embeddings_file = train_embeddings(NORMALIZED_DIR+"/"+normalized,
+                                                   outfile = outfile, 
                                                    sg = model_option,
                                                    size = size_option,
                                                    window = window_option,
