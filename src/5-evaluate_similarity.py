@@ -16,7 +16,7 @@
 from __future__ import absolute_import
 from __future__ import print_function
 from constants import ARAPY_PATH, WORKING_DIRECTORY, EMBEDDING_DIR, RESULTS_DIR
-from constants import TASKS, AR_SIM_OUTPUT_FILE, IN_HEADER, OUT_HEADER
+from constants import TASKS, AR_SIM_OUTPUT_FILE, AR_SIM_OUTPUT_FILE_2, IN_HEADER, OUT_HEADER
 import logging
 import csv
 import logging
@@ -70,6 +70,7 @@ def parseParameters(filename):
 
 def preprocessKey(inkey, params, mada):
     key = inkey
+
     if params['preprocessing'] == 'lemmas':
         out = mada.process([key])
         buff = StringIO.StringIO()
@@ -108,7 +109,7 @@ def get_similarity(key1, key2):
 #### obtain the various embeddings that need evaluation
 #### arabic embeddings
 embeddings = os.listdir(EMBEDDING_DIR)
-TASK_FILE = TASKS[0]
+TASK_FILE = TASKS[1]
 
 # load base task
 pairs = {}
@@ -197,7 +198,7 @@ with Madamira() as mada:
 
 
 # save results
-with open(AR_SIM_OUTPUT_FILE, 'wb') as csvfile:
+with open(AR_SIM_OUTPUT_FILE_2, 'wb') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(OUT_HEADER)
 
