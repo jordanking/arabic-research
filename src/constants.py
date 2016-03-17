@@ -19,9 +19,12 @@ NORMALIZED_DIR = WORKING_DIRECTORY+"/3-normalized"
 EMBEDDING_DIR = WORKING_DIRECTORY+"/4-embeddings"
 RESULTS_DIR = WORKING_DIRECTORY+"/5-semantic_results"
 
-TASKS = ['/home/jordan/Documents/Projects/arabic-research/pairs/similarity_task_merged.csv',
-         '/home/jordan/Documents/Projects/arabic-research/CLSR-EK/WS353_ar.csv']
-TASK_FILE = TASKS[0]
-OUTPUT_FILE = RESULTS_DIR+'/similiarity_task_results.csv'
+TASKS = ['/home/jordan/Documents/Projects/arabic-research/semantic_tasks/mine/similarity_task_merged.csv',
+         '/home/jordan/Documents/Projects/arabic-research/semantic_tasks/others/WS353_ar.csv',
+         '/home/jordan/Documents/Projects/arabic-research/semantic_tasks/others/WS353_en.csv']
+
+AR_SIM_OUTPUT_FILE = RESULTS_DIR+'/ar_similiarity_task_results.csv'
+EN_SIM_OUTPUT_FILE = RESULTS_DIR+'/en_similiarity_task_results.csv'
+
 IN_HEADER = ['Word 1', 'Word 2', 'Similarity']
-OUT_HEADER = ['Embedding File', 'Accuracy']
+OUT_HEADER = ['Embedding File', 'MSE', 'Accuracy', 'Hit_Percent', 'Correlation']
