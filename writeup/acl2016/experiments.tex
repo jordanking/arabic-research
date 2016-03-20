@@ -6,7 +6,9 @@ We performed a broad parameter sweep over the various preprocessing techniques, 
 \\
 All preprocessing, normalization, and training processes utilize the Arapy package we developed, which is released as an open source utility. It utilizes various software resources, including gensim, Madamira, the Google Translate API, the Big Huge Thesaurus API, \textcolor{red}{etc. CITE THESE}. All preprocessing options are precomputed first, generating multiple versions of the Arabic Wikipedia corpus. Then word vectors are trained for each parameterization. The vectors are then ran through evaluation tasks, recording various performance statistics.
 \\
-\textcolor{red}{The final results are shown here.}
+The baseline results for English vectors are shown in Table \ref{table:englishtask}. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under a default parameterization on the same number of words as our Arabic models. The second is the publically available pre-trained vectors trained on the 300 billion word Google News Corpus. The metrics that we choose to display are Mean Error and Correlation with the evaluation task. The mean error is obtained as the mean absolute distance between the vector estimate and the evaluation task estimate for word pair similarity. The default vectors exhibit an impressive .268 mean error, and both models show a high correlation with the evaluation task scores.
+\\
+Tables \ref{table:ourtask} and \ref{table:ws353task} show the results of models trained on differently preprocessed text. Table \ref{table:ourtask} contains results from the similarity task that we developed, and Table \ref{table:ws353task} contains the results from the WS353 \textcolor{red}{CITE} Arabic task. None of the Arabic models reach either the level of coorelation or accuracy that the default English model does. These tabels are sorted by mean error, revealing traits that improved their performance on evaluation tasks. We analyze these results in Section \ref{section:recommendations}.
 
 \begin{table}
 \begin{tabular}{l|l|l}%

@@ -1,8 +1,10 @@
 \section{Recommendations for Arabic Word Embeddings}
+\label{section:recommendations}
 
-
-\textcolor{red}{The best results for the semantic similarity task are xxx.}
+The least accurate results for both Arabic semantic similarity tasks were those models trained on unprocessed Arabic text. Additionally, the accuracies of unprocessed text were far below the English default baseline. This goes to show that Arabic word embeddings do benefit in semantic accuracy when preprocessed to tokens and lemmas. Additionally, tokenized Arabic tends to have a higher accuracy on the tasks than lemmatized Arabic.
 \\
-\textcolor{red}{The best results for the semantic similarity task are xxx.}
+Also to note is the effect of normalizing digits and tashkil (voweling). When lemmatizing the Arabic, there seems to be a consistent increase in performance if you then remove tashkil. Tokenization and unprocessed Arabic do not seem to have the same improvements with lemmatization.
 \\
-\textcolor{red}{Other recommendation we have are xxx.}
+\textcolor{red}{We are currently training embeddings with the word2vec parameters considered. These results are only the tip of the parameters we are considering. With the algorithm parameters changed, these preprocessing effects should reveal greater effects. However, there was a bug discovered in the training code and these embeddings require many days to train again.}
+% \textcolor{red}{The best results for the syntactic similarity task are xxx.}
+% \textcolor{red}{Other recommendation we have are xxx.}

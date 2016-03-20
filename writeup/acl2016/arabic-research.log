@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 MAR 2016 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 MAR 2016 19:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -178,26 +178,26 @@ Missing character: There is no ¡ in font ptmr7t!
 Missing character: There is no Ù in font ptmr7t!
 )
 (./evaluation.tex [3]) (./experiments.tex
-Underfull \hbox (badness 1248) in paragraph at lines 5--10
+Underfull \hbox (badness 1248) in paragraph at lines 5--12
 \OT1/ptm/m/n/10.95 All pre-pro-cess-ing, nor-mal-iza-tion, and train-ing
  []
 
 
-Overfull \hbox (14.82236pt too wide) in paragraph at lines 12--17
+Overfull \hbox (14.82236pt too wide) in paragraph at lines 14--19
 [][] 
  []
 
 
-Overfull \hbox (6.17133pt too wide) in paragraph at lines 22--27
+Overfull \hbox (6.17133pt too wide) in paragraph at lines 24--29
 [][] 
  []
 
 
-Overfull \hbox (6.17133pt too wide) in paragraph at lines 32--37
+Overfull \hbox (6.17133pt too wide) in paragraph at lines 34--39
 [][] 
  []
 
-) (./recommendations.tex) (./arapy.tex [4]) (./conclusion.tex)
+) (./recommendations.tex) (./arapy.tex [4]) (./conclusion.tex [5])
 (./arabic-research.bbl
 Underfull \hbox (badness 3343) in paragraph at lines 4--8
 \OT1/ptm/m/n/10 2013.  Poly-glot: Dis-tributed word rep-re-sen-
@@ -237,15 +237,17 @@ Underfull \hbox (badness 1077) in paragraph at lines 71--75
 \OT1/pcr/m/n/10 / / words . bighugelabs . com/$\OT1/ptm/m/n/10 .  (Vis-ited on
  []
 
-[5]) [6
+) [6] (./arabic-research.aux)
 
-] (./arabic-research.aux) )
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 2249 strings out of 493089
- 42050 string characters out of 6134842
- 104888 words of memory out of 5000000
- 5695 multiletter control sequences out of 15000+600000
+ 2250 strings out of 493089
+ 42075 string characters out of 6134842
+ 106896 words of memory out of 5000000
+ 5696 multiletter control sequences out of 15000+600000
  23123 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,10n,46p,1708b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -258,7 +260,7 @@ type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on arabic-research.pdf (6 pages, 110803 bytes).
+Output written on arabic-research.pdf (6 pages, 112493 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
