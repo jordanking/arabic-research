@@ -1,0 +1,30 @@
+
+\section{Experimental Results}
+\label{sec:experiments}
+
+We performed a broad parameter sweep over the various preprocessing techniques, normalization options, and word2vec parameterizations to determine the optimal word embedding methods. The text corpus for training the embeddings is an Arabic Wikipedia dump cleaned with our Arapy package.
+\\
+All preprocessing, normalization, and training processes that we use utilize the Arapy package we developed, which is released as an open source utility. It utilizes various software resources, including gensim, Madamira, the Google Translate API, the Big Huge Thesaurus API, \textcolor{red}{etc. CITE}. All preprocessing options are precomputed first, generating multiple versions of the Arabic Wikipedia corpus. Then word vectors are trained for each parameterization. The vectors were then ran through both evaluation tasks, recording various performance statistics.
+\\
+\textcolor{red}{The final results are shown here.}
+
+
+\begin{tabular}{l|l}%
+\bfseries MSE & \bfseries Correlation% specify table head
+\csvreader[head to column names]{results/ar_similiarity_task_results.csv}{}% use head of csv as column names
+{\\\hline\csvcolii&\csvcolv}% specify your coloumns here
+\end{tabular}
+
+
+\begin{tabular}{l|l}%
+\bfseries MSE & \bfseries Correlation% specify table head
+\csvreader[head to column names]{results/ar_similiarity_task_results_ws353.csv}{}% use head of csv as column names
+{\\\hline\csvcolii&\csvcolv}% specify your coloumns here
+\end{tabular}
+
+
+\begin{tabular}{l|l}%
+\bfseries MSE & \bfseries Correlation% specify table head
+\csvreader[head to column names]{results/en_similiarity_task_results.csv}{}% use head of csv as column names
+{\\\hline\csvcolii&\csvcolv}% specify your coloumns here
+\end{tabular}

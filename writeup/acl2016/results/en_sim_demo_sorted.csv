@@ -1,0 +1,3 @@
+Embedding File,MSE,Accuracy,Hit_Percent,Correlation
+english default,0.1,0.268,1.0,0.549
+google news corpus,0.123,0.313,1.0,0.65

@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: arabic-research.aux
+White space in argument---line 2 of file arabic-research.aux
+ : \citation{mikolovdist:2013,
+ :                             mikoloveffic:2013}
+I'm skipping whatever remains of this command
+White space in argument---line 3 of file arabic-research.aux
+ : \citation{mikolovdist:2013,
+ :                             mikoloveffic:2013}
+I'm skipping whatever remains of this command
+The style file: acl2016.bst
+Database file #1: arabic-research.bib
+You've used 14 entries,
+            2490 wiz_defined-function locations,
+            631 strings with 7477 characters,
+and the built_in function-call counts, 6337 in all, are:
+= -- 662
+> -- 260
+< -- 6
++ -- 87
+- -- 87
+* -- 434
+:= -- 986
+add.period$ -- 61
+call.type$ -- 14
+change.case$ -- 97
+chr.to.int$ -- 14
+cite$ -- 14
+duplicate$ -- 285
+empty$ -- 490
+format.name$ -- 106
+if$ -- 1373
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 12
+newline$ -- 87
+num.names$ -- 44
+pop$ -- 138
+preamble$ -- 1
+purify$ -- 111
+quote$ -- 0
+skip$ -- 219
+stack$ -- 0
+substring$ -- 274
+swap$ -- 91
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 112
+warning$ -- 0
+while$ -- 48
+width$ -- 18
+write$ -- 199
+(There were 2 error messages)

@@ -1,0 +1,13 @@
+Embedding File,MSE,Accuracy,Hit_Percent,Correlation
+tokens,0.145,0.304,0.0,0.446
+tokens+dig,0.148,0.304,0.0,0.445
+lemmas+tash,0.148,0.306,0.0,0.473
+lemmas+dig+tash,0.15,0.307,0.0,0.454
+tokens+dig+tash,0.151,0.31,0.0,0.419
+lemmas+dig,0.154,0.311,0.0,0.462
+tokens+tash,0.151,0.311,0.0,0.412
+lemmas,0.155,0.313,0.0,0.446
+control+dig,0.163,0.313,0.0,0.485
+control+tash,0.166,0.317,0.0,0.475
+control+dig+tash,0.167,0.318,0.0,0.478
+control,0.167,0.319,0.0,0.477
