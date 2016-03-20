@@ -19,15 +19,17 @@ import logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
 # Word2Vec parameter options
-english_text = '/media/jordan/Media/data/enwiki/english_training_5mil'
-english_model = '/home/jordan/Desktop/english_5mil.bin'
+english_text = '/media/jordan/Media/data/enwiki/english_training_9mil'
+english_model = '/home/jordan/Desktop/english_9mil.bin'
+
+
 
 sg = [1]
 size = [100]
 window = [7]
 min_count = 5
-sample = 1e-5
-seed = 18
+sample = 1e-3
+seed = 1
 hs = 1
 negative = 0
 iterations = 5
@@ -50,7 +52,7 @@ for model_option in sg:
                                                seed = seed,
                                                hs = hs,
                                                negative = negative,
-                                               iter = iterations)
+                                               iterations = iterations)
 
 logging.info("Done!")
 

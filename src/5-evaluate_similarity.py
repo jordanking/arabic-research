@@ -34,17 +34,19 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=log
 
 TASK_FILE = TASKS[0]
 SIM_OUT = AR_SIM_OUTPUT_FILE
+SIM_OUT = '/home/jordan/Desktop/doesitwork.csv'
 
 def parseParameters(filename):
     #controldigTruetashTruemod1size200wind7.txt
     params = {}
-
+    logging.info(filename)
     preprocessing_options = ['control', 'lemmas', 'tokens']
     for opt in preprocessing_options:
         if filename.startswith(opt):
             params['preprocessing'] = opt
             filename = filename[len(opt):]
 
+    logging.info(filename)
     normalization_options = ['dig', 'tash']
     for opt in normalization_options:
         filename = filename[len(opt):]
@@ -56,6 +58,7 @@ def parseParameters(filename):
             filename = filename[5:]
 
     model_options = ['mod', 'size', 'wind']
+    logging.info(filename)
     for opt in model_options:
         filename = filename[len(opt):]
         value = ''
@@ -114,6 +117,8 @@ def get_similarity(key1, key2):
 #### arabic embeddings
 embeddings = os.listdir(EMBEDDING_DIR)
 
+# embeddings = os.listdir('/home/jordan/Desktop/vecs/')
+# EMBEDDING_DIR = '/home/jordan/Desktop/vecs'
 
 # load base task
 pairs = {}

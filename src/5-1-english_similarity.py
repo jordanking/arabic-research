@@ -37,9 +37,11 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=log
 english_embeddings = ['/media/jordan/Media/data/word2vec/GoogleNews-vectors-negative300.bin',
                       '/home/jordan/Desktop/english_5mil.bin',
                       '/home/jordan/Desktop/english_9mil.bin',
-                      '/home/jordan/Desktop/english_20mil.bin',
-                      '/home/jordan/Desktop/english_100mil.bin']
+                      '/home/jordan/Desktop/english_20mil.bin']#,
+                      # '/home/jordan/Desktop/english_100mil.bin']
+# english_embeddings = ['/home/jordan/Desktop/english_5mil2.bin']
 english_task = TASKS[2]
+EN_SIM_OUTPUT_FILE = '/home/jordan/Desktop/itworks.csv'
 
 # load a single task
 e_pairs = {}

@@ -47,6 +47,6 @@ for normalized in os.listdir(NORMALIZED_DIR):
                                                    seed = seed,
                                                    hs = hs,
                                                    negative = negative,
-                                                   iter = iterations)
+                                                   iterations = iterations)
 
 logging.info("Done!")
