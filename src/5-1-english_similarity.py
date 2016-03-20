@@ -32,7 +32,13 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=log
 
 #### obtain the various embeddings that need evaluation
 #### english baselines (absolute paths)
-english_embeddings = ['/media/jordan/Media/data/word2vec/GoogleNews-vectors-negative300.bin']
+# EN_SIM_OUTPUT_FILE = '/home/jordan/Desktop/english_eval.txt'
+
+english_embeddings = ['/media/jordan/Media/data/word2vec/GoogleNews-vectors-negative300.bin',
+                      '/home/jordan/Desktop/english_5mil.bin',
+                      '/home/jordan/Desktop/english_9mil.bin',
+                      '/home/jordan/Desktop/english_20mil.bin',
+                      '/home/jordan/Desktop/english_100mil.bin']
 english_task = TASKS[2]
 
 # load a single task

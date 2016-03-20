@@ -32,7 +32,8 @@ from arapy.normalization import normalize
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
-
+TASK_FILE = TASKS[0]
+SIM_OUT = AR_SIM_OUTPUT_FILE
 
 def parseParameters(filename):
     #controldigTruetashTruemod1size200wind7.txt
@@ -93,6 +94,9 @@ def preprocessKey(inkey, params, mada):
                         buff.write(" ")
         buff.seek(0)
         key = buff.read().rstrip()#.encode('utf8')
+  
+    if params['preprocessing'] == 'control':
+        key = key.decode('utf8')
 
     key = normalize(key, ar_only=True, digits=params['dig'], 
                     alif=True, hamza=True, yaa=True, tashkil=params['tash'])
@@ -109,7 +113,7 @@ def get_similarity(key1, key2):
 #### obtain the various embeddings that need evaluation
 #### arabic embeddings
 embeddings = os.listdir(EMBEDDING_DIR)
-TASK_FILE = TASKS[1]
+
 
 # load base task
 pairs = {}
@@ -150,16 +154,16 @@ with Madamira() as mada:
         for key in pairs:
             try:
                 print('\n')
-                #logging.info("pre-Key1: " + str(key[0]))
-                #logging.info("pre-Key2: " + str(key[1]))
+                # logging.info("pre-Key1: " + str(key[0]))
+                # logging.info("pre-Key2: " + str(key[1]))
                 
                 # TODO preprocess the keys with the parameters
                 key1 = preprocessKey(key[0], params, mada)
                 key2 = preprocessKey(key[1], params, mada)
 
                 # TODO score the processed keys
-                #logging.info("Key1: " + str(key1))
-                #logging.info("Key2: " + str(key2))
+                logging.info("Key1: " + str(key1))
+                logging.info("Key2: " + str(key2))
 
                 keyscore = abs(get_similarity(key1, key2))
                 pairs[key]['scores'][m] = keyscore
@@ -198,7 +202,7 @@ with Madamira() as mada:
 
 
 # save results
-with open(AR_SIM_OUTPUT_FILE_2, 'wb') as csvfile:
+with open(SIM_OUT, 'wb') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(OUT_HEADER)
 
