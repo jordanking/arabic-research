@@ -16,7 +16,7 @@ POS_FILE = WORKING_DIRECTORY+"/2-preprocessed/pos.txt"
 CONTROL_FILE = WORKING_DIRECTORY+"/2-preprocessed/control.txt"
 PREPROCESSED_DIR = WORKING_DIRECTORY+"/2-preprocessed"
 NORMALIZED_DIR = WORKING_DIRECTORY+"/3-normalized"
-EMBEDDING_DIR = WORKING_DIRECTORY+"/4-embeddings"
+EMBEDDING_DIR = WORKING_DIRECTORY+"/4-1-embeddings"
 RESULTS_DIR = WORKING_DIRECTORY+"/5-semantic_results"
 
 TASKS = ['/home/jordan/Documents/Projects/arabic-research/semantic_tasks/mine/similarity_task_merged.csv',
