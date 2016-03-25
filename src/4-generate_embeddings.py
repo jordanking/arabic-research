@@ -19,15 +19,15 @@ import logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
 
-EMBEDDING_DIR = '/home/jordan/Documents/Projects/arabic-research/temp/4-1-embeddings'
+# EMBEDDING_DIR = '/home/jordan/Documents/Projects/arabic-research/temp/4-1-embeddings'
 
 # Word2Vec parameter options
 sg = [0, 1]
-sg = [1]
+# sg = [1]
 size = [100, 200]
-size = [100]
+# size = [100]
 window = [4,7]
-window = [4]
+# window = [4]
 min_count = 5
 sample = 1e-5
 seed = 18
