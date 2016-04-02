@@ -35,24 +35,33 @@ hs = 1
 negative = 0
 iterations = 5
 
+skip = 46
+stop_after  = 47
+count = 0
+
 for normalized in os.listdir(NORMALIZED_DIR):
     for model_option in sg:
         for size_option in size:
             for window_option in window:
+                count+=1
+                if (count > stop_after):
+                    sys.exit(0)
+                if (count > skip):
+                    logging.info("Generating word vectors")
+                    outfile = EMBEDDING_DIR+"/"+normalized[:-4]+"mod"+str(model_option)+"size"+str(size_option)+"wind"+str(window_option)+".txt"
 
-                logging.info("Generating word vectors")
-                outfile = EMBEDDING_DIR+"/"+normalized[:-4]+"mod"+str(model_option)+"size"+str(size_option)+"wind"+str(window_option)+".txt"
-
-                embeddings_file = train_embeddings(NORMALIZED_DIR+"/"+normalized,
-                                                   outfile = outfile, 
-                                                   sg = model_option,
-                                                   size = size_option,
-                                                   window = window_option,
-                                                   min_count = min_count,
-                                                   sample = sample,
-                                                   seed = seed,
-                                                   hs = hs,
-                                                   negative = negative,
-                                                   iterations = iterations)
-
+                    embeddings_file = train_embeddings(NORMALIZED_DIR+"/"+normalized,
+                                                       outfile = outfile, 
+                                                       sg = model_option,
+                                                       size = size_option,
+                                                       window = window_option,
+                                                       min_count = min_count,
+                                                       sample = sample,
+                                                       seed = seed,
+                                                       hs = hs,
+                                                       negative = negative,
+                                                       iterations = iterations)
+                else:
+                    outfile = EMBEDDING_DIR+"/"+normalized[:-4]+"mod"+str(model_option)+"size"+str(size_option)+"wind"+str(window_option)+".txt"
+                    print('skipping %s' % (outfile))
 logging.info("Done!")

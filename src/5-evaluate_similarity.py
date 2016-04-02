@@ -33,8 +33,8 @@ from arapy.normalization import normalize
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
 TASK_FILE = TASKS[1]
-SIM_OUT = AR_SIM_OUTPUT_FILE
-SIM_OUT = '/home/jordan/Documents/Projects/arabic-research/writeup/acl2016/results/preprocessing_eval_1.csv'
+SIM_OUT = AR_SIM_OUTPUT_FILE_2
+# SIM_OUT = '/home/jordan/Documents/Projects/arabic-research/writeup/acl2016/results/preprocessing_eval_1.csv'
 
 def parseParameters(filename):
     #controldigTruetashTruemod1size200wind7.txt
