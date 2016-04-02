@@ -1,0 +1,269 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 MAR 2016 19:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**arabic-research.tex
+(./arabic-research.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./acl2016.sty
+Conference Style for ACL 2016 -- released January 17th, 2016
+\titlebox=\skip43
+\aclrulerbox=\box26
+\aclrulercount=\count87
+\aclruleroffset=\dimen103
+\cv@lineheight=\dimen104
+\cv@boxheight=\dimen105
+\cv@tmpbox=\box27
+\cv@refno=\count88
+\cv@tot=\count89
+\cv@tmpc@=\count90
+\cv@tmpc=\count91
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+Package: csvsimple 2014/07/14 version 1.12 LaTeX CSV file processing
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks14
+\pgfkeys@temptoks=\toks15
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks16
+))) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\csv@file=\read1
+\c@csvinputline=\count93
+\c@csvrow=\count94
+\c@csvcol=\count95
+\csv@out=\write3
+)
+(./arabic-research.aux)
+\openout1 = `arabic-research.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 31.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+ABD: EveryShipout initializing macros
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen106
+\scratchbox=\box28
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen107
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 33.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 33.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) (./abstract.tex) (./introduction.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+
+
+LaTeX Warning: Citation ` mikoloveffic:2013' on page 1 undefined on input line 
+4.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 4.
+) (./literature.tex
+Underfull \hbox (badness 1292) in paragraph at lines 4--1
+\OT1/ptm/m/n/10.95 em-bed-dings have been ex-ten-sively re-searched,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+
+LaTeX Warning: Citation ` mikoloveffic:2013' on page 2 undefined on input line 
+4.
+
+) (./training.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Missing character: There is no Ø in font ptmr7t!
+Missing character: There is no § in font ptmr7t!
+Missing character: There is no Ø in font ptmr7t!
+Missing character: There is no ¡ in font ptmr7t!
+Missing character: There is no Ù in font ptmr7t!
+)
+(./evaluation.tex [3]) (./experiments.tex
+Underfull \hbox (badness 1248) in paragraph at lines 5--12
+\OT1/ptm/m/n/10.95 All pre-pro-cess-ing, nor-mal-iza-tion, and train-ing
+ []
+
+
+Overfull \hbox (14.82236pt too wide) in paragraph at lines 14--19
+[][] 
+ []
+
+
+Overfull \hbox (6.17133pt too wide) in paragraph at lines 24--29
+[][] 
+ []
+
+
+Overfull \hbox (6.17133pt too wide) in paragraph at lines 34--39
+[][] 
+ []
+
+) (./recommendations.tex) (./arapy.tex [4]) (./conclusion.tex [5])
+(./arabic-research.bbl
+Underfull \hbox (badness 3343) in paragraph at lines 4--8
+\OT1/ptm/m/n/10 2013.  Poly-glot: Dis-tributed word rep-re-sen-
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 4--8
+\OT1/ptm/m/n/10 ta-tions for mul-ti-lin-gual nlp.  \OT1/ptm/m/it/10 arXiv prepr
+int
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 51.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 51.
+
+Underfull \hbox (badness 4913) in paragraph at lines 49--53
+\OT1/ptm/m/n/10 plat-form.  $\OT1/pcr/m/n/10 https : / / cloud . google . com /
+
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 63--69
+\OT1/ptm/m/n/10 lingual se-man-tic re-lat-ed-ness us-ing en-cy-clo-pe-dic
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 71--75
+\OT1/ptm/m/n/10 antonyms, and rhymes (oh my!).  $\OT1/pcr/m/n/10 https :
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 71--75
+\OT1/pcr/m/n/10 / / words . bighugelabs . com/$\OT1/ptm/m/n/10 .  (Vis-ited on
+ []
+
+) [6] (./arabic-research.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred when \iffalse on line 331 was incomplete) 
+Here is how much of TeX's memory you used:
+ 2250 strings out of 493089
+ 42075 string characters out of 6134842
+ 106896 words of memory out of 5000000
+ 5696 multiletter control sequences out of 15000+600000
+ 23123 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,10n,46p,1708b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/201
+5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+
+Output written on arabic-research.pdf (6 pages, 112493 bytes).
+PDF statistics:
+ 52 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
