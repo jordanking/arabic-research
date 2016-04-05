@@ -1,5 +1,12 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citename{Ahmed}2000]{ahmed2000alarge}
+Mohamed Attia Mohamed~Elaraby Ahmed.
+\newblock 2000.
+\newblock {\em ALarge-SCALE COMPUTATIONAL PROCESSOR OF THE ARABIC MORPHOLOGY,
+  AND APPLICATIONS}.
+\newblock {Ph.D.} thesis, Faculty of Engineering, Cairo University Giza, Egypt.
+
 \bibitem[\protect\citename{Al-Rfou \bgroup et al.\egroup }2013]{al:2013}
 Rami Al-Rfou, Bryan Perozzi, and Steven Skiena.
 \newblock 2013.
@@ -13,6 +20,13 @@ Yonatan Belinkov.
   feature-rich approach.
 \newblock In {\em ANLP Workshop 2015}, page 183.
 
+\bibitem[\protect\citename{Da'na}]{Muhammad:2015}
+Muhammad Da'na.
+\newblock (5) how many words does the arabic language have? - quora.
+\newblock
+  \url{https://www.quora.com/How-many-words-does-the-Arabic-language-have}.
+\newblock (Accessed on 04/04/2016).
+
 \bibitem[\protect\citename{Diab}2009]{diab:2009}
 Mona Diab.
 \newblock 2009.
@@ -20,6 +34,13 @@ Mona Diab.
   tokenization, pos tagging, and base phrase chunking.
 \newblock In {\em 2nd International Conference on Arabic Language Resources and
   Tools}. Citeseer.
+
+\bibitem[\protect\citename{dos Santos and Gatti}2014]{dos2014deep}
+C{\'\i}cero~Nogueira dos Santos and Maira Gatti.
+\newblock 2014.
+\newblock Deep convolutional neural networks for sentiment analysis of short
+  texts.
+\newblock In {\em COLING}, pages 69--78.
 
 \bibitem[\protect\citename{Farghaly and Shaalan}2009]{farghaly:2009}
 Ali Farghaly and Khaled Shaalan.
@@ -73,21 +94,55 @@ Big~Huge Labs.
 \newblock \url{https://words.bighugelabs.com/}.
 \newblock (Visited on 11/30/2015).
 
-\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
-  }2013]{mikolovdist:2013}
-Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg~S Corrado, and Jeff Dean.
+\bibitem[\protect\citename{Luong \bgroup et al.\egroup }2013]{luong2013better}
+Thang Luong, Richard Socher, and Christopher~D Manning.
 \newblock 2013.
+\newblock Better word representations with recursive neural networks for
+  morphology.
+\newblock In {\em CoNLL}, pages 104--113. Citeseer.
+
+\bibitem[\protect\citename{Meta}2016]{wiki:xxx}
+Meta.
+\newblock 2016.
+\newblock Data dumps --- meta{,} discussion about wikimedia projects.
+\newblock [Online; accessed 5-April-2016].
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013a]{mikoloveffic:2013}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock 2013a.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013b]{mikolovdist:2013}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg~S Corrado, and Jeff Dean.
+\newblock 2013b.
 \newblock Distributed representations of words and phrases and their
   compositionality.
 \newblock In C.J.C. Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.Q.
   Weinberger, editors, {\em Advances in Neural Information Processing Systems
   26}, pages 3111--3119. Curran Associates, Inc.
 
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013c]{mikolov2013linguistic}
+Tomas Mikolov, Wen-tau Yih, and Geoffrey Zweig.
+\newblock 2013c.
+\newblock Linguistic regularities in continuous space word representations.
+\newblock In {\em HLT-NAACL}, pages 746--751.
+
 \bibitem[\protect\citename{Miller and Charles}1991]{miller:1991}
 George~A Miller and Walter~G Charles.
 \newblock 1991.
 \newblock Contextual correlates of semantic similarity.
 \newblock {\em Language and cognitive processes}, 6(1):1--28.
+
+\bibitem[\protect\citename{NPR}]{Googl96:online}
+NPR.
+\newblock Google book tool tracks cultural change with words : Npr.
+\newblock
+  \url{http://www.npr.org/2010/12/16/132106374/google-book-tool-tracks-cultural-change-with-words}.
+\newblock (Accessed on 04/04/2016).
 
 \bibitem[\protect\citename{Pasha \bgroup et al.\egroup }2014]{pasha:2014}
 Arfath Pasha, Mohamed Al-Badrashiny, Mona Diab, Ahmed El~Kholy, Ramy Eskander,
@@ -97,6 +152,21 @@ Arfath Pasha, Mohamed Al-Badrashiny, Mona Diab, Ahmed El~Kholy, Ramy Eskander,
   disambiguation of arabic.
 \newblock In {\em Proceedings of the Language Resources and Evaluation
   Conference (LREC), Reykjavik, Iceland}.
+
+\bibitem[\protect\citename{Pennington \bgroup et al.\egroup
+  }2014]{pennington2014glove}
+Jeffrey Pennington, Richard Socher, and Christopher~D Manning.
+\newblock 2014.
+\newblock Glove: Global vectors for word representation.
+\newblock In {\em EMNLP}, volume~14, pages 1532--1543.
+
+\bibitem[\protect\citename{Souag}]{Lameen:2013}
+Lameen Souag.
+\newblock Jabal al-lughat: Does arabic have the most words? don't believe the
+  hype.
+\newblock
+  \url{http://lughat.blogspot.com/2013/12/does-arabic-have-most-words-dont.html}.
+\newblock (Accessed on 04/04/2016).
 
 \bibitem[\protect\citename{Zirikly and Diab}2015]{zirikly:2015}
 Ayah Zirikly and Mona Diab.

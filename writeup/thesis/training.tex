@@ -1,6 +1,7 @@
 \section{Training Word Embeddings in Arabic}
+\label{sec:training}
 
-There are a number of decisions to be made when training word embeddings in Arabic. We have chosen to use the word2vec framework to train, although there are other proposed methods to obtain word embeddings. \textcolor{red}{Elaborate other training methods a bit.} The main decisions to be made when training word embeddings in Arabic are how to preprocess the text, how to normalize the text, and how to parameterize the word2vec algorithms.
+There are a number of decisions to be made when training word embeddings in Arabic. We have chosen to use the word2vec framework to train, although there are other proposed methods to obtain word embeddings that are highly similar \cite{pennington2014glove}. We chose word2vec as there is more public research available to reference and excellent open software support. The main decisions to be made when training word2vec embeddings in Arabic are how to preprocess the text, how to normalize the text, and how to parameterize the word2vec algorithms. The remainder of this section describes different consideration for each of these steps, explains options and training parameters that can be adjusted, and presents the specific training parameters we used in our evaluation.
 
 \subsection{Preprocessing Options}
 
@@ -10,11 +11,11 @@ The three main preprocessing options that we consider for this task are 1) leave
 
 \subsection{Normalization}
 
-Normalizing Arabic text can greatly reduce the sparsity of the word space in Arabic. We always normalize the corpus by removing English characters, reducing all forms of the letters alif, hamza, and yaa to single general forms (respectively \textcolor{red}{ا,ء,and ي -- arabic letters not showing up?}). The options we consider variable are removing diacritics and reducing both English and Arabic numerical characters to the number sign.
+Normalizing Arabic text can greatly reduce the sparsity of the word space in Arabic. We always normalize the corpus by removing English characters, reducing all forms of the letters alif, hamza, and yaa to single general forms (respectively \<ا>,\<ء>,and \<ي>).  The options we consider variable are removing diacritics and reducing both English and Arabic numerical characters to the number sign.
 
 \subsection{Parameterizations}
 
-The main parameters of word2vec that are considered are algorithm, embedding dimension, and window size. Both CBOW and Skipgram algorithms are considered. The embedding dimensions considered are 100 and 200. We chose these dimensions as the typical range is between 100 and 300, where 300 requires more time and data to train. We lack the gratuitous amount of data that is available freely for English, so we chose to keep only the smaller two dimensionalities. The window sizes considered are 5 and 8, which is how far to either side of the word being trained we look for context. For the other parameters, refer to Table \ref{table:params}.
+The main parameters of word2vec that are considered are algorithm, embedding dimension, and window size. Both CBOW and Skipgram algorithms are considered \cite{mikoloveffic:2013}. The embedding dimensions considered are 100 and 200. We chose these dimensions as the typical range is between 100 and 300, where more dimensions require more time and data to train well. We lack the gratuitous amount of data that is available freely for English, so we chose to keep only smaller dimensionalities. The window sizes considered are 4 and 7, which is how far to either side of the word being trained we look for context. For the other parameter values, refer to Table \ref{table:params}. Hierarchical softmax and negative sampling are methods to sample training data efficiently. Downsampling is used to decrease the influence of high frequency words in the corpus. We use hierarchical sampling and some downsampling as together they have been shown to perform well on complex vocabularies with infrequently represented words and phrases \cite{mikolovdist:2013}.
 
 \begin{table}
 \begin{tabular}{l|l|l}
@@ -26,8 +27,8 @@ $window$ & $[4, 7]$ & Context window \\
 $min count$ & $5$ & Filters rare words \\
 $sample$ & $1e-5$ & Downsampling \\
 $seed$ & $1$ & Random seed \\
-$hs$ & $1$ & Heirarchical samp. \\
-$negative$ & $0$ & Negative samp. \\
+$hs$ & $1$ & Hierarchical softmax \\
+$negative$ & $0$ & Negative sampling \\
 $iterations$ & $5$ & Training iterations \\
 \end{tabular}
 \caption{Training Parameters}
