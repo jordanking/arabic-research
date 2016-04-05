@@ -1,0 +1,11 @@
+Embedding File,MSE,Accuracy,Hit_Percent,Correlation,wind,size,mod,dig,tash,preprocessing
+lemmasdigFalsetashFalsemod0size100wind4.txt,0.1486,0.3059,0.0,0.4821,4,100,0,False,False,lemmas
+controldigFalsetashFalsemod1size200wind4.txt,0.1943,0.3383,0.0,0.4819,4,200,1,False,False,control
+controldigFalsetashTruemod1size100wind4.txt,0.1647,0.3159,0.0,0.4796,4,100,1,False,True,control
+controldigTruetashTruemod1size200wind4.txt,0.1942,0.3387,0.0,0.4779,4,200,1,True,True,control
+controldigTruetashFalsemod1size100wind4.txt,0.1655,0.3151,0.0,0.4747,4,100,1,True,False,control
+controldigTruetashTruemod1size100wind4.txt,0.1671,0.3172,0.0,0.4736,4,100,1,True,True,control
+lemmasdigFalsetashFalsemod0size200wind4.txt,0.1806,0.3303,0.0,0.47,4,200,0,False,False,lemmas
+controldigTruetashTruemod1size200wind7.txt,0.1952,0.3379,0.0,0.4694,7,200,1,True,True,control
+lemmasdigTruetashFalsemod0size100wind4.txt,0.1514,0.3087,0.0,0.4661,4,100,0,True,False,lemmas
+controldigTruetashFalsemod1size200wind4.txt,0.1949,0.3385,0.0,0.4658,4,200,1,True,False,control

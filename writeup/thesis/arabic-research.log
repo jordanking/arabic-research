@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 APR 2016 01:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 APR 2016 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -284,20 +284,6 @@ Underfull \hbox (badness 1286) in paragraph at lines 5--8
  []
 
 
-LaTeX Warning: Reference `table:ourtask' on page 5 undefined on input line 19.
-
-
-LaTeX Warning: Reference `table:ws353task' on page 5 undefined on input line 19
-.
-
-
-LaTeX Warning: Reference `table:ourtask' on page 5 undefined on input line 19.
-
-
-LaTeX Warning: Reference `table:ws353task' on page 5 undefined on input line 19
-.
-
-
 LaTeX Warning: Reference `section:recommendations' on page 5 undefined on input
  line 19.
 
@@ -311,12 +297,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./arapy.tex) (./conclusion.tex
+[5]) (./arapy.tex) (./conclusion.tex
 Underfull \hbox (badness 1248) in paragraph at lines 4--1
 \OT1/ptm/m/n/10.95 All pre-pro-cess-ing, nor-mal-iza-tion, and train-ing
  []
 
-[5]) (./arabic-research.bbl
+
+Underfull \vbox (badness 1478) has occurred while \output is active []
+
+)
+(./arabic-research.bbl
 Underfull \hbox (badness 3343) in paragraph at lines 11--15
 \OT1/ptm/m/n/10 2013.  Poly-glot: Dis-tributed word rep-re-sen-
  []
@@ -352,6 +342,7 @@ Overfull \hbox (61.8639pt too wide) in paragraph at lines 24--29
 /ptm/m/n/10 .
  []
 
+[6]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
@@ -381,7 +372,7 @@ Underfull \hbox (badness 1264) in paragraph at lines 98--103
 \OT1/ptm/m/n/10 Man-ning.  2013.  Bet-ter word rep-re-sen-ta-tions
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 141--146
 []\OT1/ptm/m/n/10 NPR.  Google book tool tracks cul-tural
  []
@@ -412,9 +403,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--170
 \OT1/pcr/m/n/10 does-[]arabic-[]have-[]most-[]words-[]dont .
  []
 
-) [7
-
-] (./arabic-research.aux)
+) [7] (./arabic-research.aux)
 
  *File List*
  article.cls    2014/09/29 v1.4h Standard LaTeX document class
@@ -483,13 +472,13 @@ LaTeX Warning: There were undefined references.
  )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 4573 strings out of 493089
- 64713 string characters out of 6134842
- 150657 words of memory out of 5000000
- 7923 multiletter control sequences out of 15000+600000
+ 4610 strings out of 493089
+ 65462 string characters out of 6134842
+ 150673 words of memory out of 5000000
+ 7958 multiletter control sequences out of 15000+600000
  23955 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,10n,46p,2134b,303s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,10n,46p,2134b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fon
@@ -500,7 +489,7 @@ e1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/arabtex/xnsh14.pfb>
-Output written on arabic-research.pdf (7 pages, 130621 bytes).
+Output written on arabic-research.pdf (7 pages, 131689 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

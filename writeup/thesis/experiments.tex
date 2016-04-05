@@ -19,24 +19,27 @@ The baseline results for English vectors are shown in Table \ref{table:englishta
 Tables \ref{table:ourtask} and \ref{table:ws353task} show the results of models trained on differently preprocessed text. Table \ref{table:ourtask} contains results from the similarity task that we developed, and Table \ref{table:ws353task} contains the results from the WS353 Arabic task \cite{finkelstein:2001,hassan:2009}. None of the Arabic models reach either the level of correlation or accuracy that the default English model does. These tabels are sorted by mean error, revealing traits that improved their performance on evaluation tasks. We analyze these results in Section \ref{section:recommendations}.
 
 
+% Embedding File,MSE,Accuracy,Hit_Percent,Correlation,wind,size,mod,dig,tash,preprocessing
+% 1              2   3        4           5            6     7   8   9  10    1
 
-% \begin{table}
-% \begin{tabular}{l|l|l}%
-% \bfseries Method & \bfseries Mean Error & \bfseries Correlation
-% \csvreader[head to column names]{results/ar_similiarity_task_results_sorted_Accuracy.csv}{}
-% {\\\hline\csvcoli&\csvcoliii&\csvcolv}
-% \end{tabular}
-% \caption{Results on Our Task}
-% \label{table:ourtask}
-% \end{table}
 
-% \begin{table}
-% \begin{tabular}{l|l|l}%
-% \bfseries Method & \bfseries Mean Error & \bfseries Correlation
-% \csvreader[head to column names]{results/ar_similiarity_task_results_ws353_sorted_Accuracy.csv}{}
-% {\\\hline\csvcoli&\csvcoliii&\csvcolv}
-% \end{tabular}
-% \caption{Results on ws353 Task}
-% \label{table:ws353task}
-% \end{table}
+\begin{table}
+\begin{tabular}{l|l|l}%
+\bfseries Preprocessing & \bfseries Mean Error & \bfseries Correlation
+\csvreader[head to column names]{results/ar_similiarity_task_results_prepared.csv}{}
+{\\\hline\csvcolxi&\csvcoliii&\csvcolv}
+\end{tabular}
+\caption{Results on Our Task}
+\label{table:ourtask}
+\end{table}
+
+\begin{table}
+\begin{tabular}{l|l|l}%
+\bfseries Preprocessing & \bfseries Mean Error & \bfseries Correlation
+\csvreader[head to column names]{results/ar_similiarity_task_results_ws353_prepared.csv}{}
+{\\\hline\csvcolxi&\csvcoliii&\csvcolv}
+\end{tabular}
+\caption{Results on ws353 Task}
+\label{table:ws353task}
+\end{table}
 
