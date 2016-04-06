@@ -24,7 +24,7 @@ import os
 import numpy as np
 from gensim.models import Word2Vec
 from scipy.stats.stats import pearsonr
-import scipy.stats.spearmanr
+from scipy.stats.stats import spearmanr
 import StringIO
 import sys
 sys.path.insert(0,ARAPY_PATH)

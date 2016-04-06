@@ -24,7 +24,7 @@ import os
 import numpy as np
 from gensim.models import Word2Vec
 from scipy.stats.stats import pearsonr  
-import scipy.stats.spearmanr
+from scipy.stats.stats import spearmanr
 import sys
 sys.path.insert(0,ARAPY_PATH)
 from arapy.madamira import Madamira
@@ -42,7 +42,7 @@ english_embeddings = ['/media/jordan/Media/data/word2vec/GoogleNews-vectors-nega
                       # '/home/jordan/Desktop/english_100mil.bin']
 # english_embeddings = ['/home/jordan/Desktop/english_5mil2.bin']
 english_task = TASKS[2]
-EN_SIM_OUTPUT_FILE = '/home/jordan/Desktop/itworks.csv'
+# EN_SIM_OUTPUT_FILE = '/home/jordan/Desktop/itworks.csv'
 
 # load a single task
 e_pairs = {}
