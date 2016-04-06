@@ -4,7 +4,7 @@
 
 We perform a parameter sweep over the various preprocessing techniques, normalization options, and word2vec parameterizations to determine the optimal word embedding methods. The text corpus for training the embeddings is an Arabic Wikipedia dump from \url{https://dumps.wikimedia.org/arwiki/20150901/} \cite{wiki:xxx}, cleaned by dropping Wikipedia markup, punctuation, and non-Arabic characters. All preprocessing options are precomputed first, generating multiple versions of the Arabic Wikipedia corpus. Then word vectors are trained for each parameterization. The vectors are then ran through evaluation tasks, recording various performance statistics.
 \\
-The baseline results for English vectors are shown in Table \ref{table:englishtask}. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under a default parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publically available pre-trained vectors trained on the 300 billion word Google News Corpus. The metrics that we choose to display are mean error and \textcolor{red}{correlation} with the evaluation task. The mean error is the mean absolute distance between the vector estimate and the evaluation task estimate for word pair similarity. The default vectors exhibit an impressive .268 mean error, and both models show a high correlation with the evaluation task scores. The Google News vectors display an impressive $.65$ correlation score to the task, showing the power of well-trained word vectors.
+The baseline results for English vectors are shown in Table \ref{table:englishtask}. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under a default parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publically available pre-trained vectors trained on the 300 billion word Google News Corpus. The metrics that we choose to display are mean squared error (MSE) and \textcolor{red}{correlation} with the evaluation task. The MSE is the mean squared distance between the vector estimate and the evaluation task estimate for word pair similarity. The default vectors exhibit an impressive .268 MSE, and both models show a high correlation with the evaluation task scores. The Google News vectors display an impressive \textcolor{red}{$.65$ correlation} score to the task, providing a high optimal score to aim for.
 
 \begin{table}
 \begin{tabular}{l|l|l}
@@ -16,30 +16,31 @@ The baseline results for English vectors are shown in Table \ref{table:englishta
 \label{table:englishtask}
 \end{table}
 
-Tables \ref{table:ourtask} and \ref{table:ws353task} show the results of models trained on differently preprocessed text. Table \ref{table:ourtask} contains results from the similarity task that we developed, and Table \ref{table:ws353task} contains the results from the WS353 Arabic task \cite{finkelstein:2001,hassan:2009}. None of the Arabic models reach either the level of correlation or accuracy that the default English model does. These tabels are sorted by mean error, revealing traits that improved their performance on evaluation tasks. We analyze these results in Section \ref{section:recommendations}.
-
-
-% Embedding File,MSE,Accuracy,Hit_Percent,Correlation,wind,size,mod,dig,tash,preprocessing
-% 1              2   3        4           5            6     7   8   9  10    1
-
+Table \ref{table:ws353task} shows the results of the models with the 10 highest \textcolor{red}{correlation} scores on the Word Similarity 353 task \cite{finkelstein:2001,hassan:2009}. The full results are available with our code. Standing out is the lack of any preprocessing method but tokenization in this list. This results clearly show that tokenization produces the best results on the Word Similarity 353 task. Additionally, these best performing models were mostly 100 dimensional vectors, trained using a window of 4 words. The trend of better performance with fewer dimensions seen in the results is likely correlated with the amount of data available to train on. The window size is very interesting though, as this parameter is highly dependent on the grammar of the training language. A sentence structure that uses complex words may have related words nearer to each other than English does. Arabic word vectors benefit from having a small window and not looking beyond the relevant information.
 
 \begin{table}
-\begin{tabular}{l|l|l}%
-\bfseries Preprocessing & \bfseries Mean Error & \bfseries Correlation
-\csvreader[head to column names]{results/ar_similiarity_task_results_prepared.csv}{}
-{\\\hline\csvcolxi&\csvcoliii&\csvcolv}
-\end{tabular}
-\caption{Results on Our Task}
-\label{table:ourtask}
-\end{table}
-
-\begin{table}
-\begin{tabular}{l|l|l}%
-\bfseries Preprocessing & \bfseries Mean Error & \bfseries Correlation
+\begin{tabular}{l|l|l|l}%
+\bfseries Preprocessing & \bfseries Window & \bfseries Size & \bfseries Correlation
 \csvreader[head to column names]{results/ar_similiarity_task_results_ws353_prepared.csv}{}
-{\\\hline\csvcolxi&\csvcoliii&\csvcolv}
+{\\\hline\csvcolxi&\csvcolvi&\csvcolvii&\csvcolv}
 \end{tabular}
-\caption{Results on ws353 Task}
+\caption{Results on Word Similarity 353}
 \label{table:ws353task}
 \end{table}
 
+Table \ref{table:ourtask} shows the results of the models with the 10 highest \textcolor{red}{correlation} scores on the task we developed. The results on our data show that the window size does indeed have a strong impact on the quality of the word embeddings, with all but one of the top results having the smaller window size. \textcolor{red}{Our results do not show a single dominant preprocessing technique however. We suspect that the high performance of the control group without preprocessing is due to the evaluation task being developed from the same corpus as the vector training data. There is also less consensus among the top results indicating which dimension size is best.}
+
+% Embedding File,MSE,Accuracy,Hit_Percent,Correlation,wind,size,mod,dig,tash,preprocessing
+% 1              2   3        4           5            6     7   8   9  10    11
+
+\begin{table}
+\begin{tabular}{l|l|l|l}
+\bfseries Preprocessing & \bfseries Window & \bfseries Size & \bfseries Correlation
+\csvreader[head to column names]{results/ar_similiarity_task_results_prepared.csv}{}
+{\\\hline\csvcolxi&\csvcolvi&\csvcolvii&\csvcolv}
+\end{tabular}
+\caption{Results on our Task}
+\label{table:ourtask}
+\end{table}
+
+None of the Arabic models reach either the level of correlation that the default English model does. However, the best performing models come close enough that the remaining difference may have literally been lost in translation. However, both models are still significantly below the Google New English optimal scores. This is to be expected considering the strong correlation between the quantity of training data when creating word embeddings.
