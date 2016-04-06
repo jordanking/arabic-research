@@ -20,11 +20,19 @@ Yonatan Belinkov.
   feature-rich approach.
 \newblock In {\em ANLP Workshop 2015}, page 183.
 
-\bibitem[\protect\citename{Da'na}]{Muhammad:2015}
+\bibitem[\protect\citename{Big-Huge-Labs}2016]{bhl:online}
+Big-Huge-Labs.
+\newblock 2016.
+\newblock Big huge thesaurus: Synonyms, antonyms, and rhymes (oh my!).
+\newblock \url{https://words.bighugelabs.com/}.
+\newblock (Visited on 11/30/2015).
+
+\bibitem[\protect\citename{Da'na}2012]{Muhammad:2015}
 Muhammad Da'na.
+\newblock 2012.
 \newblock (5) how many words does the arabic language have? - quora.
 \newblock
-  \url{https://www.quora.com/How-many-words-does-the-Arabic-language-have}.
+  \url{https://www.quora.com/How-many-words-does-the-Arabic-language-have}, 12.
 \newblock (Accessed on 04/04/2016).
 
 \bibitem[\protect\citename{Diab}2009]{diab:2009}
@@ -66,8 +74,9 @@ Lev Finkelstein, Evgeniy Gabrilovich, Yossi Matias, Ehud Rivlin, Zach Solan,
 \newblock In {\em Proceedings of the 10th international conference on World
   Wide Web}, pages 406--414. ACM.
 
-\bibitem[\protect\citename{Google}]{google:online}
+\bibitem[\protect\citename{Google}2016]{google:online}
 Google.
+\newblock 2016.
 \newblock Translate api - translate api — google cloud platform.
 \newblock \url{https://cloud.google.com/translate/docs}.
 \newblock (Visited on 11/30/2015).
@@ -88,24 +97,12 @@ Samer Hassan and Rada Mihalcea.
   Natural Language Processing: Volume 3-Volume 3}, pages 1192--1201.
   Association for Computational Linguistics.
 
-\bibitem[\protect\citename{Labs}]{bhl:online}
-Big~Huge Labs.
-\newblock Big huge thesaurus: Synonyms, antonyms, and rhymes (oh my!).
-\newblock \url{https://words.bighugelabs.com/}.
-\newblock (Visited on 11/30/2015).
-
 \bibitem[\protect\citename{Luong \bgroup et al.\egroup }2013]{luong2013better}
 Thang Luong, Richard Socher, and Christopher~D Manning.
 \newblock 2013.
 \newblock Better word representations with recursive neural networks for
   morphology.
 \newblock In {\em CoNLL}, pages 104--113. Citeseer.
-
-\bibitem[\protect\citename{Meta}2016]{wiki:xxx}
-Meta.
-\newblock 2016.
-\newblock Data dumps --- meta{,} discussion about wikimedia projects.
-\newblock [Online; accessed 5-April-2016].
 
 \bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
   }2013a]{mikoloveffic:2013}
@@ -137,11 +134,13 @@ George~A Miller and Walter~G Charles.
 \newblock Contextual correlates of semantic similarity.
 \newblock {\em Language and cognitive processes}, 6(1):1--28.
 
-\bibitem[\protect\citename{NPR}]{Googl96:online}
+\bibitem[\protect\citename{NPR}2010]{Googl96:online}
 NPR.
+\newblock 2010.
 \newblock Google book tool tracks cultural change with words : Npr.
 \newblock
-  \url{http://www.npr.org/2010/12/16/132106374/google-book-tool-tracks-cultural-change-with-words}.
+  \url{http://www.npr.org/2010/12/16/132106374/google-book-tool-tracks-cultural-change-with-words},
+  12.
 \newblock (Accessed on 04/04/2016).
 
 \bibitem[\protect\citename{Pasha \bgroup et al.\egroup }2014]{pasha:2014}
@@ -160,13 +159,21 @@ Jeffrey Pennington, Richard Socher, and Christopher~D Manning.
 \newblock Glove: Global vectors for word representation.
 \newblock In {\em EMNLP}, volume~14, pages 1532--1543.
 
-\bibitem[\protect\citename{Souag}]{Lameen:2013}
+\bibitem[\protect\citename{Souag}2013]{Lameen:2013}
 Lameen Souag.
+\newblock 2013.
 \newblock Jabal al-lughat: Does arabic have the most words? don't believe the
   hype.
 \newblock
-  \url{http://lughat.blogspot.com/2013/12/does-arabic-have-most-words-dont.html}.
+  \url{http://lughat.blogspot.com/2013/12/does-arabic-have-most-words-dont.html},
+  12.
 \newblock (Accessed on 04/04/2016).
+
+\bibitem[\protect\citename{Wikipedia-Meta}2016]{wiki:xxx}
+Wikipedia-Meta.
+\newblock 2016.
+\newblock Data dumps --- meta{,} discussion about wikimedia projects.
+\newblock [Online; accessed 5-April-2016].
 
 \bibitem[\protect\citename{Zirikly and Diab}2015]{zirikly:2015}
 Ayah Zirikly and Mona Diab.

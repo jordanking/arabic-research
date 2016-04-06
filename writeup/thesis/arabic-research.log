@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 APR 2016 15:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 APR 2016 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -141,18 +141,18 @@ Package: utf8 2000/06/13  3.10 UTF-8 input encoding
 (ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
 \openout1 = `arabic-research.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -177,32 +177,27 @@ ABD: EveryShipout initializing macros
 (ArabTeX) 3.11 local stub, 26.02.2006)
 (ArabTeX) version 3.11s (02.07.2006): second phase of patching)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 37.
+(Font)              <12> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 37.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 37.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
+(Font)              <6> on input line 38.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 38.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 38.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-[][]\OT1/ptm/m/n/10.95 FOR PART 2:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-\OT1/ptm/m/n/10.95 Freq/DomFreq/NeighborFreq/Buzz eval-u-a-
+Underfull \hbox (badness 2285) in paragraph at lines 44--45
+[][]\OT1/ptm/m/n/10.95 FUTURE: Freq/DomFreq/NeighborFreq/Buzz
  []
 
 (./abstract.tex) (./introduction.tex
@@ -218,7 +213,10 @@ Underfull \hbox (badness 1292) in paragraph at lines 5--1
 \OT1/ptm/m/n/10.95 em-bed-dings have been ex-ten-sively re-searched,
  []
 
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \vbox (badness 2512) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
@@ -245,47 +243,96 @@ Overfull \hbox (2.59132pt too wide) in paragraph at lines 21--34
  []
 
 ) (./evaluation.tex
-Underfull \vbox (badness 4316) has occurred while \output is active []
-
-
-Underfull \hbox (badness 7064) in paragraph at lines 15--22
-\OT1/ptm/m/n/10.95 dump (Meta, 2016) at $\OT1/pcr/m/n/10.95 https : / / dumps .
-
+Underfull \hbox (badness 4036) in paragraph at lines 15--22
+\OT1/ptm/m/n/10.95 of the most com-mon words in the Ara-bic
  []
 
-[4]) (./experiments.tex
-Underfull \hbox (badness 2521) in paragraph at lines 5--8
-\OT1/ptm/m/n/10.95 and word2vec pa-ram-e-ter-i-za-tions to de-ter-mine
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--22
+\OT1/ptm/m/n/10.95 Wikipedia dump (Wikipedia-Meta, 2016)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--22
+\OT1/ptm/m/n/10.95 at $\OT1/pcr/m/n/10.95 https : / / dumps\OML/cmm/m/it/10.95 
+:\OT1/pcr/m/n/10.95 wikimedia\OML/cmm/m/it/10.95 :\OT1/pcr/m/n/10.95 org /
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 15--22
+\OT1/pcr/m/n/10.95 arwiki / 20150901/$\OT1/ptm/m/n/10.95 , ex-clud-ing words th
+at
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 15--22
+\OT1/ptm/m/n/10.95 Huge The-saurus API for ei-ther syn-onyms or
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 15--22
+\OT1/ptm/m/n/10.95 and the re-sult-ing syn-onym or antonym were
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 15--22
+\OT1/ptm/m/n/10.95 to flu-ent Ara-bic speak-ers such that each pair
+ []
+
+
+Underfull \vbox (badness 5403) has occurred while \output is active []
+
+ [4])
+(./experiments.tex
+Underfull \hbox (badness 6445) in paragraph at lines 5--8
+\OT1/ptm/m/n/10.95 i-ous pre-pro-cess-ing tech-niques, nor-mal-iza-tion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--8
-\OT1/ptm/m/n/10.95 Wikipedia dump from $\OT1/pcr/m/n/10.95 https : / / dumps .
+\OT1/ptm/m/n/10.95 op-tions, and word2vec pa-ram-e-ter-i-za-tions
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 5--8
+\OT1/ptm/m/n/10.95 to de-ter-mine the op-ti-mal word em-bed-ding
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 5--8
+\OT1/ptm/m/n/10.95 meth-ods. The text cor-pus for train-ing the
+ []
+
+
+Underfull \hbox (badness 7667) in paragraph at lines 5--8
+\OT1/ptm/m/n/10.95 em-bed-dings is an Ara-bic Wikipedia dump
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--8
-\OT1/pcr/m/n/10.95 wikimedia . org / arwiki / 20150901/$
+\OT1/ptm/m/n/10.95 from $\OT1/pcr/m/n/10.95 https : / / dumps\OML/cmm/m/it/10.9
+5 :\OT1/pcr/m/n/10.95 wikimedia\OML/cmm/m/it/10.95 :\OT1/pcr/m/n/10.95 org /
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 5--8
-\OT1/ptm/m/n/10.95 markup, punc-tu-a-tion, and non-Arabic char-ac-
+Underfull \hbox (badness 1603) in paragraph at lines 5--8
+\OT1/ptm/m/n/10.95 that we choose to dis-play are mean squared
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 5--8
-\OT1/ptm/m/n/10.95 a de-fault pa-ram-e-ter-i-za-tion (skip-gram, win-dow
+Underfull \hbox (badness 1331) in paragraph at lines 5--8
+\OT1/ptm/m/n/10.95 vec-tors ex-hibit an im-pres-sive .268 MSE, and
  []
 
 
-Underfull \hbox (badness 1286) in paragraph at lines 5--8
-\OT1/ptm/m/n/10.95 pub-li-cally avail-able pre-trained vec-tors trained
+Overfull \hbox (6.84947pt too wide) in paragraph at lines 22--27
+[][] 
  []
 
-
-LaTeX Warning: Reference `section:recommendations' on page 5 undefined on input
- line 19.
+[5]
+Overfull \hbox (6.84947pt too wide) in paragraph at lines 37--42
+[][] 
+ []
 
 ) (./recommendations.tex
 Underfull \hbox (badness 1019) in paragraph at lines 4--6
@@ -297,16 +344,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[5]) (./arapy.tex) (./conclusion.tex
+) (./arapy.tex) (./conclusion.tex
 Underfull \hbox (badness 1248) in paragraph at lines 4--1
 \OT1/ptm/m/n/10.95 All pre-pro-cess-ing, nor-mal-iza-tion, and train-ing
  []
 
+) (./arabic-research.bbl
+Underfull \vbox (badness 3492) has occurred while \output is active []
 
-Underfull \vbox (badness 1478) has occurred while \output is active []
-
-)
-(./arabic-research.bbl
+ [6]
 Underfull \hbox (badness 3343) in paragraph at lines 11--15
 \OT1/ptm/m/n/10 2013.  Poly-glot: Dis-tributed word rep-re-sen-
  []
@@ -322,88 +368,92 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 27.
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
-[]\OT1/ptm/m/n/10 Muhammad Da'na.  (5) how many words
+Underfull \hbox (badness 3364) in paragraph at lines 24--29
+\OT1/pcr/m/n/10 / / words\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 bighugelabs\OML/cmm/
+m/it/10 :\OT1/pcr/m/n/10 com/$\OT1/ptm/m/n/10 .  (Vis-ited on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
-\OT1/ptm/m/n/10 does the ara-bic lan-guage have? -
+Underfull \hbox (badness 10000) in paragraph at lines 31--37
+\OT1/pcr/m/n/10 / / www\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 quora\OML/cmm/m/it/10 
+:\OT1/pcr/m/n/10 com / How -[] many -[] words -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
-\OT1/ptm/m/n/10 quora.  $\OT1/pcr/m/n/10 https : / / www . quora . com /
+Underfull \hbox (badness 10000) in paragraph at lines 31--37
+\OT1/pcr/m/n/10 does -[] the -[] Arabic -[] language -[] have$\OT1/ptm/m/n/10 ,
+ 12.
  []
 
-
-Overfull \hbox (61.8639pt too wide) in paragraph at lines 24--29
-\OT1/pcr/m/n/10 How-[]many-[]words-[]does-[]the-[]Arabic-[]language-[]have$\OT1
-/ptm/m/n/10 .
- []
-
-[6]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-Underfull \hbox (badness 4913) in paragraph at lines 70--74
-\OT1/ptm/m/n/10 plat-form.  $\OT1/pcr/m/n/10 https : / / cloud . google . com /
-
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+[]\OT1/ptm/m/n/10 Google.  2016.  Trans-late api - trans-late
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 84--90
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+\OT1/ptm/m/n/10 api  google cloud plat-form.  $\OT1/pcr/m/n/10 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
+\OT1/pcr/m/n/10 / / cloud\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 google\OML/cmm/m/it/
+10 :\OT1/pcr/m/n/10 com / translate / docs$\OT1/ptm/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 93--99
 \OT1/ptm/m/n/10 lingual se-man-tic re-lat-ed-ness us-ing en-cy-clo-pe-dic
  []
 
 
-Underfull \hbox (badness 3989) in paragraph at lines 92--96
-\OT1/ptm/m/n/10 antonyms, and rhymes (oh my!).  $\OT1/pcr/m/n/10 https :
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 92--96
-\OT1/pcr/m/n/10 / / words . bighugelabs . com/$\OT1/ptm/m/n/10 .  (Vis-ited on
- []
-
-
-Underfull \hbox (badness 1264) in paragraph at lines 98--103
+Underfull \hbox (badness 1264) in paragraph at lines 101--106
 \OT1/ptm/m/n/10 Man-ning.  2013.  Bet-ter word rep-re-sen-ta-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--146
-[]\OT1/ptm/m/n/10 NPR.  Google book tool tracks cul-tural
+Underfull \hbox (badness 3919) in paragraph at lines 138--145
+[]\OT1/ptm/m/n/10 NPR.  2010.  Google book tool tracks cul-
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 141--146
-\OT1/ptm/m/n/10 change with words : Npr.  $\OT1/pcr/m/n/10 http : / / www .
+Underfull \hbox (badness 5460) in paragraph at lines 138--145
+\OT1/ptm/m/n/10 tural change with words : Npr.  $\OT1/pcr/m/n/10 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--146
-\OT1/pcr/m/n/10 npr . org / 2010 / 12 / 16 / 132106374 /
+Underfull \hbox (badness 10000) in paragraph at lines 138--145
+\OT1/pcr/m/n/10 / / www\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 npr\OML/cmm/m/it/10 :\
+OT1/pcr/m/n/10 org / 2010 / 12 / 16 / 132106374 /
  []
 
 
-Overfull \hbox (97.8639pt too wide) in paragraph at lines 141--146
-\OT1/pcr/m/n/10 google-[]book-[]tool-[]tracks-[]cultural-[]change-[]with-[]word
-s$\OT1/ptm/m/n/10 .
+Underfull \hbox (badness 10000) in paragraph at lines 138--145
+\OT1/pcr/m/n/10 google -[] book -[] tool -[] tracks -[] cultural -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--170
-\OT1/pcr/m/n/10 / / lughat . blogspot . com / 2013 / 12 /
+Underfull \hbox (badness 5161) in paragraph at lines 138--145
+\OT1/pcr/m/n/10 change -[] with -[] words$\OT1/ptm/m/n/10 , 12.  (Ac-cessed on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--170
-\OT1/pcr/m/n/10 does-[]arabic-[]have-[]most-[]words-[]dont .
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
+\OT1/pcr/m/n/10 http : / / lughat\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 blogspot\OML
+/cmm/m/it/10 :\OT1/pcr/m/n/10 com / 2013 /
  []
 
-) [7] (./arabic-research.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
+\OT1/pcr/m/n/10 12 / does -[] arabic -[] have -[] most -[] words -[]
+ []
+
+[7]) [8
+
+] (./arabic-research.aux)
 
  *File List*
  article.cls    2014/09/29 v1.4h Standard LaTeX document class
@@ -466,16 +516,13 @@ conclusion.tex
 arabic-research.bbl
  ***********
 
-
-LaTeX Warning: There were undefined references.
-
  )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 4610 strings out of 493089
- 65462 string characters out of 6134842
- 150673 words of memory out of 5000000
- 7958 multiletter control sequences out of 15000+600000
+ 4609 strings out of 493089
+ 65437 string characters out of 6134842
+ 150680 words of memory out of 5000000
+ 7957 multiletter control sequences out of 15000+600000
  23955 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,10n,46p,2134b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -489,10 +536,10 @@ e1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/arabtex/xnsh14.pfb>
-Output written on arabic-research.pdf (7 pages, 131689 bytes).
+Output written on arabic-research.pdf (8 pages, 133151 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
