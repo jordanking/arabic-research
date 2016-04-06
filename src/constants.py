@@ -29,4 +29,4 @@ AR_SIM_OUTPUT_FILE_2 = RESULTS_DIR+'/ar_similiarity_task_results_ws353.csv'
 EN_SIM_OUTPUT_FILE = RESULTS_DIR+'/en_similiarity_task_results.csv'
 
 IN_HEADER = ['Word 1', 'Word 2', 'Similarity']
-OUT_HEADER = ['Embedding File', 'MSE', 'Accuracy', 'Hit_Percent', 'Correlation']
+OUT_HEADER = ['Embedding File', 'MSE', 'Accuracy', 'Hit_Percent', 'Correlation', 'Correlation Sig', 'Spearman', 'Spearman Sig']

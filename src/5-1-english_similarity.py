@@ -24,6 +24,7 @@ import os
 import numpy as np
 from gensim.models import Word2Vec
 from scipy.stats.stats import pearsonr  
+import scipy.stats.spearmanr
 import sys
 sys.path.insert(0,ARAPY_PATH)
 from arapy.madamira import Madamira
@@ -62,6 +63,10 @@ e_means = np.zeros(len(english_embeddings))
 e_mse = np.zeros(len(english_embeddings))
 e_hit_percents = np.zeros(len(english_embeddings))
 e_correlations = np.zeros(len(english_embeddings))
+e_correlations_sig = np.zeros(len(english_embeddings))
+e_spearmans = np.zeros(len(english_embeddings))
+e_spearmans_sig = np.zeros(len(english_embeddings))
+
 
 for m in range(len(english_embeddings)):
 
@@ -112,8 +117,14 @@ for m in range(len(english_embeddings)):
 
     correlation = pearsonr(scores, values)
     e_correlations[m] = correlation[0]
+    e_correlations_sig[m] = correlation[1]
+
+    spearman = spearmanr(scores, values)
+    e_spearmans[m] = spearman[0]
+    e_spearmans_sig[m] = spearman[1]
 
     logging.info("Score-value correlation: " + str(e_correlations[m]))
+    logging.info("Spearman: " + str(e_spearmans[m]))
     logging.info("Pairs evaluated: " + str(hits))
     logging.info("Pairs not found: " + str(misses))
 
@@ -127,5 +138,5 @@ with open(EN_SIM_OUTPUT_FILE, 'wb') as csvfile:
     writer.writerow(OUT_HEADER)
 
     for m in range(len(english_embeddings)):
-        writer.writerow([english_embeddings[m], e_mse[m], e_means[m], e_hit_percents[m], e_correlations[m]])
+        writer.writerow([english_embeddings[m], e_mse[m], e_means[m], e_hit_percents[m], e_correlations[m], e_correlations_sig[m], e_spearmans[m], e_spearmans_sig[m]])
 
