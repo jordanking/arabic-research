@@ -24,9 +24,10 @@ from arapy.normalization import normalize
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
-ARABIC = False
-TASK_FILE = ANALOGY_TASKS[0]
-ACC_OUT = ANALOGY_OUTPUT_FILES[0]
+ARABIC = True
+TASK_FILE = ANALOGY_TASKS[1]
+# TASK_FILE = '/home/jordan/Documents/Projects/arabic-research/analogy_tasks/test_ar.txt'
+ACC_OUT = ANALOGY_OUTPUT_FILES[1]
 
 def parseParameters(filename):
     #controldigTruetashTruemod1size200wind7.txt
@@ -95,7 +96,6 @@ def preprocessKey(inkey, params, mada):
 
     key = normalize(key, ar_only=True, digits=params['dig'], 
                     alif=True, hamza=True, yaa=True, tashkil=params['tash'])
-
     return key.encode('utf8')
 
 
@@ -109,27 +109,39 @@ def analogyTest(key1, key2, key3, key4, model, params, mada):
     # key2 = [key2]
     # key3 = [key3]
     # key4 = [key4]
+    # print('test Analogy: %s %s %s %s' % (key1, key2, key3, key4))
 
-    key1 = key1.decode('UTF-8', 'replace').split(' ')
-    key2 = key2.decode('UTF-8', 'replace').split(' ')
-    key3 = key3.decode('UTF-8', 'replace').split(' ')
-    key4 = key4.decode('UTF-8', 'replace').split(' ')
+    key1 = key1.split(' ')
+    key2 = key2.split(' ')
+    key3 = key3.split(' ')
+    key4 = key4.split(' ')
 
-    print('%s %s %s %s' % (key1[0], key2[0], key3[0], key4[0]))
+    # key1 = key1.decode('UTF-8', 'replace').split(' ')
+    # key2 = key2.decode('UTF-8', 'replace').split(' ')
+    # key3 = key3.decode('UTF-8', 'replace').split(' ')
+    # key4 = key4.decode('UTF-8', 'replace').split(' ')
 
-    pos = key2 + key3
-    sims = model.most_similar(positive=pos, negative=key1, topn=False)
+    # key1 = [part.encode('utf-8') for part in key1.decode('UTF-8', 'replace').split(' ')]
+    # key2 = [part.encode('utf-8') for part in key2.decode('UTF-8', 'replace').split(' ')]
+    # key3 = [part.encode('utf-8') for part in key3.decode('UTF-8', 'replace').split(' ')]
+    # key4 = [part.encode('utf-8') for part in key4.decode('UTF-8', 'replace').split(' ')]
+
+    pos = [part.decode('utf-8', 'replace') for part in (key2 + key3)]
+    neg = [part.decode('utf-8', 'replace') for part in key1]
+    sims = model.most_similar(positive=pos, negative=neg, topn=False)
     
     for index in matutils.argsort(sims, reverse=True):
-        word = model.index2word[index]
-        print("Result: %s and %s" % (word, key4[0]))
+
+        word = model.index2word[index].encode('utf-8')
+        
+        # print("Test result: %s and %s" % (word, repr(key4).decode('string-escape')))
 
         # word = [word]
         # if ARABIC:
         #     word = preprocessKey(word, params, mada).decode('UTF-8', 'replace').split(' ')
         
-        if [word] not in [key1, key2, key3]:
-            print("Result: %s and %s" % (word, key4))
+        if word not in set(key1+key2+key3):
+            # print("Accepted result: %s and %s" % (word, key4))
             if word not in key4:
                 return 0
             else:
@@ -143,7 +155,6 @@ else:
                   '/home/jordan/Desktop/english_5mil.bin',
                   '/home/jordan/Desktop/english_9mil.bin',
                   '/home/jordan/Desktop/english_20mil.bin']#,
-
 # load base task
 analogies = []
 delim = ' '
@@ -157,12 +168,10 @@ with open(TASK_FILE, 'rb') as csvfile:
         # print(row)
         analogies.append([row['a'], row['b'], row['c'], row['d']])
 
-
-# run arabic tasks
+# run  tasks
 scores = np.zeros(len(embeddings))
 hit_percents = np.zeros(len(embeddings))
 task_size = len(analogies)
-
 
 with Madamira() as mada:
     for m in range(len(embeddings)):
@@ -172,6 +181,12 @@ with Madamira() as mada:
         if ARABIC:
             params = parseParameters(modelfile)
             modelfile = EMBEDDING_DIR + '/' + modelfile
+
+
+        # if params['preprocessing'] != 'control':
+        #     continue
+
+
 
         # load word2vec model
         model = Word2Vec.load_word2vec_format(modelfile, binary=True)
@@ -188,17 +203,20 @@ with Madamira() as mada:
                 key3 = analogy[2]
                 key4 = analogy[3]
 
+
+
                 if ARABIC:
                     key1 = preprocessKey(analogy[0], params, mada)
                     key2 = preprocessKey(analogy[1], params, mada)
                     key3 = preprocessKey(analogy[2], params, mada)
                     key4 = preprocessKey(analogy[3], params, mada)
 
-
-
+                # print('Processed Analogy: %s %s %s %s' % (key1, key2, key3, key4))
 
                 result = analogyTest(key1, key2, key3, key4, model, params, mada)
+
                 print("result: %d" % (result))
+                
                 score += result
                 hits += 1
 
@@ -207,9 +225,9 @@ with Madamira() as mada:
                 continue
 
         
-        print("Score: %s" % (str(score/max(1, hits))))
+        print("Score: %f" % (score*1.0/max(1, hits)))
 
-        scores[m] = total_diff / max(hits, 1)
+        scores[m] = score*1.0/max(hits, 1)
         hit_percents[m] = hits / task_size
 
 

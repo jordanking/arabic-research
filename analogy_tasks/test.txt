@@ -1,0 +1,3 @@
+: capital-common-countries
+Athens Greece Baghdad Iraq
+Athens Greece Bangkok Thailand
