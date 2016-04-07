@@ -16,7 +16,7 @@
 from __future__ import absolute_import
 from __future__ import print_function
 from constants import ARAPY_PATH, WORKING_DIRECTORY, EMBEDDING_DIR, RESULTS_DIR
-from constants import TASKS, AR_SIM_OUTPUT_FILE, AR_SIM_OUTPUT_FILE_2, IN_HEADER, OUT_HEADER
+from constants import TASKS, AR_SIM_OUTPUT_FILES, IN_HEADER, OUT_HEADER
 import logging
 import csv
 import logging
@@ -33,8 +33,8 @@ from arapy.normalization import normalize
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
 
-TASK_FILE = TASKS[1]
-SIM_OUT = AR_SIM_OUTPUT_FILE_2
+TASK_FILE = TASKS[4]
+SIM_OUT = AR_SIM_OUTPUT_FILES[4]
 # SIM_OUT = '/home/jordan/Documents/Projects/arabic-research/writeup/acl2016/results/preprocessing_eval_1.csv'
 
 def parseParameters(filename):
@@ -108,10 +108,11 @@ def preprocessKey(inkey, params, mada):
     return key.encode('utf8')
 
 
-def get_similarity(key1, key2):
+def get_similarity(key1, key2, model):
     keyset1 = set(key1.decode('UTF-8', 'replace').split(' '))
     keyset2 = set(key2.decode('UTF-8', 'replace').split(' '))
     return abs(model.n_similarity(keyset1,keyset2))
+
 
 
 #### obtain the various embeddings that need evaluation
@@ -175,7 +176,7 @@ with Madamira() as mada:
                 logging.info("Key1: " + str(key1))
                 logging.info("Key2: " + str(key2))
 
-                keyscore = abs(get_similarity(key1, key2))
+                keyscore = abs(get_similarity(key1, key2, model))
                 pairs[key]['scores'][m] = keyscore
 
                 # get the difference between the task estimate and model estimate
