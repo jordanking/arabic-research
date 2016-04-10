@@ -32,9 +32,12 @@ AR_SIM_OUTPUT_FILES = [RESULTS_DIR+'/ar_similiarity_task_results.csv',
                        RESULTS_DIR+'/ar_similiarity_task_4_votes_results.csv']
 
 ANALOGY_TASKS = ['/home/jordan/Documents/Projects/arabic-research/analogy_tasks/questions-words.txt',
-                 '/home/jordan/Documents/Projects/arabic-research/analogy_tasks/questions-words-ar-fixed.txt']
+                 '/home/jordan/Documents/Projects/arabic-research/analogy_tasks/questions-words-ar-fixed.txt',
+                 '/home/jordan/Documents/Projects/arabic-research/analogy_tasks/questions-words-subset.txt']
 ANALOGY_OUTPUT_FILES = [RESULTS_DIR+'/en_analogy_results.csv',
-                        RESULTS_DIR+'/ar_analogy_results_fixed.csv']                    
+                        RESULTS_DIR+'/ar_analogy_results_fixed.csv',                    
+                        RESULTS_DIR+'/ar_analogy_results_subset.csv']                    
+
 ANALOGY_OUT_HEADER = ['Embedding File', 'Hit_Percent', 'Scores']
 
 EN_SIM_OUTPUT_FILE = RESULTS_DIR+'/en_similiarity_task_results.csv'
