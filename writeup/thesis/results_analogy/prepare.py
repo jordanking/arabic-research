@@ -1,21 +1,17 @@
 import pandas as pd
 
-sort_metric = 'Correlation'
+sort_metric = 'Scores'
 
-files = ['/Users/jordanking/Documents/arabic-research/writeup/thesis/results/ar_similiarity_task_results.csv',
-         '/Users/jordanking/Documents/arabic-research/writeup/thesis/results/ar_similiarity_task_results_ws353.csv']#,
-         # '/Users/jordanking/Documents/arabic-research/writeup/thesis/results/en_similarity_task_results.csv']
+files = ['/Users/jordanking/Documents/arabic-research/writeup/thesis/results_analogy/ar_analogy_results_fixed.csv']
 
 def parseParameters(filename):
     #controldigTruetashTruemod1size200wind7.txt
     params = {}
-
     preprocessing_options = ['control', 'lemmas', 'tokens']
     for opt in preprocessing_options:
         if filename.startswith(opt):
             params['preprocessing'] = opt
             filename = filename[len(opt):]
-
     normalization_options = ['dig', 'tash']
     for opt in normalization_options:
         filename = filename[len(opt):]
@@ -25,7 +21,6 @@ def parseParameters(filename):
         else:
             params[opt] = False
             filename = filename[5:]
-
     model_options = ['mod', 'size', 'wind']
     for opt in model_options:
         filename = filename[len(opt):]
@@ -37,14 +32,12 @@ def parseParameters(filename):
                 break
         params[opt] = int(value)
         filename = filename[len(value):]
-
     return params
 
 for file in files:
     df = pd.read_csv(file)
   
     for index, row in df.iterrows():
-        
         params = parseParameters(row.at['Embedding File'])
 
         df.set_value(index, 'wind', int(params['wind']))
@@ -55,11 +48,11 @@ for file in files:
         df.set_value(index, 'preprocessing', params['preprocessing'])
 
     df = df.sort_values(by=sort_metric, ascending=False)
-    df = df.round({'Accuracy':4, 'MSE':4, 'Correlation':4})
+    df = df.round({'Hit_Percent':4, 'Scores':4})
     df['wind'] = df['wind'].astype(int)
     df['size'] = df['size'].astype(int)
     df['mod'] = df['mod'].astype(int)
-    df = df.head(10)
+    # df = df.head(10)
 
 
     df.to_csv(file[:-4]+'_prepared' + '.csv', index=False)

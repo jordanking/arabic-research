@@ -20,6 +20,10 @@ This list of 1250 word pairs was then distributed to fluent Arabic speakers such
 \\
 When evaluating a model parameterization with the WordSimilarity-353 task or our similarity task, we perform the same preprocessing on the word pairs as we do on the training corpus for each model. Each word pair's embeddings are first obtained from the model, and then an absolute cosine similarity score is obtained between them. The cosine similarity is compared against the similarity task's score. The model is scored on both the mean absolute difference between the scores and the correlation between the task scores and model scores.
 
+
+% 0.7022335424
+
+
 % \subsection{Syntactic Understanding Evaluation}
 
 % The syntactic understanding of the word embeddings was evaluated via a part-of-speech tagging task. A selection of Arabic documents were first tagged with part-of-speech values using Madamira's NLP analysis, once for each preprocessing method \cite{pasha:2014}. For each parameterization, a simple recurrent neural network \textcolor{red}{set up for sequence to sequence learning} is trained to predict the part-of-speech of a word using its embedding. \textcolor{red}{One document} is held out as a test set for the network, and the accuracy of the network on this set was taken as the syntactic understanding score for the parameterization.
