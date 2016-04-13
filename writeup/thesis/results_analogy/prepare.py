@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 sort_metric = 'Scores'
 
@@ -47,14 +48,20 @@ for file in files:
         df.set_value(index, 'tash', params['tash'])
         df.set_value(index, 'preprocessing', params['preprocessing'])
 
-    df = df.sort_values(by=sort_metric, ascending=False)
-    df = df.round({'Hit_Percent':4, 'Scores':4})
     df['wind'] = df['wind'].astype(int)
     df['size'] = df['size'].astype(int)
     df['mod'] = df['mod'].astype(int)
-    # df = df.head(10)
 
+    plot = df.boxplot(column='Scores', by=['size','preprocessing'])
+    plt.show()
+    # plt.savefig(file[:-4] + '_plot.png')
 
+    df = df.sort_values(by=sort_metric, ascending=False)
+    df = df.round({'Hit_Percent':4, 'Scores':4})
+
+    df = df.head(10)
     df.to_csv(file[:-4]+'_prepared' + '.csv', index=False)
+  
+    
 
 

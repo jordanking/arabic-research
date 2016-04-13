@@ -1,11 +1,13 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+
 
 sort_metric = 'Spearman'
 
 files = ['/Users/jordanking/Documents/arabic-research/writeup/thesis/results_spearman/ar_similiarity_task_multi_results.csv',
          '/Users/jordanking/Documents/arabic-research/writeup/thesis/results_spearman/ar_similiarity_task_results_ws353.csv',
-         '/Users/jordanking/Documents/arabic-research/writeup/thesis/results_spearman/ar_similiarity_task_results.csv']#,
-         # '/Users/jordanking/Documents/arabic-research/writeup/thesis/results_spearman/ar_similiarity_task_4_results.csv']
+         '/Users/jordanking/Documents/arabic-research/writeup/thesis/results_spearman/ar_similiarity_task_results.csv',
+         '/Users/jordanking/Documents/arabic-research/writeup/thesis/results_spearman/ar_similiarity_task_4_votes_results.csv']
 
 
 def parseParameters(filename):
@@ -44,21 +46,31 @@ for file in files:
     for index, row in df.iterrows():
         params = parseParameters(row.at['Embedding File'])
 
-        df.set_value(index, 'wind', int(params['wind']))
-        df.set_value(index, 'size', int(params['size']))
-        df.set_value(index, 'mod', int(params['mod']))
-        df.set_value(index, 'dig', params['dig'])
-        df.set_value(index, 'tash', params['tash'])
-        df.set_value(index, 'preprocessing', params['preprocessing'])
+        df.set_value(index, 'wind', int(params['wind'])) # slight; slight
+        df.set_value(index, 'size', int(params['size'])) # no; yes
+        df.set_value(index, 'mod', int(params['mod'])) # no; yes
+        df.set_value(index, 'dig', params['dig']) # no; no
+        df.set_value(index, 'tash', params['tash']) # no; no
+        df.set_value(index, 'preprocessing', params['preprocessing']) # yes; yes
     
     df['wind'] = df['wind'].astype(int)
     df['size'] = df['size'].astype(int)
     df['mod'] = df['mod'].astype(int)
 
+    plot = df.boxplot(column='MSE', by=['size','mod','preprocessing'])
+    plt.show()
+    # plt.savefig(file[:-4] + '_spearplot.png')
+
+    plot = df.boxplot(column='Spearman', by=['wind','preprocessing'])
+    plt.show()
+    # plt.savefig(file[:-4] + '_spearplot.png')
+
     df = df.sort_values(by=sort_metric, ascending=False)
     df = df.round({'Accuracy':4, 'MSE':4, 'Correlation':4})
 
-    # df = df.head(10)
+
+
+    df = df.head(10)
 
     df.to_csv(file[:-4]+'_prepared' + '.csv', index=False)
 

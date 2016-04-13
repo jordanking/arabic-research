@@ -2,9 +2,9 @@
 \section{Experimental Results}
 \label{sec:experiments}
 
-We perform a parameter sweep over the various preprocessing techniques, normalization options, and word2vec parameterizations to determine the optimal word embedding methods. The text corpus for training the embeddings is an Arabic Wikipedia dump from \url{https://dumps.wikimedia.org/arwiki/20150901/} \cite{wiki:xxx}, cleaned by dropping Wikipedia markup, punctuation, and non-Arabic characters. All preprocessing options are precomputed first, generating multiple versions of the Arabic Wikipedia corpus. Then word vectors are trained for each parameterization. The vectors are then ran through evaluation tasks, recording various performance statistics.
+We perform a parameter sweep over the various preprocessing techniques, normalization options, and word2vec parameterizations to determine the optimal word embedding methods. The text corpus for training the embeddings is an Arabic Wikipedia dump from \url{https://dumps.wikimedia.org/arwiki/20150901/} \cite{wiki:xxx}, cleaned by dropping Wikipedia markup, punctuation, and non-Arabic characters. All preprocessing options are precomputed first, generating multiple versions of the Arabic Wikipedia corpus. Then word vectors are trained for each parameterization. The vectors are then ran through the evaluation tasks, recording various performance statistics.
 \\
-The baseline results for English vectors are shown in Table \ref{table:englishtask}. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under a default parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publically available pre-trained vectors trained on the 300 billion word Google News Corpus. The metrics that we choose to display are mean squared error (MSE) and \textcolor{red}{correlation} with the evaluation task. The MSE is the mean squared distance between the vector estimate and the evaluation task estimate for word pair similarity. The default vectors exhibit an impressive .268 MSE, and both models show a high correlation with the evaluation task scores. The Google News vectors display an impressive \textcolor{red}{$.65$ correlation} score to the task, providing a high optimal score to aim for.
+The baseline results for English vectors on the semantic similarity tasks are shown in Table \ref{table:englishtask}. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under a default parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publically available pre-trained vectors trained on the 300 billion word Google News Corpus. The metric that we choose to base our evaluate on is the Spearman correlation between the model similarity estimates the evaluation task similarity values. We also provide the mean squared error as the mean squared difference between the model estimate and the evaluation task value. The default vectors exhibit an impressive .268 MSE, and both models show a high \textcolor{red}{correlation} with the evaluation task scores. The Google News vectors display an impressive \textcolor{red}{$.65$ Spearman correlation} score to the task, providing a high score to aim for.
 
 \begin{table}
 \begin{tabular}{l|l|l}
@@ -44,3 +44,30 @@ Table \ref{table:ourtask} shows the results of the models with the 10 highest \t
 \end{table}
 
 None of the Arabic models reach either the level of correlation that the default English model does. However, the best performing models come close enough that the remaining difference may have literally been lost in translation. However, both models are still significantly below the Google New English optimal scores. This is to be expected considering the strong correlation between the quantity of training data when creating word embeddings.
+
+
+
+
+
+
+
+\textcolor{red}{analogy results}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
