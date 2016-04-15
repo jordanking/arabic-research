@@ -52,23 +52,30 @@ for file in files:
         df.set_value(index, 'dig', params['dig']) # no; no
         df.set_value(index, 'tash', params['tash']) # no; no
         df.set_value(index, 'preprocessing', params['preprocessing']) # yes; yes
-    
+        df.set_value(index, 'preprocessing_abbr', params['preprocessing'][0].upper())
     df['wind'] = df['wind'].astype(int)
     df['size'] = df['size'].astype(int)
     df['mod'] = df['mod'].astype(int)
 
-    plot = df.boxplot(column='MSE', by=['size','mod','preprocessing'])
-    plt.show()
+    # plot = df.boxplot(column='MSE', by=['size','mod','preprocessing'])
+    # plt.show()
     # plt.savefig(file[:-4] + '_spearplot.png')
-
-    plot = df.boxplot(column='Spearman', by=['wind','preprocessing'])
-    plt.show()
-    # plt.savefig(file[:-4] + '_spearplot.png')
+    # labels=['4,C','4,L','4,T','7,C','7,L','7,T']
+    plot = df.boxplot(column='Spearman', by=['wind','preprocessing_abbr'])
+    plt.title("Grouped by Window and Preprocessing Method")
+    plt.xlabel('Window,Preprocessing (C: Control L: Lemmas T: Tokens)')
+    plt.annotate('C: Control L: Lemmas T: Tokens', xy=(-12, -12), xycoords='axes points',
+            size=14, ha='right', va='top',
+            bbox=dict(boxstyle='round', fc='w'))
+    # plt.legend([void,void,void],['C: Control','L: Lemmas', 'T: Tokens'], loc='best')
+    plt.suptitle("")
+    # plt.show()
+    plt.savefig(file[:-4] + '_spearplot.png')
 
     df = df.sort_values(by=sort_metric, ascending=False)
-    df = df.round({'Accuracy':4, 'MSE':4, 'Correlation':4})
+    df = df.round({'Accuracy':4, 'MSE':4, 'Correlation':4, 'Spearman':4})
 
-
+    df = df.drop('preprocessing_abbr', 1)
 
     df = df.head(10)
 

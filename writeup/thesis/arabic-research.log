@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 APR 2016 00:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 APR 2016 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -67,17 +67,38 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+)
+\Gin@req@height=\dimen106
+\Gin@req@width=\dimen107
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/csvsimple/csvsimple.sty
 Package: csvsimple 2014/07/14 version 1.12 LaTeX CSV file processing
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks14
-\pgfkeys@temptoks=\toks15
+\pgfkeys@pathtoks=\toks15
+\pgfkeys@temptoks=\toks16
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks16
+\pgfkeys@tmptoks=\toks17
 ))) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -141,69 +162,125 @@ Package: utf8 2000/06/13  3.10 UTF-8 input encoding
 (ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
 \openout1 = `arabic-research.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
-\scratchdimen=\dimen128
+\scratchdimen=\dimen130
 \scratchbox=\box43
 \nofMPsegments=\count130
 \nofMParguments=\count131
-\everyMPshowfont=\toks37
+\everyMPshowfont=\toks38
 \MPscratchCnt=\count132
-\MPscratchDim=\dimen129
+\MPscratchDim=\dimen131
 \MPnumerator=\count133
 \makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks38
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/apatch.sty
+\everyMPtoPDFconversion=\toks39
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/apatch.sty
 \a@lines=\count135
-\a@Lwidth=\dimen130
-\a@displaywidth=\dimen131
+\a@Lwidth=\dimen132
+\a@displaywidth=\dimen133
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/alocal.sty
 (ArabTeX) 3.11 local stub, 26.02.2006)
 (ArabTeX) version 3.11s (02.07.2006): second phase of patching)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 38.
+(Font)              <12> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 38.
+(Font)              <8> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 38.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 38.
+(Font)              <6> on input line 39.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 39.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 2285) in paragraph at lines 44--45
+Underfull \hbox (badness 2285) in paragraph at lines 43--44
 [][]\OT1/ptm/m/n/10.95 FUTURE: Freq/DomFreq/NeighborFreq/Buzz
  []
 
 (./abstract.tex) (./introduction.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 5.
-) (./literature.tex
+LaTeX Font Info:    Try loading font information for U+xnsh on input line 13.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/Uxnsh.fd
+File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
+)
+LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
+(Font)              scaled to size 15.76802pt on input line 13.
+)
+(./literature.tex
 Underfull \hbox (badness 1242) in paragraph at lines 5--1
 \OT1/ptm/m/n/10.95 eval-u-ated for dif-fer-ent tasks in En-glish corpa
  []
@@ -214,7 +291,7 @@ Underfull \hbox (badness 1292) in paragraph at lines 5--1
  []
 
 
-Underfull \vbox (badness 2512) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -230,110 +307,131 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
  [3]
-LaTeX Font Info:    Try loading font information for U+xnsh on input line 14.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/Uxnsh.fd
-File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
-)
-LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
-(Font)              scaled to size 15.76802pt on input line 14.
-
 Overfull \hbox (2.59132pt too wide) in paragraph at lines 21--34
 [][] 
  []
 
 ) (./evaluation.tex
-Underfull \hbox (badness 4036) in paragraph at lines 15--22
-\OT1/ptm/m/n/10.95 of the most com-mon words in the Ara-bic
+Underfull \vbox (badness 4316) has occurred while \output is active []
+
+ [4]
+Underfull \vbox (badness 1226) has occurred while \output is active []
+
+
+Overfull \hbox (91.10751pt too wide) in paragraph at lines 25--35
+[][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--22
-\OT1/ptm/m/n/10.95 Wikipedia dump (Wikipedia-Meta, 2016)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--22
-\OT1/ptm/m/n/10.95 at $\OT1/pcr/m/n/10.95 https : / / dumps\OML/cmm/m/it/10.95 
-:\OT1/pcr/m/n/10.95 wikimedia\OML/cmm/m/it/10.95 :\OT1/pcr/m/n/10.95 org /
- []
-
-
-Underfull \hbox (badness 3179) in paragraph at lines 15--22
-\OT1/pcr/m/n/10.95 arwiki / 20150901/$\OT1/ptm/m/n/10.95 , ex-clud-ing words th
-at
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 15--22
-\OT1/ptm/m/n/10.95 Huge The-saurus API for ei-ther syn-onyms or
- []
-
-
-Underfull \hbox (badness 1960) in paragraph at lines 15--22
-\OT1/ptm/m/n/10.95 and the re-sult-ing syn-onym or antonym were
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 15--22
-\OT1/ptm/m/n/10.95 to flu-ent Ara-bic speak-ers such that each pair
- []
-
-
-Underfull \vbox (badness 5403) has occurred while \output is active []
-
- [4])
-(./experiments.tex
-Underfull \hbox (badness 6445) in paragraph at lines 5--8
+) (./experiments.tex
+Underfull \hbox (badness 6445) in paragraph at lines 5--6
 \OT1/ptm/m/n/10.95 i-ous pre-pro-cess-ing tech-niques, nor-mal-iza-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 \OT1/ptm/m/n/10.95 op-tions, and word2vec pa-ram-e-ter-i-za-tions
  []
 
 
-Underfull \hbox (badness 7851) in paragraph at lines 5--8
+Underfull \hbox (badness 7851) in paragraph at lines 5--6
 \OT1/ptm/m/n/10.95 to de-ter-mine the op-ti-mal word em-bed-ding
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 5--8
+Underfull \hbox (badness 2707) in paragraph at lines 5--6
 \OT1/ptm/m/n/10.95 meth-ods. The text cor-pus for train-ing the
  []
 
 
-Underfull \hbox (badness 7667) in paragraph at lines 5--8
+Underfull \hbox (badness 7667) in paragraph at lines 5--6
 \OT1/ptm/m/n/10.95 em-bed-dings is an Ara-bic Wikipedia dump
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 \OT1/ptm/m/n/10.95 from $\OT1/pcr/m/n/10.95 https : / / dumps\OML/cmm/m/it/10.9
 5 :\OT1/pcr/m/n/10.95 wikimedia\OML/cmm/m/it/10.95 :\OT1/pcr/m/n/10.95 org /
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 5--8
-\OT1/ptm/m/n/10.95 that we choose to dis-play are mean squared
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 5--8
-\OT1/ptm/m/n/10.95 vec-tors ex-hibit an im-pres-sive .268 MSE, and
- []
-
-
-Overfull \hbox (6.84947pt too wide) in paragraph at lines 22--27
-[][] 
+Underfull \hbox (badness 1072) in paragraph at lines 5--6
+\OT1/ptm/m/n/10.95 word vec-tors are trained for each pa-ram-e-ter-i-
  []
 
 [5]
-Overfull \hbox (6.84947pt too wide) in paragraph at lines 37--42
+Overfull \hbox (6.84947pt too wide) in paragraph at lines 24--29
 [][] 
  []
 
+
+<results_spearman/ar_similiarity_task_results_ws353_spearplot.png, id=27, 578.1
+6pt x 433.62pt>
+File: results_spearman/ar_similiarity_task_results_ws353_spearplot.png Graphic 
+file (type png)
+
+<use results_spearman/ar_similiarity_task_results_ws353_spearplot.png>
+Package pdftex.def Info: results_spearman/ar_similiarity_task_results_ws353_spe
+arplot.png used on input line 34.
+(pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (6.84947pt too wide) in paragraph at lines 47--52
+[][] 
+ []
+
+
+Overfull \hbox (6.84947pt too wide) in paragraph at lines 57--62
+[][] 
+ []
+
+
+Overfull \hbox (6.84947pt too wide) in paragraph at lines 67--72
+[][] 
+ []
+
+
+<results_spearman/ar_similiarity_task_results_spearplot.png, id=29, 578.16pt x 
+433.62pt>
+File: results_spearman/ar_similiarity_task_results_spearplot.png Graphic file (
+type png)
+ <use results_spearman/ar_similiarity_task_results_spearplot.png>
+Package pdftex.def Info: results_spearman/ar_similiarity_task_results_spearplot
+.png used on input line 77.
+(pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
+
+<results_spearman/ar_similiarity_task_multi_results_spearplot.png, id=30, 578.1
+6pt x 433.62pt>
+File: results_spearman/ar_similiarity_task_multi_results_spearplot.png Graphic 
+file (type png)
+
+<use results_spearman/ar_similiarity_task_multi_results_spearplot.png>
+Package pdftex.def Info: results_spearman/ar_similiarity_task_multi_results_spe
+arplot.png used on input line 83.
+(pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
+
+<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=31, 578
+.16pt x 433.62pt>
+File: results_spearman/ar_similiarity_task_4_votes_results_spearplot.png Graphi
+c file (type png)
+
+<use results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>
+Package pdftex.def Info: results_spearman/ar_similiarity_task_4_votes_results_s
+pearplot.png used on input line 89.
+(pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
+
+[6 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png>]
+[7 <./results_spearman/ar_similiarity_task_results_spearplot.png> <./results_sp
+earman/ar_similiarity_task_multi_results_spearplot.png> <./results_spearman/ar_
+similiarity_task_4_votes_results_spearplot.png>]
+<results_analogy/ar_analogy_results_fixed_plot.png, id=43, 578.16pt x 433.62pt>
+File: results_analogy/ar_analogy_results_fixed_plot.png Graphic file (type png)
+
+<use results_analogy/ar_analogy_results_fixed_plot.png>
+Package pdftex.def Info: results_analogy/ar_analogy_results_fixed_plot.png used
+ on input line 124.
+(pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
 ) (./recommendations.tex
 Underfull \hbox (badness 1019) in paragraph at lines 4--6
 \OT1/ptm/m/n/10.95 tic sim-i-lar-ity tasks were those mod-els trained
@@ -344,15 +442,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-) (./arapy.tex) (./conclusion.tex
-Underfull \hbox (badness 1248) in paragraph at lines 4--1
-\OT1/ptm/m/n/10.95 All pre-pro-cess-ing, nor-mal-iza-tion, and train-ing
+) (./arapy.tex
+
+LaTeX Warning: Citation `rehurek_lrec' on page 8 undefined on input line 6.
+
+) (./conclusion.tex
+Underfull \hbox (badness 1308) in paragraph at lines 4--1
+\OT1/ptm/m/n/10.95 We have de-vel-oped a sim-ple python pack-age
  []
 
-) (./arabic-research.bbl
-Underfull \vbox (badness 3492) has occurred while \output is active []
 
- [6]
+Underfull \hbox (badness 5133) in paragraph at lines 4--1
+\OT1/ptm/m/n/10.95 All pre-pro-cess-ing, nor-mal-iza-tion, and train-
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 4--1
+\OT1/ptm/m/n/10.95 ing pro-cesses out-lined in this re-search uti-lize
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 4--1
+\OT1/ptm/m/n/10.95 Arapy in-cludes many use-ful tools for sim-ple
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 4--1
+\OT1/ptm/m/n/10.95 with Ara-bic. The first is a mod-ule pro-vid-
+ []
+
+[8 <./results_analogy/ar_analogy_results_fixed_plot.png>])
+(./arabic-research.bbl
 Underfull \hbox (badness 3343) in paragraph at lines 11--15
 \OT1/ptm/m/n/10 2013.  Poly-glot: Dis-tributed word rep-re-sen-
  []
@@ -440,7 +560,7 @@ Underfull \hbox (badness 5161) in paragraph at lines 138--145
 \OT1/pcr/m/n/10 change -[] with -[] words$\OT1/ptm/m/n/10 , 12.  (Ac-cessed on
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 163--171
 \OT1/pcr/m/n/10 http : / / lughat\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 blogspot\OML
 /cmm/m/it/10 :\OT1/pcr/m/n/10 com / 2013 /
@@ -451,7 +571,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--171
 \OT1/pcr/m/n/10 12 / does -[] arabic -[] have -[] most -[] words -[]
  []
 
-[7]) [8
+) [10
 
 ] (./arabic-research.aux)
 
@@ -467,6 +587,11 @@ latexsym.sty    1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
  ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
      url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+graphicx.sty    2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+graphics.sty    2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
 csvsimple.sty    2014/07/14 version 1.12 LaTeX CSV file processing
  pgfkeys.sty    
  pgfkeys.code.tex
@@ -500,16 +625,31 @@ arabchrs.sty    1998/07/11  3.07 letter token definitions
     utf8.sty    2000/06/13  3.10 UTF-8 input encoding 
  utfcode.sty    2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
 supp-pdf.mkii
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+epstopdf-base.sty    2010/02/09 v2.5 Base part for package epstopdf
+  grfext.sty    2010/08/19 v1.1 Manage graphics extensions (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+epstopdf-sys.cfg    2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
   apatch.sty    2006/07/02  3.11s last minute patches 
    ulasy.fd    1998/08/17 v2.2e LaTeX symbol font definitions
   ot1pcr.fd    2001/06/04 font definitions for OT1/pcr.
 abstract.tex
 introduction.tex
+   Uxnsh.fd
 literature.tex
 training.tex
-   Uxnsh.fd
 evaluation.tex
 experiments.tex
+results_spearman/ar_similiarity_task_results_ws353_spearplot.png
+results_spearman/ar_similiarity_task_results_spearplot.png
+results_spearman/ar_similiarity_task_multi_results_spearplot.png
+results_spearman/ar_similiarity_task_4_votes_results_spearplot.png
+results_analogy/ar_analogy_results_fixed_plot.png
 recommendations.tex
    arapy.tex
 conclusion.tex
@@ -519,13 +659,13 @@ arabic-research.bbl
  )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 4609 strings out of 493089
- 65437 string characters out of 6134842
- 150680 words of memory out of 5000000
- 7957 multiletter control sequences out of 15000+600000
+ 5236 strings out of 493089
+ 77483 string characters out of 6134842
+ 167080 words of memory out of 5000000
+ 8528 multiletter control sequences out of 15000+600000
  23955 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,10n,46p,2134b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,10n,46p,2134b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fon
@@ -536,10 +676,10 @@ e1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/arabtex/xnsh14.pfb>
-Output written on arabic-research.pdf (8 pages, 133151 bytes).
+Output written on arabic-research.pdf (10 pages, 300603 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

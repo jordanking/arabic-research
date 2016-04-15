@@ -17,8 +17,24 @@ When evaluating a model parameterization with the WordSimilarity-353 task or our
 
 \subsection{Analogy Task}
 
-\textcolor{red}{Analogy task!}
+The analogy task is a standard for evaluating word vectors first used by Mikolov et al. \cite{mikoloveffic:2013}. It consists of analogy questions each composed of three query words and one answer word, in the form of an analogy such that $query_1$ is to $query_2$ as $query_3$ is to $answer$. We used the Google Translate API to translate the 19544 English analogies to Arabic \cite{google:online}. This translated model is available with our code. For each model that we trained, we performed matching preprocessing to each item in each analogy. The first three analogy items are then coverted to two positive vectors and one negative vector and averaged to obtain a fourth result vector. A correct answer on this task is one for which the closest vector to the result in the model matches the fourth analogy item.
+\\
+This task is composed of categories of analogies, with a mix of syntactic and semantic analogies. This allows this task to evaluate the syntactic abilities of our models to complement our semantic similarity evaluations. See Table \ref{table:analogyexamples} for examples of these analogies in English taken from Mikolov's originating paper \cite{mikoloveffic:2013}.
 
+\begin{table}
+\begin{tabular}{l|l|l|l|l}
+\textbf{Type} & \textbf{Query} & \textbf{Query} & \textbf{Query} & \textbf{Answer}\\
+\hline
+Capital city & Athens & Greece & Oslo & Norway \\
+Gender & brother & sister & grandson & granddaughter \\
+Opposite & possibly & impossibly & ethical & unethical \\
+Comparative & great & greater &  tough & tougher \\
+Past tense & walking & walked & swimming & swam \\
+Plural nouns & mouse & mice & dollar & dollars \\
+\end{tabular}
+\caption{Analogy Examples}
+\label{table:analogyexamples}
+\end{table}
 
 
 

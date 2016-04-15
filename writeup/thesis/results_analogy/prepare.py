@@ -53,8 +53,8 @@ for file in files:
     df['mod'] = df['mod'].astype(int)
 
     plot = df.boxplot(column='Scores', by=['size','preprocessing'])
-    plt.show()
-    # plt.savefig(file[:-4] + '_plot.png')
+    # plt.show()
+    plt.savefig(file[:-4] + '_plot.png')
 
     df = df.sort_values(by=sort_metric, ascending=False)
     df = df.round({'Hit_Percent':4, 'Scores':4})
