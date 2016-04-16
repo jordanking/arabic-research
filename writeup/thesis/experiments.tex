@@ -91,10 +91,11 @@ Table \ref{table:ourtask} shows the results of the models with the 10 highest co
   \label{fig:spearplot4}
 \end{figure}
 
-We have shown that preprocessing decisions in Arabic can substantially change the performance of the word embeddings on similarity tasks. Some methods were even able to surpass the English baseline. While the best performing models were still significantly below the scores of the English embeddings trained on the Google News corpus, this is to be expected considering the strong correlation between the quantity of training data and the quality of the word embeddings. Our training set has approximately 5 million Arabic words while the Google News set has about 100 billion words \cite{mikolovdist:2013}.
+We have shown that preprocessing and training decisions can substantially change the performance of Arabic word embeddings on similarity tasks. Some methods were even able to surpass the English baseline. While the best performing models were still significantly below the scores of the English embeddings trained on the Google News corpus, this is to be expected considering the strong correlation between the quantity of training data and the quality of the word embeddings. Our training set has approximately 5 million Arabic words while the Google News set has about 100 billion words \cite{mikolovdist:2013}.
 
 \subsection{Analogy Task}
 
+Table \ref{table:englishanalogy} shows the baseline results of the English embeddings on the Analogy task. These results demonstrate the extreme difference in quality between vectors trained on 5 million words and 100 billion words. The lower accuracy of the 5 million word model at $0.04522$, or 4.522 percent correct of the $19544$ analogies, will be used as a comparitive baseline for this task.
 
 
 \begin{table}
@@ -109,6 +110,8 @@ We have shown that preprocessing decisions in Arabic can substantially change th
 
 % Embedding File,Hit_Percent,Scores,wind,size,mod,dig,tash,preprocessing
 % 1               2           3      4   5      6 7    8   9
+
+Table \ref{table:aranalogy} shows the top 10 analogy task results from the Arabic models. Here it seems models preprocessed to lemmas and trained to 200 dimensions seem to dominate. We also see less difference between models with different window sizes. Figure \ref{fig:aranalogy} confirms these trends with boxplots with groups by significant factors. This plot illustrates the dramatic improvements that are obtained with proper preprocessing and parameterization for the task. The lemmatized 200 dimensional models consistently outperformed all other models, including the baseline English model. In the best case, one ideally parameterized model is nearly 50\% better than the English baseline. Of lesser note, the tokenization method also delivers significantly higher accuracies than the models that received no preprocessing on the Arabic. These results demonstrate that preprocessing and training decisions can greatly improve the performance of Arabic word embeddings on analogy solving tasks, improving scores from as low as half of the English baseline to as high as 150\% of the baseline.
 
 \begin{table}
 \begin{tabular}{l|l|l|l}
