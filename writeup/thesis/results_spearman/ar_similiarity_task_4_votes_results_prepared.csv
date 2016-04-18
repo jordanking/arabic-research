@@ -1,11 +1,11 @@
-Embedding File,MSE,Accuracy,Hit_Percent,Correlation,Correlation Sig,Spearman,Spearman Sig,wind,size,mod,dig,tash,preprocessing
-controldigFalsetashFalsemod1size200wind4.txt,0.1984,0.3536,1.0,0.5989,4.53322217844e-24,0.576,5.37885771769e-22,4,200,1,False,False,control
-controldigFalsetashTruemod1size100wind4.txt,0.1648,0.3196,1.0,0.5894,3.46090916769e-23,0.5733,9.26187616995e-22,4,100,1,False,True,control
-controldigTruetashTruemod1size200wind4.txt,0.2009,0.3564,1.0,0.5886,4.05904421048e-23,0.5687,2.29842103442e-21,4,200,1,True,True,control
-controldigFalsetashFalsemod0size200wind4.txt,0.2151,0.3679,1.0,0.5662,3.78674121048e-21,0.5654,4.39221472795e-21,4,200,0,False,False,control
-controldigTruetashTruemod1size100wind4.txt,0.1731,0.3285,1.0,0.5641,5.59259907441e-21,0.5566,2.35656980118e-20,4,100,1,True,True,control
-controldigTruetashTruemod0size200wind7.txt,0.2262,0.3774,1.0,0.5435,2.61662541258e-19,0.5529,4.70589449185e-20,7,200,0,True,True,control
-controldigTruetashTruemod0size200wind4.txt,0.218,0.3705,1.0,0.5632,6.74007055756e-21,0.5527,4.8400879451e-20,4,200,0,True,True,control
-lemmasdigFalsetashTruemod0size200wind4.txt,0.1757,0.3256,0.0,0.5509,8.15164528703e-20,0.5509,8.19123462894e-20,4,200,0,False,True,lemmas
-lemmasdigTruetashTruemod1size200wind4.txt,0.1768,0.3273,0.0,0.5348,1.46263472888e-18,0.5508,8.30157362335e-20,4,200,1,True,True,lemmas
-tokensdigTruetashFalsemod0size200wind4.txt,0.1752,0.3338,1.0,0.465,6.72597340325e-14,0.5467,1.47597440625e-19,4,200,0,True,False,tokens
+Embedding File,MSE,Accuracy,Hit_Percent,Correlation,Correlation Sig,Spearman,Spearman Sig,wind,size,mod,dig,tash,preprocessing,rank,index
+controldigFalsetashFalsemod1size200wind4.txt,0.1984,0.3536,1.0,0.5989,4.53322217844e-24,0.576,5.37885771769e-22,4,200,1,False,False,base,1,23
+controldigFalsetashTruemod1size100wind4.txt,0.1648,0.3196,1.0,0.5894,3.46090916769e-23,0.5733,9.26187616995e-22,4,100,1,False,True,base,2,25
+controldigTruetashTruemod1size200wind4.txt,0.2009,0.3564,1.0,0.5886,4.05904421048e-23,0.5687,2.29842103442e-21,4,200,1,True,True,base,3,86
+controldigFalsetashFalsemod0size200wind4.txt,0.2151,0.3679,1.0,0.5662,3.78674121048e-21,0.5654,4.39221472795e-21,4,200,0,False,False,base,4,67
+controldigTruetashTruemod1size100wind4.txt,0.1731,0.3285,1.0,0.5641,5.59259907441e-21,0.5566,2.35656980118e-20,4,100,1,True,True,base,5,34
+controldigTruetashTruemod0size200wind7.txt,0.2262,0.3774,1.0,0.5435,2.61662541258e-19,0.5529,4.70589449185e-20,7,200,0,True,True,base,6,27
+controldigTruetashTruemod0size200wind4.txt,0.218,0.3705,1.0,0.5632,6.74007055756e-21,0.5527,4.8400879451e-20,4,200,0,True,True,base,7,30
+lemmasdigFalsetashTruemod0size200wind4.txt,0.1757,0.3256,0.0,0.5509,8.15164528703e-20,0.5509,8.19123462894e-20,4,200,0,False,True,lemmas,8,70
+lemmasdigTruetashTruemod1size200wind4.txt,0.1768,0.3273,0.0,0.5348,1.46263472888e-18,0.5508,8.30157362335e-20,4,200,1,True,True,lemmas,9,68
+tokensdigTruetashFalsemod0size200wind4.txt,0.1752,0.3338,1.0,0.465,6.72597340325e-14,0.5467,1.47597440625e-19,4,200,0,True,False,tokens,10,78

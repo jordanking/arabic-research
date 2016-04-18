@@ -1,11 +1,11 @@
-Embedding File,Hit_Percent,Scores,wind,size,mod,dig,tash,preprocessing
-lemmasdigTruetashTruemod1size200wind4.txt,0.0,0.0671,4,200,1,True,True,lemmas
-lemmasdigFalsetashTruemod1size200wind4.txt,0.0,0.0647,4,200,1,False,True,lemmas
-lemmasdigTruetashTruemod1size200wind7.txt,0.0,0.0637,7,200,1,True,True,lemmas
-lemmasdigFalsetashFalsemod0size200wind4.txt,0.0,0.0634,4,200,0,False,False,lemmas
-lemmasdigFalsetashFalsemod1size200wind7.txt,0.0,0.0626,7,200,1,False,False,lemmas
-lemmasdigFalsetashTruemod0size200wind7.txt,0.0,0.0623,7,200,0,False,True,lemmas
-lemmasdigFalsetashFalsemod0size200wind7.txt,0.0,0.0621,7,200,0,False,False,lemmas
-lemmasdigTruetashFalsemod1size200wind4.txt,0.0,0.061,4,200,1,True,False,lemmas
-lemmasdigFalsetashFalsemod1size200wind4.txt,0.0,0.0607,4,200,1,False,False,lemmas
-lemmasdigTruetashFalsemod1size200wind7.txt,0.0,0.0591,7,200,1,True,False,lemmas
+Embedding File,Hit_Percent,Scores,wind,size,mod,dig,tash,preprocessing,rank
+lemmasdigTruetashTruemod1size200wind4.txt,0.0,0.0671,4,200,1,True,True,lemmas,1
+lemmasdigFalsetashTruemod1size200wind4.txt,0.0,0.0647,4,200,1,False,True,lemmas,2
+lemmasdigTruetashTruemod1size200wind7.txt,0.0,0.0637,7,200,1,True,True,lemmas,3
+lemmasdigFalsetashFalsemod0size200wind4.txt,0.0,0.0634,4,200,0,False,False,lemmas,4
+lemmasdigFalsetashFalsemod1size200wind7.txt,0.0,0.0626,7,200,1,False,False,lemmas,5
+lemmasdigFalsetashTruemod0size200wind7.txt,0.0,0.0623,7,200,0,False,True,lemmas,6
+lemmasdigFalsetashFalsemod0size200wind7.txt,0.0,0.0621,7,200,0,False,False,lemmas,7
+lemmasdigTruetashFalsemod1size200wind4.txt,0.0,0.061,4,200,1,True,False,lemmas,8
+lemmasdigFalsetashFalsemod1size200wind4.txt,0.0,0.0607,4,200,1,False,False,lemmas,9
+lemmasdigTruetashFalsemod1size200wind7.txt,0.0,0.0591,7,200,1,True,False,lemmas,10
