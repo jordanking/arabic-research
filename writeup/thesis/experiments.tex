@@ -6,7 +6,7 @@ Using the parameter selections outlined in Section \ref{sec:training}, we perfor
 
 \subsection{Word Similarity 353}
 
-The results for English vectors on the semantic similarity tasks are shown in Table \ref{table:englishtask} for comparison. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under the default Word2Vec parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publically available pre-trained vectors trained on a 100 billion word Google News Corpus \cite{mikolovdist:2013}. The metric that we choose to base our evaluate on is the Spearman correlation between the model similarity estimates the evaluation task similarity values. \textcolor{red}{We also provide the mean squared error as the mean squared difference between the model estimate and the evaluation task value. The default vectors exhibit an impressive .268 MSE, and} both models show a high correlation with the evaluation task scores. The Google News vectors display an impressive $.6978$ Spearman correlation score to the task, providing a high score to aim for. We consider the $0.5457$ correlation score of the default English task to be the baseline for our Arabic word embeddings.
+The results for English vectors on the semantic similarity tasks are shown in Table \ref{table:englishtask} for comparison. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under the default Word2Vec parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publicly available pre-trained model trained on a 100 billion word Google News Corpus \cite{mikolovdist:2013}. The metric that we choose to base our evaluations on is the Spearman correlation between the model similarity estimates the evaluation task similarity values. Both models show a high correlation with the evaluation task scores. The Google News vectors display an impressive $.6978$ Spearman correlation score to the task, providing a high score to aim for. We consider the $0.5457$ correlation score of the default English task to be the baseline for our Arabic word embeddings.
 
 \begin{table}
 \begin{tabular}{l|l|l}
@@ -18,7 +18,7 @@ The results for English vectors on the semantic similarity tasks are shown in Ta
 \label{table:englishtask}
 \end{table}
 
-Table \ref{table:ws353task} shows the results of the models with the 10 highest correlation scores on the Word Similarity 353 task \cite{finkelstein:2001,hassan:2009}. \textcolor{red}{Do these tables add?} Standing out is the lack of any preprocessing method but tokenization in this list. Additionally, these best performing models were primarily trained using a window of 4 words. Figure \ref{fig:spearplotws353} shows box plots over all results grouped by the two most significant preprocessing measures, Window size and Preprocessing method. These results show that tokenization is the only method not only as good as teh English baseline, but able to perform better. This improvement can be considered even more significant due to the translation of the task, but it is difficult to quantify this effect. Interestingly, the unprocessed Arabic scores higher than lemmatization on this task. textcolor{red}{Interpret.} The window size is very interesting, as this parameter is highly dependent on the grammar of the training language. A sentence structure that uses complex words more often has related words nearer to each other than English does, so Arabic word embeddings may benefit from having a smaller window to not look beyond the relevant information.
+Table \ref{table:ws353task} shows the results of the models with the 10 highest correlation scores on the Word Similarity 353 task \cite{finkelstein:2001,hassan:2009}. Standing out is the lack of any preprocessing method but tokenization in this list. Additionally, these best performing models were primarily trained using a window of 4 words. Figure \ref{fig:spearplotws353} shows box plots over all results grouped by the two most significant preprocessing measures, window size and preprocessing method. These results show that tokenization is the only method that performs as well as the English baseline, and outperforms it. This improvement can be considered even more significant due to the translation of the task, but it is difficult to quantify how much loss is occured from translation. Interestingly, the unprocessed base text scores higher than lemmatization on this task, possibly due to the comparitively simpler, noun dominated terms in the task. Lemmatization likely over simplifies the words, while in our similarity task, the higher complexity of the terms benefits more from lemmatization. The window size is very interesting, as this parameter is highly dependent on the grammar of the training language. A sentence structure that uses complex words more often has related words nearer to each other than English does, so Arabic word embeddings may benefit from having a smaller window to not look beyond the relevant information.
 
 \begin{table}
 \begin{tabular}{l|l|l|l|l}
@@ -38,7 +38,11 @@ Table \ref{table:ws353task} shows the results of the models with the 10 highest 
 
 \subsection{Our Similarity Task}
 
-Table \ref{table:ourtask} shows the results of the models with the 10 highest correlation scores on the task we developed \textcolor{red}{Pick one of the three model options. The subset with 4 votes has the highest correlation but only ~250 word pairs.} The results on our data support our findings that the smaller window size does indeed have a strong positive impact on the quality of the word embeddings. \textcolor{red}{We suspect that the high performance of the control group without preprocessing is due to the evaluation task being developed from the same corpus as the vector training data. Interpret, verify?}
+Tables \ref{table:ourtask}, \ref{table:ourtaskmulti}, and \ref{table:ourtask4} show the results of the models with the 10 highest correlation scores on the task we developed. Each table displays results on different subsets of our data, selected by the minimum number of fluent Arabic evaluators that contributed labels to the word pairs. These subsets are the collections where each word pair has at least one evaluator, at least two evaluators, and at least four evaluators (maximum is four). These results all demonstrate similar trends in Figures \ref{fig:spearplot1}, \ref{fig:spearplot2}, and \ref{fig:spearplot4}. The Kendall Tau scores between these three rankings are .335 between the full set of word pairs and the set with four votes, .482 between the full set and the set with two or more votes, and .572 between the task with two votes and the task with four votes (all highly significant). Tables \ref{table:ourtask}, \ref{table:ourtaskmulti}, and \ref{table:ourtask4} do demonstrate that with more evaluators, the models become better correlated with the task. Interestingly, the base Arabic without tokenization or lemmatization produces the highest correlation scores on our task. This observation, along with the improvements with more voters, suggests that as our task draws the most common words from the same Wikipedia corpus that the models are trained on, the embeddings are able to directly learn the semantic similarity of these base words without the aid of lemmatization or tokenization. As the word pair similarities become more correlated with the model as we add fluent evaluators, these results also suggest that the control model is able to predict a similarity score more consistently accurate than our human labelers, assuming that the similarity scores will converge to a true label as we add human labelers. Additionally, Figures \ref{fig:spearplot1}, \ref{fig:spearplot2}, and \ref{fig:spearplot4} support our findings that the smaller window size does indeed have a strong positive impact on the quality of the word embeddings.
+
+% full/4: tau: 0.334649122807, p_value: 1.36433095045e-06
+% multi/full: tau: 0.481578947368, p_value: 3.63086505503e-12
+% multi/4: tau: 0.572368421053, p_value: 1.44144439867e-16
 
 % Embedding File,MSE,Accuracy,Hit_Percent,Correlation,Correlation Sig,Spearman,Spearman Sig,wind,size,mod,dig,tash,preprocessing
 % 1              2    3        4            5          6           7    8        9           10   11   12  13  14   15
@@ -59,7 +63,7 @@ Table \ref{table:ourtask} shows the results of the models with the 10 highest co
 \csvreader[head to column names]{results_spearman/ar_similiarity_task_multi_results_prepared.csv}{}
 {\\\hline\rank&\preprocessing&\wind&\size&\Spearman}
 \end{tabular}
-\caption{Top Results on our Task-2+ Votes}
+\caption{Top Results on our Task - 2+ Votes}
 \label{table:ourtaskmulti}
 \end{table}
 
@@ -69,7 +73,7 @@ Table \ref{table:ourtask} shows the results of the models with the 10 highest co
 \csvreader[head to column names]{results_spearman/ar_similiarity_task_4_votes_results_prepared.csv}{}
 {\\\hline\rank&\preprocessing&\wind&\size&\Spearman}
 \end{tabular}
-\caption{Top Results on our Task-4 Votes}
+\caption{Top Results on our Task - 4 Votes}
 \label{table:ourtask4}
 \end{table}
 
@@ -91,11 +95,9 @@ Table \ref{table:ourtask} shows the results of the models with the 10 highest co
   \label{fig:spearplot4}
 \end{figure}
 
-% full/4: tau: 0.334649122807, p_value: 1.36433095045e-06
-% multi/full: tau: 0.481578947368, p_value: 3.63086505503e-12
-% multi/4: tau: 0.572368421053, p_value: 1.44144439867e-16
 
-We have shown that preprocessing and training decisions can substantially change the performance of Arabic word embeddings on similarity tasks. Some methods were even able to surpass the English baseline. While the best performing models were still significantly below the scores of the English embeddings trained on the Google News corpus, this is to be expected considering the strong correlation between the quantity of training data and the quality of the word embeddings. Our training set has approximately 5 million Arabic words while the Google News set has about 100 billion words \cite{mikolovdist:2013}.
+
+These similarity task experiments have shown that preprocessing and training decisions can substantially change the performance of Arabic word embeddings on similarity tasks. Some methods were even able to surpass the English baseline. While the best performing models were still significantly below the scores of the English embeddings trained on the Google News corpus, this is to be expected considering the strong correlation between the quantity of training data and the quality of the word embeddings, and our training set has approximately 5 million Arabic words while the Google News set has about 100 billion words \cite{mikolovdist:2013}.
 
 \subsection{Analogy Task}
 
