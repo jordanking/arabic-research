@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: arabic-research.aux
 The style file: acl2016.bst
 Database file #1: arabic-research.bib
-You've used 24 entries,
+You've used 25 entries,
             2490 wiz_defined-function locations,
-            684 strings with 9126 characters,
-and the built_in function-call counts, 10325 in all, are:
-= -- 1101
-> -- 385
-< -- 11
-+ -- 129
-- -- 127
-* -- 677
-:= -- 1590
-add.period$ -- 107
-call.type$ -- 24
-change.case$ -- 156
-chr.to.int$ -- 22
-cite$ -- 24
-duplicate$ -- 464
-empty$ -- 813
-format.name$ -- 157
-if$ -- 2250
+            692 strings with 9386 characters,
+and the built_in function-call counts, 10836 in all, are:
+= -- 1162
+> -- 398
+< -- 12
++ -- 133
+- -- 131
+* -- 710
+:= -- 1666
+add.period$ -- 113
+call.type$ -- 25
+change.case$ -- 162
+chr.to.int$ -- 23
+cite$ -- 25
+duplicate$ -- 489
+empty$ -- 853
+format.name$ -- 163
+if$ -- 2367
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 152
-num.names$ -- 74
-pop$ -- 214
+missing$ -- 18
+newline$ -- 159
+num.names$ -- 77
+pop$ -- 220
 preamble$ -- 1
-purify$ -- 181
+purify$ -- 188
 quote$ -- 0
-skip$ -- 384
+skip$ -- 403
 stack$ -- 0
-substring$ -- 452
-swap$ -- 152
-text.length$ -- 11
+substring$ -- 481
+swap$ -- 161
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 200
 warning$ -- 0
-while$ -- 80
-width$ -- 26
-write$ -- 349
+while$ -- 85
+width$ -- 28
+write$ -- 368

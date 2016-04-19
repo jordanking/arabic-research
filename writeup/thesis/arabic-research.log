@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 APR 2016 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 APR 2016 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,18 +162,18 @@ Package: utf8 2000/06/13  3.10 UTF-8 input encoding
 (ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
 \openout1 = `arabic-research.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -246,27 +246,32 @@ e
 (ArabTeX) 3.11 local stub, 26.02.2006)
 (ArabTeX) version 3.11s (02.07.2006): second phase of patching)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 39.
+(Font)              <12> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 39.
+(Font)              <8> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 39.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
+(Font)              <6> on input line 42.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 42.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 2285) in paragraph at lines 43--44
-[][]\OT1/ptm/m/n/10.95 FUTURE: Freq/DomFreq/NeighborFreq/Buzz
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[][]\OT1/ptm/m/n/10.95 FUTURE DRAFT:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+\OT1/ptm/m/n/10.95 Freq/DomFreq/NeighborFreq/WeightedBuzz
  []
 
 (./abstract.tex) (./introduction.tex
@@ -286,8 +291,8 @@ Underfull \hbox (badness 1242) in paragraph at lines 5--1
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 5--1
-\OT1/ptm/m/n/10.95 em-bed-dings have been ex-ten-sively re-searched,
+Underfull \hbox (badness 1215) in paragraph at lines 5--1
+\OT1/ptm/m/n/10.95 em-bed-dings have been ex-ten-sively re-searched;
  []
 
 
@@ -316,16 +321,32 @@ Package pdftex.def Info: diagrams/Slide1.png used on input line 7.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
 
-[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
 Overfull \hbox (2.59132pt too wide) in paragraph at lines 27--40
 [][] 
  []
 
-) (./evaluation.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+) (./evaluation.tex [4 <./diagrams/Slide1.png>]
+Underfull \hbox (badness 1946) in paragraph at lines 9--16
+\OT1/ptm/m/n/10.95 Be-tween 1 and 4 flu-ent Ara-bic speak-ers la-
+ []
 
- [4 <./diagrams/Slide1.png>]
-Underfull \vbox (badness 6141) has occurred while \output is active []
+
+Underfull \hbox (badness 1173) in paragraph at lines 9--16
+\OT1/ptm/m/n/10.95 from 4 la-bels, on from pairs that have 2 or
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 9--16
+\OT1/ptm/m/n/10.95 given la-bels. To be-gin cre-at-ing these tasks,
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 9--16
+\OT1/ptm/m/n/10.95 the WordSimilarity-353 task or our sim-i-lar-ity
+ []
 
 
 Overfull \hbox (91.10751pt too wide) in paragraph at lines 25--35
@@ -333,18 +354,18 @@ Overfull \hbox (91.10751pt too wide) in paragraph at lines 25--35
  []
 
 ) (./experiments.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-\OT1/ptm/m/n/10.95 over the var-i-ous pre-pro-cess-ing tech-niques,
+Underfull \hbox (badness 2762) in paragraph at lines 5--6
+\OT1/ptm/m/n/10.95 In or-der to bet-ter un-der-stand the ef-fects of
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 5--6
-\OT1/ptm/m/n/10.95 nor-mal-iza-tion op-tions, and word2vec pa-ram-
+Underfull \hbox (badness 2096) in paragraph at lines 5--6
+\OT1/ptm/m/n/10.95 sweep over the pa-ram-e-ter se-lec-tions out-lined
  []
 
 
-Underfull \hbox (badness 6708) in paragraph at lines 5--6
-\OT1/ptm/m/n/10.95 e-ter-i-za-tions to de-ter-mine the op-ti-mal word
+Underfull \hbox (badness 2035) in paragraph at lines 5--6
+\OT1/ptm/m/n/10.95 in Sec-tion 3[]. The text cor-pus for train-ing
  []
 
 
@@ -378,79 +399,70 @@ file (type png)
 Package pdftex.def Info: results_spearman/ar_similiarity_task_results_ws353_spe
 arplot.png used on input line 34.
 (pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
- [6 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png>]
-Overfull \hbox (44.40657pt too wide) in paragraph at lines 47--52
+ [6]
+Overfull \hbox (44.40657pt too wide) in paragraph at lines 51--56
 [][] 
  []
 
 
-Overfull \hbox (44.40657pt too wide) in paragraph at lines 57--62
+Overfull \hbox (44.40657pt too wide) in paragraph at lines 61--66
 [][] 
  []
 
 
-Overfull \hbox (44.40657pt too wide) in paragraph at lines 67--72
+Overfull \hbox (44.40657pt too wide) in paragraph at lines 71--76
 [][] 
  []
 
 
-<results_spearman/ar_similiarity_task_results_spearplot.png, id=35, 578.16pt x 
+<results_spearman/ar_similiarity_task_results_spearplot.png, id=34, 578.16pt x 
 433.62pt>
 File: results_spearman/ar_similiarity_task_results_spearplot.png Graphic file (
 type png)
  <use results_spearman/ar_similiarity_task_results_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_results_spearplot
-.png used on input line 77.
+.png used on input line 81.
 (pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
 
-<results_spearman/ar_similiarity_task_multi_results_spearplot.png, id=36, 578.1
+<results_spearman/ar_similiarity_task_multi_results_spearplot.png, id=35, 578.1
 6pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_multi_results_spearplot.png Graphic 
 file (type png)
 
 <use results_spearman/ar_similiarity_task_multi_results_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_multi_results_spe
-arplot.png used on input line 83.
+arplot.png used on input line 87.
 (pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
 
-<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=37, 578
+<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=36, 578
 .16pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_4_votes_results_spearplot.png Graphi
 c file (type png)
 
 <use results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_4_votes_results_s
-pearplot.png used on input line 89.
+pearplot.png used on input line 93.
 (pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./results_spearman/ar_similiarity_task_results_spearplot.png> <./results_s
-pearman/ar_similiarity_task_multi_results_spearplot.png>]
-Overfull \hbox (34.25606pt too wide) in paragraph at lines 121--126
+[7 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png>]
+Overfull \hbox (34.25606pt too wide) in paragraph at lines 123--128
 [][] 
  []
 
 
-<results_analogy/ar_analogy_results_fixed_plot.png, id=44, 578.16pt x 433.62pt>
+<results_analogy/ar_analogy_results_fixed_plot.png, id=42, 578.16pt x 433.62pt>
 File: results_analogy/ar_analogy_results_fixed_plot.png Graphic file (type png)
 
 <use results_analogy/ar_analogy_results_fixed_plot.png>
 Package pdftex.def Info: results_analogy/ar_analogy_results_fixed_plot.png used
- on input line 131.
+ on input line 133.
 (pdftex.def)             Requested size: 219.08612pt x 164.31415pt.
-) (./recommendations.tex) (./arapy.tex [8 <./results_spearman/ar_similiarity_ta
-sk_4_votes_results_spearplot.png> <./results_analogy/ar_analogy_results_fixed_p
-lot.png>]
+) (./recommendations.tex) (./arapy.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `rehurek_lrec' on page 9 undefined on input line 6.
-
-) (./conclusion.tex
-Underfull \hbox (badness 1308) in paragraph at lines 4--1
-\OT1/ptm/m/n/10.95 We have de-vel-oped a sim-ple python pack-age
- []
-
-
+ [8 <./results_spearman/ar_similiarity_task_results_spearplot.png> <./results_s
+pearman/ar_similiarity_task_multi_results_spearplot.png> <./results_spearman/ar
+_similiarity_task_4_votes_results_spearplot.png>]) (./conclusion.tex
 Underfull \hbox (badness 5133) in paragraph at lines 4--1
 \OT1/ptm/m/n/10.95 All pre-pro-cess-ing, nor-mal-iza-tion, and train-
  []
@@ -470,7 +482,11 @@ Underfull \hbox (badness 1454) in paragraph at lines 4--1
 \OT1/ptm/m/n/10.95 with Ara-bic. The first is a mod-ule pro-vid-
  []
 
-) (./arabic-research.bbl [9]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./results_analogy/ar_analogy_results_fixed_plot.png>]) (./arabic-research.
+bbl
 Underfull \hbox (badness 3343) in paragraph at lines 11--15
 \OT1/ptm/m/n/10 2013.  Poly-glot: Dis-tributed word rep-re-sen-
  []
@@ -503,6 +519,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--37
  12.
  []
 
+[10]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
@@ -559,17 +576,17 @@ Underfull \hbox (badness 5161) in paragraph at lines 138--145
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--171
+Underfull \hbox (badness 10000) in paragraph at lines 171--179
 \OT1/pcr/m/n/10 http : / / lughat\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 blogspot\OML
 /cmm/m/it/10 :\OT1/pcr/m/n/10 com / 2013 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--171
+Underfull \hbox (badness 10000) in paragraph at lines 171--179
 \OT1/pcr/m/n/10 12 / does -[] arabic -[] have -[] most -[] words -[]
  []
 
-) [10] (./arabic-research.aux)
+) [11] (./arabic-research.aux)
 
  *File List*
  article.cls    2014/09/29 v1.4h Standard LaTeX document class
@@ -653,19 +670,16 @@ conclusion.tex
 arabic-research.bbl
  ***********
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 5256 strings out of 493089
- 77862 string characters out of 6134842
- 169088 words of memory out of 5000000
- 8545 multiletter control sequences out of 15000+600000
+ 5257 strings out of 493089
+ 77870 string characters out of 6134842
+ 166125 words of memory out of 5000000
+ 8546 multiletter control sequences out of 15000+600000
  23955 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,10n,46p,2134b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,10n,46p,2140b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fon
@@ -676,10 +690,10 @@ e1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/arabtex/xnsh14.pfb>
-Output written on arabic-research.pdf (10 pages, 353079 bytes).
+Output written on arabic-research.pdf (11 pages, 355157 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

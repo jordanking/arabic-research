@@ -1,66 +1,85 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import pandas as pd
 import os
 import json
+import datetime
+import intervaltree
 
-# 5 types to compute: frequency, domain, neighborhood, weighted, and graph [0-4]
+
+# 4 types to compute: frequency, domain, neighborhood, and weighted
 BUZZ_TYPE = 0
 
 rootdir = 'text_corpus'
 buzzDump = 'file'
 groundTruth = 'file'
-buzzTimeline = {}
-groundTruthTimeline = {}
+deathCountFile = 'some.csv'
+buzzTimeline = IntervalTree()
+
+firstDay = #?
+lastDay = #?
 
 # list of seed words
 domain = []
 
 def main():
 
-    # expand seed words by buzz type
+    # expand with embeddings
     if BUZZ_TYPE == 3:
-        # expand with embeddings
-    elif BUZZ_TYPE == 4:
-        # build graph
+        pass # TODO
+
+    # TODO add weights to domain?
 
     # compute buzz
     for subdir, dirs, files in os.walk(rootdir):
         for file in files:
             timestamp, text = parseDocument(os.path.join(subdir, file))
-            buzzTimeline[timestamp] += frequencyBuzz(text, domain)
+            buzzTimeline[timestamp] += domainBuzz(text, domain)
 
     # save buzz timeline
     with open(buzzDump, 'w') as f:
         json.dump(buzzTimeline, f)
 
     # load ground truth
-    with open(groundTruth, 'r') as f:
-        try:
-            groundTruthTimeline = json.load(f)
-        # if the file is empty the ValueError will be thrown
-        except ValueError:
-            groundTruthTimeline = {}
+    deathCountTimeline = loadDeathCount(deathCountFile)
 
     # evaluate buzz
+    # query each interval in gt
+    # sum buzz in that interval as result
+    # compare gt interval value to result
 
 def parseDocument(file):
     document = open(os.path.join(subdir, file), 'rb')
+    
     # parse timestamp
+    # convert to seconds
+
     # extract text
+
     return timestamp, text
 
-def frequencyBuzz(text, domain):
+def loadDeathCount(deathCountFile):
+
+    df = pd.read_csv(deathCountFile, header=True, skiprows=10)
+
+    deathCountTimeline = IntervalTree()
+
+    for i, row in df.iterrows():
+        timestamp = datetime.strptime('01 ' + row['Month Starting'][2:], '%d %b %Y')
+        deathCountTimeline[timestamp:timestamp] = row['dataset 1']
+
+def domainBuzz(text, domain):
+    # parameter to weight all words?
+
     buzz = 0
     for word in text.split():
 
         if BUZZ_TYPE < 3:
             if word in domain:
                 buzz += 1
-        elif BUZZ_TYPE == 3:
-            # weighted
         else:
-            # graph?
+            # weighted
 
     return buzz
 

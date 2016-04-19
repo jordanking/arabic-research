@@ -159,6 +159,14 @@ Jeffrey Pennington, Richard Socher, and Christopher~D Manning.
 \newblock Glove: Global vectors for word representation.
 \newblock In {\em EMNLP}, volume~14, pages 1532--1543.
 
+\bibitem[\protect\citename{{\v R}eh{\r u}{\v r}ek and Sojka}2010]{rehurek_lrec}
+Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka.
+\newblock 2010.
+\newblock {Software Framework for Topic Modelling with Large Corpora}.
+\newblock In {\em {Proceedings of the LREC 2010 Workshop on New Challenges for
+  NLP Frameworks}}, pages 45--50, Valletta, Malta, May. ELRA.
+\newblock \url{http://is.muni.cz/publication/884893/en}.
+
 \bibitem[\protect\citename{Souag}2013]{Lameen:2013}
 Lameen Souag.
 \newblock 2013.

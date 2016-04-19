@@ -2,7 +2,7 @@
 \section{Word Embedding Experiments}
 \label{sec:experiments}
 
-Using the parameter selections outlined in Section \ref{sec:training}, we perform a partial parameter sweep over the various preprocessing techniques, normalization options, and word2vec parameterizations to determine the optimal word embedding methods. The text corpus for training the embeddings is an Arabic Wikipedia dump from \url{https://dumps.wikimedia.org/arwiki/20150901/} \cite{wiki:xxx}, cleaned by dropping Wikipedia markup, punctuation, and non-Arabic characters. All preprocessing options are precomputed first, generating multiple versions of the Arabic Wikipedia corpus. Then word vectors are trained for each parameterization. The vectors are then ran through the evaluation tasks, recording performance statistics.
+In order to better understand the effects of different parameters on the quality of the final embeddings, we performed a partial parameter sweep over the parameter selections outlined in Section \ref{sec:training}. The text corpus for training the embeddings is an Arabic Wikipedia dump from \url{https://dumps.wikimedia.org/arwiki/20150901/} \cite{wiki:xxx}, cleaned by dropping Wikipedia markup, punctuation, and non-Arabic characters. All preprocessing options are precomputed first, generating multiple versions of the Arabic Wikipedia corpus. Then word vectors are trained for each parameterization. The vectors are then run through the evaluation tasks, recording performance statistics.
 
 \subsection{Word Similarity 353}
 
@@ -26,13 +26,13 @@ Table \ref{table:ws353task} shows the results of the models with the 10 highest 
 \csvreader[column count=15,head to column names]{results_spearman/ar_similiarity_task_results_ws353_prepared.csv}{}
 {\\\hline\rank&\preprocessing&\wind&\size&\Spearman}
 \end{tabular}
-\caption{Top Results on Word Similarity 353}
+\caption{Top Results on Arabic Word Similarity 353}
 \label{table:ws353task}
 \end{table}
 
 \begin{figure}
   \includegraphics[width=\linewidth]{results_spearman/ar_similiarity_task_results_ws353_spearplot.png}
-  \caption{WS353 Results}
+  \caption{Results on Arabic Word Similarity 353}
   \label{fig:spearplotws353}
 \end{figure}
 
@@ -53,7 +53,7 @@ Tables \ref{table:ourtask}, \ref{table:ourtaskmulti}, and \ref{table:ourtask4} s
 \csvreader[head to column names]{results_spearman/ar_similiarity_task_results_prepared.csv}{}
 {\\\hline\rank&\preprocessing&\wind&\size&\Spearman}
 \end{tabular}
-\caption{Top Results on our whole Task}
+\caption{Top Results on our whole Arabic Task}
 \label{table:ourtask}
 \end{table}
 
@@ -63,7 +63,7 @@ Tables \ref{table:ourtask}, \ref{table:ourtaskmulti}, and \ref{table:ourtask4} s
 \csvreader[head to column names]{results_spearman/ar_similiarity_task_multi_results_prepared.csv}{}
 {\\\hline\rank&\preprocessing&\wind&\size&\Spearman}
 \end{tabular}
-\caption{Top Results on our Task - 2+ Votes}
+\caption{Top Results on our Arabic Task - 2+ Votes}
 \label{table:ourtaskmulti}
 \end{table}
 
@@ -73,25 +73,25 @@ Tables \ref{table:ourtask}, \ref{table:ourtaskmulti}, and \ref{table:ourtask4} s
 \csvreader[head to column names]{results_spearman/ar_similiarity_task_4_votes_results_prepared.csv}{}
 {\\\hline\rank&\preprocessing&\wind&\size&\Spearman}
 \end{tabular}
-\caption{Top Results on our Task - 4 Votes}
+\caption{Top Results on our Arabic Task - 4 Votes}
 \label{table:ourtask4}
 \end{table}
 
 \begin{figure}
   \includegraphics[width=\linewidth]{results_spearman/ar_similiarity_task_results_spearplot.png}
-  \caption{Our Whole Task Results}
+  \caption{Results on Our Whole Arabic Task}
   \label{fig:spearplot1}
 \end{figure}
 
 \begin{figure}
   \includegraphics[width=\linewidth]{results_spearman/ar_similiarity_task_multi_results_spearplot.png}
-  \caption{Our Task 2+ Votes Results}
+  \caption{Results on Our Arabic Task - 2+ Votes}
   \label{fig:spearplot2}
 \end{figure}
 
 \begin{figure}
   \includegraphics[width=\linewidth]{results_spearman/ar_similiarity_task_4_votes_results_spearplot.png}
-  \caption{Our Task 4 Votes Results}
+  \caption{Results on Our Arabic Task - 4 Votes}
   \label{fig:spearplot4}
 \end{figure}
 
