@@ -111,16 +111,16 @@
 % Allow the author to declare degree, year, professor, etc.,
 % and provide suitable defaults.
 
-\gdef\gupreviousdegree{(*Previous Degree Goes Here*)}
-\def\previousdegree#1{\gdef\gupreviousdegree{#1}}
+%\gdef\gupreviousdegree{(*Previous Degree Goes Here*)}
+%\def\previousdegree#1{\gdef\gupreviousdegree{#1}}
 
-\gdef\guthisdegree{(*GU Degree Goes Here*)}
+\gdef\guthisdegree{(Bachelor of Science)}
 \def\thisdegree#1{\gdef\guthisdegree{#1}}
 
-\gdef\guthesistype{(*Thesis Type Goes Here*)}
+\gdef\guthesistype{(Senior Honors Thesis)}
 \def\thesistype#1{\gdef\guthesistype{#1}}
 
-\gdef\guthisdiscipline{(*Thesis Discipline Goes Here*)}
+\gdef\guthisdiscipline{(Computer Science)}
 \def\thisdiscipline#1{\gdef\guthisdiscipline{#1}}
 
 \gdef\guthesisyear{\number\year}
@@ -139,7 +139,7 @@
 \gdef\guthesisday{\number\day}
 \def\thesisday#1{\gdef\guthesisday{#1}}
 
-\gdef\guprofessor{(*Major professor's name*)}
+\gdef\guprofessor{(Dr. Lisa Singh)}
 \def\professor#1{\gdef\guprofessor{#1}}
 
 % M. Covington 2005 Feb 3
@@ -149,15 +149,15 @@
 \gdef\guindexwords{(*Index words go here*)}
 \def\indexwords#1{\gdef\guindexwords{#1}}
 
-\gdef\gufulltitle{(*Full title, not broken by backslashes, goes here*)}
+\gdef\gufulltitle{(Optimized Training and Evaluation of Arabic Word Embeddings)}
 \def\fulltitle#1{\gdef\gufulltitle{#1}}
 
 % For electronic approval page
 
-\gdef\guci{*Committee member I*}
+\gdef\guci{Dr. Jeremy Fineman}
 \def\memberi#1{\gdef\guci{#1}}
 
-\gdef\gucii{*Committee member II*}
+\gdef\gucii{Dr. Calvin Newport}
 \def\memberii#1{\gdef\gucii{#1}}
 
 \gdef\guciii{~}
