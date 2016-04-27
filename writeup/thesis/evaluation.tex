@@ -1,10 +1,10 @@
-\section{Evaluating Arabic Word Embeddings}
+\chapter{Evaluating Arabic Word Embeddings}
 \label{sec:evaluation}
 
 
 It is a complex problem to evaluate the quality of word embeddings. The word2vec methods produce unsupervised vectors that maximize the probability of predicting a word given the context that it appears near in the training corpus. We evaluate the embeddings on semantic similarity tasks as well as an analogy solving task. 
 
-\subsection{Semantic Similarity Tasks}
+\section{Semantic Similarity Tasks}
 
 The semantic similarity tasks consist of pairs of words associated with a human-labeled similarity value. The largest Arabic semantic similarity task that we could find is the WordSimilarity-353 task, which was developed in English and then manually translated into Arabic \cite{finkelstein:2001,hassan:2009}. 
 \\
@@ -15,13 +15,15 @@ This list of 1250 word pairs was then distributed to fluent Arabic speakers. We 
 When evaluating a model parameterization with the WordSimilarity-353 task or our similarity tasks, we perform the same preprocessing on the word pairs as we do on the training corpus for each model. Each word pair's embeddings are first obtained from the model, and then an absolute cosine similarity score is obtained between them. The cosine similarity is compared against the similarity task's score. The model is scored on both the mean absolute difference between the scores and the correlation between the task scores and model scores.
 
 
-\subsection{Analogy Task}
+\section{Analogy Task}
 
 The analogy task is a standard for evaluating word vectors first used by Mikolov et al. \cite{mikoloveffic:2013}. It consists of analogy questions each composed of three query words and one answer word, in the form of an analogy such that $query_1$ is to $query_2$ as $query_3$ is to $answer$. We used the Google Translate API to translate the 19544 English analogies to Arabic \cite{google:online}. This translated model is available with our code. For each model that we trained, we performed matching preprocessing to each item in each analogy. The first three analogy items are then coverted to two positive vectors and one negative vector and averaged to obtain a fourth result vector. A correct answer on this task is one for which the closest vector to the result in the model matches the fourth analogy item.
 \\
 This task is composed of categories of analogies, with a mix of syntactic and semantic analogies. This allows this task to evaluate the syntactic abilities of our models to complement our semantic similarity evaluations. See Table \ref{table:analogyexamples} for examples of these analogies in English taken from Mikolov's originating paper \cite{mikoloveffic:2013}.
 
 \begin{table}
+\begin{center}
+
 \begin{tabular}{l|l|l|l|l}
 \textbf{Type} & \textbf{Query} & \textbf{Query} & \textbf{Query} & \textbf{Answer}\\
 \hline
@@ -34,6 +36,7 @@ Plural nouns & mouse & mice & dollar & dollars \\
 \end{tabular}
 \caption{Analogy Examples}
 \label{table:analogyexamples}
+\end{center}
 \end{table}
 
 

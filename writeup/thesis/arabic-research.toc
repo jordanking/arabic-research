@@ -1,0 +1,22 @@
+\contentsline {pseudochapter}{List of Figures}{vi}
+\contentsline {pseudochapter}{List of Tables}{vii}
+\par \vspace {6\p@ }
+\noindent {\sc Chapter}
+\vspace {-3\p@ }
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Related Literature}{4}
+\contentsline {chapter}{\numberline {3}Training Word Embeddings in Arabic}{6}
+\contentsline {section}{\numberline {3.1}Preprocessing Options}{6}
+\contentsline {section}{\numberline {3.2}Normalization}{8}
+\contentsline {section}{\numberline {3.3}Parameterizations}{8}
+\contentsline {chapter}{\numberline {4}Evaluating Arabic Word Embeddings}{10}
+\contentsline {section}{\numberline {4.1}Semantic Similarity Tasks}{10}
+\contentsline {section}{\numberline {4.2}Analogy Task}{11}
+\contentsline {chapter}{\numberline {5}Word Embedding Experiments}{13}
+\contentsline {section}{\numberline {5.1}Word Similarity 353}{13}
+\contentsline {section}{\numberline {5.2}Our Similarity Task}{16}
+\contentsline {section}{\numberline {5.3}Analogy Task}{21}
+\contentsline {chapter}{\numberline {6}Recommendations for Arabic Word Embeddings}{24}
+\contentsline {chapter}{\numberline {7}Arabic NLP Package}{26}
+\contentsline {chapter}{\numberline {8}Conclusion and Future Directions}{28}
+\contentsline {pseudochapter}{Bibliography}{29}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 APR 2016 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 APR 2016 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,21 +23,8 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./guthesis.sty
-Package: guthesis 2010/12/14 Georgetown University thesis style sheet
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-* --------------------------------------------------------------------------
-* GU Thesis style sheet, version 3.4, December 2010. 
-* For instructions read the file ``gusample.tex'' distributed herewith. 
-* --------------------------------------------------------------------------
-* GU Thesis style sheet loaded.
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty
@@ -118,9 +105,10 @@ BABEL detected
 \a@maindate=\count93
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/arabaux.sty)
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 551.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 551.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/acmd.sty)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/afonts.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/afonts2.sty))
@@ -159,22 +147,41 @@ Package: utfcode 2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
 )
 Package: utf8 2000/06/13  3.10 UTF-8 input encoding 
 
-(ArabTeX) scanner for code UTF-8 installed.)
-(ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
+(ArabTeX) scanner for code UTF-8 installed.) (./guthesis.sty
+Package: guthesis 2010/12/14 Georgetown University thesis style sheet
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+* --------------------------------------------------------------------------
+* GU Thesis style sheet, version 3.4, December 2010. 
+* For instructions read the file ``gusample.tex'' distributed herewith. 
+* --------------------------------------------------------------------------
+* GU Thesis style sheet loaded.
+) (ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
 \openout1 = `arabic-research.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -244,94 +251,54 @@ e
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/alocal.sty
 (ArabTeX) 3.11 local stub, 26.02.2006)
-(ArabTeX) version 3.11s (02.07.2006): second phase of patching) (./abstract.tex
-) (./introduction.tex
-! Undefined control sequence.
-\b@mikoloveffic:2013 ->\citename 
-                                 {Mikolov \bgroup et al.\egroup }2013a
-l.5 ...g \cite{mikoloveffic:2013,mikolovdist:2013}
-                                                  . This approach works very...
+(ArabTeX) version 3.11s (02.07.2006): second phase of patching) [1
 
-? 
-! Undefined control sequence.
-\b@mikolovdist:2013 ->\citename 
-                                {Mikolov \bgroup et al.\egroup }2013b
-l.5 ...g \cite{mikoloveffic:2013,mikolovdist:2013}
-                                                  . This approach works very...
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 58.
 
-? 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+ [2]
+(./abstract.tex [3]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 1.
+) [4] (./arabic-research.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 5.
+(Font)              <12> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 5.
+(Font)              <6> on input line 1.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 1.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-! Undefined control sequence.
-\b@mikolovdist:2013 ->\citename 
-                                {Mikolov \bgroup et al.\egroup }2013b
-l.7 ...ing basic analogies \cite{mikolovdist:2013}
-                                                  . The classic demonstratio...
+))
+\tf@toc=\write6
+\openout6 = `arabic-research.toc'.
 
-? 
-! Undefined control sequence.
-\b@mikolov2013linguistic ->\citename 
-                                     {Mikolov \bgroup et al.\egroup }2013c
-l.7 ...en's embedding \cite{mikolov2013linguistic}
-                                                  .
-? 
-! Undefined control sequence.
-\b@mikoloveffic:2013 ->\citename 
-                                 {Mikolov \bgroup et al.\egroup }2013a
-l.9 ... corpa \cite{mikoloveffic:2013,dos2014deep}
-                                                  , word embeddings in other...
+ [5
 
-? 
-! Undefined control sequence.
-\b@dos2014deep ->\citename 
-                           {dos Santos and Gatti}2014
-l.9 ... corpa \cite{mikoloveffic:2013,dos2014deep}
-                                                  , word embeddings in other...
+]
+(./arabic-research.lof)
+\tf@lof=\write7
+\openout7 = `arabic-research.lof'.
 
-? 
-! Undefined control sequence.
-\b@al:2013 ->\citename 
-                       {Al-Rfou \bgroup et al.\egroup }2013
-l.9 ...neric part-of-speech tagging \cite{al:2013}
-                                                  . However, the process of ...
+ [6
 
-? 
-! Undefined control sequence.
-\b@ahmed2000alarge ->\citename 
-                               {Ahmed}2000
-l.9 ...ossible Arabic words \cite{ahmed2000alarge}
-                                                  . While the number of sens...
+] (./arabic-research.lot)
+\tf@lot=\write8
+\openout8 = `arabic-research.lot'.
 
-? 
-! Undefined control sequence.
-\b@Lameen:2013 ->\citename 
-                           {Souag}2013
-l.9 ...al sources \cite{Lameen:2013,Muhammad:2015}
-                                                  , the vocabulary is much l...
+ [7
 
-? 
-! Undefined control sequence.
-\b@Muhammad:2015 ->\citename 
-                             {Da'na}2012
-l.9 ...al sources \cite{Lameen:2013,Muhammad:2015}
-                                                  , the vocabulary is much l...
-
-? 
-! Undefined control sequence.
-\b@Googl96:online ->\citename 
-                              {NPR}2010
-l.9 ...vocabulary of English \cite{Googl96:online}
-                                                  . In this paper, we focus ...
-
-? 
+] (./introduction.tex
+Chapter 1.
 LaTeX Font Info:    Try loading font information for U+xnsh on input line 13.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/Uxnsh.fd
 File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
@@ -345,348 +312,111 @@ Overfull \hbox (9.22453pt too wide) in paragraph at lines 5--1
 been exten-sively researched;
  []
 
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1
 
-]
-[2] [3]
-! Undefined control sequence.
-\b@mikolovdist:2013 ->\citename 
-                                {Mikolov \bgroup et al.\egroup }2013b
-l.4 ...4 \cite{mikolovdist:2013,mikoloveffic:2013}
-                                                  . While new algorithms and...
+] [2] [3]
+Chapter 2.
+) (./training.tex [4
 
-? 
-! Undefined control sequence.
-\b@mikoloveffic:2013 ->\citename 
-                                 {Mikolov \bgroup et al.\egroup }2013a
-l.4 ...4 \cite{mikolovdist:2013,mikoloveffic:2013}
-                                                  . While new algorithms and...
-
-? 
-! Undefined control sequence.
-\b@farghaly:2009 ->\citename 
-                             {Farghaly and Shaalan}2009
-l.4 ...ed by Farghaly et al. ~\cite{farghaly:2009}
-                                                  . Al-Rfou et al. computed ...
-
-? 
-! Undefined control sequence.
-\b@al:2013 ->\citename 
-                       {Al-Rfou \bgroup et al.\egroup }2013
-l.4 ...ges using Wikipedia articles \cite{al:2013}
-                                                  . This work is the closest...
-
-? 
-! Undefined control sequence.
-\b@zirikly:2015 ->\citename 
-                            {Zirikly and Diab}2015
-l.4 ...nd number normalization \cite{zirikly:2015}
-                                                  . However, this work did n...
-
-? 
-! Undefined control sequence.
-\b@belinkov:2015 ->\citename 
-                             {Belinkov}2015
-l.4 ...matized using MADAMIRA \cite{belinkov:2015}
-                                                  . Further normalization is...
-
-? 
-! Undefined control sequence.
-\b@luong2013better ->\citename 
-                               {Luong \bgroup et al.\egroup }2013
-l.4 ...logical similarities \cite{luong2013better}
-                                                  , but this work makes no a...
-
-? 
-! Undefined control sequence.
-\b@habash:2009 ->\citename 
-                           {Habash \bgroup et al.\egroup }2009
-l.6 ...gging, and lemmatization \cite{habash:2009}
-                                                  . Diab published the Amira...
-
-? 
-! Undefined control sequence.
-\b@diab:2009 ->\citename 
-                         {Diab}2009
-l.6 ...e chunking and POS tagging \cite{diab:2009}
-                                                  . Recently, these tools ha...
-
-? 
-! Undefined control sequence.
-\b@pasha:2014 ->\citename 
-                          {Pasha \bgroup et al.\egroup }2014
-l.6 ...nd part of speech tagging \cite{pasha:2014}
-                                                  . While powerful and robus...
-
-? 
-! Undefined control sequence.
-\b@faruqui:2014 ->\citename 
-                            {Faruqui and Dyer}2014
-l.8 ...piled by Faruqui et al. \cite{faruqui:2014}
-                                                  . However, few of these ar...
-
-? 
-! Undefined control sequence.
-\b@hassan:2009 ->\citename 
-                           {Hassan and Mihalcea}2009
-l.8 ... Arabic by Hassan et al. \cite{hassan:2009}
-                                                  , the 353 word WordSimilar...
-
-? 
-! Undefined control sequence.
-\b@finkelstein:2001 ->\citename 
-                                {Finkelstein \bgroup et al.\egroup }2001
-l.8 ...atasets \cite{finkelstein:2001,miller:1991}
-                                                  . However, this translatio...
-
-? 
-! Undefined control sequence.
-\b@miller:1991 ->\citename 
-                           {Miller and Charles}1991
-l.8 ...atasets \cite{finkelstein:2001,miller:1991}
-                                                  . However, this translatio...
-
-? 
-! Undefined control sequence.
-\b@hassan:2009 ->\citename 
-                           {Hassan and Mihalcea}2009
-l.8 ...mantic similarity scores \cite{hassan:2009}
-                                                  . In their paper, they cit...
-
-? 
-) (./training.tex
-Underfull \hbox (badness 1189) in paragraph at lines 4--1
-\T1/ptm/m/n/12 WordSimilarity-353 and the 30 word Miller-Charles datasets [[],
- []
-
-[4] [5]
-! Undefined control sequence.
-\b@pennington2014glove ->\citename 
-                                   {Pennington \bgroup et al.\egroup }2014
-l.4 ...e highly similar \cite{pennington2014glove}
-                                                  . We chose word2vec as the...
-
-? 
-[6] <diagrams/Slide1.png, id=28, 722.7pt x 542.025pt>
+] [5]
+Chapter 3.
+<diagrams/Slide1.png, id=48, 722.7pt x 542.025pt>
 File: diagrams/Slide1.png Graphic file (type png)
-
-<use diagrams/Slide1.png>
+ <use diagrams/Slide1.png>
 Package pdftex.def Info: diagrams/Slide1.png used on input line 7.
 (pdftex.def)             Requested size: 433.62pt x 325.2175pt.
- [7] [8 <./diagrams/Slide1.png>]
-! Undefined control sequence.
-\b@mikoloveffic:2013 ->\citename 
-                                 {Mikolov \bgroup et al.\egroup }2013a
-l.24 ...ms are considered \cite{mikoloveffic:2013}
-                                                  . The defining difference ...
 
-? 
-! Undefined control sequence.
-\b@mikolovdist:2013 ->\citename 
-                                {Mikolov \bgroup et al.\egroup }2013b
-l.24 ... words and phrases \cite{mikolovdist:2013}
-                                                  .
-? 
+[6
 
-Overfull \hbox (19.09961pt too wide) in paragraph at lines 24--25
-\T1/ptm/m/n/12 and window size. Both CBOW and Skip-gram algo-rithms are con-sid
--ered [[]].
- []
-
-[9]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
-) (./evaluation.tex
-! Undefined control sequence.
-\b@finkelstein:2001 ->\citename 
-                                {Finkelstein \bgroup et al.\egroup }2001
-l.9 ... Arabic \cite{finkelstein:2001,hassan:2009}
-                                                  .
-? 
-! Undefined control sequence.
-\b@hassan:2009 ->\citename 
-                           {Hassan and Mihalcea}2009
-l.9 ... Arabic \cite{finkelstein:2001,hassan:2009}
-                                                  .
-? 
-! Undefined control sequence.
-\b@wiki:xxx ->\citename 
-                        {Wikipedia-Meta}2016
-l.11 ... the Arabic Wikipedia dump \cite{wiki:xxx}
-                                                   at \url{https://dumps.wik...
-
-? 
+] [7 <./diagrams/Slide1.png>] [8]) (./evaluation.tex [9]
+Chapter 4.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-! Undefined control sequence.
-\b@google:online ->\citename 
-                             {Google}2016
-l.11 ... to Arabic \cite{google:online,bhl:online}
-                                                  . The original word and th...
+) [10
 
-? 
-! Undefined control sequence.
-\b@bhl:online ->\citename 
-                          {Big-Huge-Labs}2016
-l.11 ... to Arabic \cite{google:online,bhl:online}
-                                                  . The original word and th...
+] [11])
+(./experiments.tex [12]
+Chapter 5.
+[13
 
-? 
-[10] [11]
-! Undefined control sequence.
-\b@mikoloveffic:2013 ->\citename 
-                                 {Mikolov \bgroup et al.\egroup }2013a
-l.20 ...by Mikolov et al. \cite{mikoloveffic:2013}
-                                                  . It consists of analogy q...
-
-? 
-! Undefined control sequence.
-\b@google:online ->\citename 
-                             {Google}2016
-l.20 ...h analogies to Arabic \cite{google:online}
-                                                  . This translated model is...
-
-? 
-! Undefined control sequence.
-\b@mikoloveffic:2013 ->\citename 
-                                 {Mikolov \bgroup et al.\egroup }2013a
-l.22 ...originating paper \cite{mikoloveffic:2013}
-                                                  .
-? 
-) (./experiments.tex
-! Undefined control sequence.
-\b@wiki:xxx ->\citename 
-                        {Wikipedia-Meta}2016
-l.5 ...media.org/arwiki/20150901/} \cite{wiki:xxx}
-                                                  , cleaned by dropping Wiki...
-
-? 
-
-Underfull \hbox (badness 2368) in paragraph at lines 5--6
-\T1/ptm/m/n/12 Wikipedia dump from $\T1/pcr/m/n/12 https : / / dumps\OML/cmm/m/
-it/12 :\T1/pcr/m/n/12 wikimedia\OML/cmm/m/it/12 :\T1/pcr/m/n/12 org / arwiki / 
-20150901/$
- []
-
-[12]
-! Undefined control sequence.
-\b@mikolovdist:2013 ->\citename 
-                                {Mikolov \bgroup et al.\egroup }2013b
-l.9 ... Google News Corpus \cite{mikolovdist:2013}
-                                                  . The metric that we choos...
-
-? 
-[13]
-! Undefined control sequence.
-\b@finkelstein:2001 ->\citename 
-                                {Finkelstein \bgroup et al.\egroup }2001
-l.21 ...3 task \cite{finkelstein:2001,hassan:2009}
-                                                  . Standing out is the lack...
-
-? 
-! Undefined control sequence.
-\b@hassan:2009 ->\citename 
-                           {Hassan and Mihalcea}2009
-l.21 ...3 task \cite{finkelstein:2001,hassan:2009}
-                                                  . Standing out is the lack...
-
-? 
-[14]
-<results_spearman/ar_similiarity_task_results_ws353_spearplot.png, id=59, 578.1
+]
+<results_spearman/ar_similiarity_task_results_ws353_spearplot.png, id=78, 578.1
 6pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_results_ws353_spearplot.png Graphic 
 file (type png)
 
 <use results_spearman/ar_similiarity_task_results_ws353_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_results_ws353_spe
-arplot.png used on input line 34.
+arplot.png used on input line 38.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
- [15]
-[16 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png>]
-<results_spearman/ar_similiarity_task_results_spearplot.png, id=67, 578.16pt x 
+ [14]
+[15 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png>]
+<results_spearman/ar_similiarity_task_results_spearplot.png, id=86, 578.16pt x 
 433.62pt>
 File: results_spearman/ar_similiarity_task_results_spearplot.png Graphic file (
 type png)
  <use results_spearman/ar_similiarity_task_results_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_results_spearplot
-.png used on input line 81.
+.png used on input line 91.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
 
-<results_spearman/ar_similiarity_task_multi_results_spearplot.png, id=68, 578.1
+<results_spearman/ar_similiarity_task_multi_results_spearplot.png, id=87, 578.1
 6pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_multi_results_spearplot.png Graphic 
 file (type png)
 
 <use results_spearman/ar_similiarity_task_multi_results_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_multi_results_spe
-arplot.png used on input line 87.
+arplot.png used on input line 97.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
 
-<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=69, 578
+<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=88, 578
 .16pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_4_votes_results_spearplot.png Graphi
 c file (type png)
 
 <use results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_4_votes_results_s
-pearplot.png used on input line 93.
+pearplot.png used on input line 103.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
 
-! Undefined control sequence.
-\b@mikolovdist:2013 ->\citename 
-                                {Mikolov \bgroup et al.\egroup }2013b
-l.100 ...100 billion words \cite{mikolovdist:2013}
-                                                  .
-? 
-[17] [18] [19 <./results_spearman/ar_similiarity_task_results_spearplot.png>]
-[20 <./results_spearman/ar_similiarity_task_multi_results_spearplot.png>]
-[21 <./results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>]
-[22]
-<results_analogy/ar_analogy_results_fixed_plot.png, id=92, 578.16pt x 433.62pt>
+[16] [17] [18 <./results_spearman/ar_similiarity_task_results_spearplot.png>]
+[19 <./results_spearman/ar_similiarity_task_multi_results_spearplot.png>]
+[20 <./results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>]
+[21]
+<results_analogy/ar_analogy_results_fixed_plot.png, id=111, 578.16pt x 433.62pt
+>
 File: results_analogy/ar_analogy_results_fixed_plot.png Graphic file (type png)
 
-<use results_analogy/ar_analogy_results_fixed_plot.png>
+ <use results_analogy/ar_analogy_results_fixed_plot.png>
 Package pdftex.def Info: results_analogy/ar_analogy_results_fixed_plot.png used
- on input line 133.
+ on input line 147.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
-) (./recommendations.tex) (./arapy.tex [23] [24 <./results_analogy/ar_analogy_r
-esults_fixed_plot.png>]
-! Undefined control sequence.
-\b@rehurek_lrec ->\citename 
-                            {{\v R}eh{\r u}{\v r}ek and Sojka}2010
-l.6 ...k_lrec,pasha:2014,google:online,bhl:online}
-                                                  .
-? 
-! Undefined control sequence.
-\b@pasha:2014 ->\citename 
-                          {Pasha \bgroup et al.\egroup }2014
-l.6 ...k_lrec,pasha:2014,google:online,bhl:online}
-                                                  .
-? 
-! Undefined control sequence.
-\b@google:online ->\citename 
-                             {Google}2016
-l.6 ...k_lrec,pasha:2014,google:online,bhl:online}
-                                                  .
-? 
-! Undefined control sequence.
-\b@bhl:online ->\citename 
-                          {Big-Huge-Labs}2016
-l.6 ...k_lrec,pasha:2014,google:online,bhl:online}
-                                                  .
-? 
-) (./conclusion.tex [25]) [26] (./arabic-research.bbl [27]
+)
+(./recommendations.tex [22] [23 <./results_analogy/ar_analogy_results_fixed_plo
+t.png>]
+Chapter 6.
+) (./arapy.tex [24
+
+] [25]
+Chapter 7.
+) (./conclusion.tex [26
+
+] [27]
+Chapter 8.
+) (./arabic-research.bbl [28
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 28--34
 \T1/pcr/m/n/12 https : / / www\OML/cmm/m/it/12 :\T1/pcr/m/n/12 quora\OML/cmm/m/
 it/12 :\T1/pcr/m/n/12 com / How -[] many -[] words -[] does -[] the -[] Arabic 
 -[]
  []
 
-[28
+[29
 
-] [29]
+] [30]
 Underfull \hbox (badness 10000) in paragraph at lines 118--124
 []\T1/ptm/m/n/12 NPR.  Google book tool tracks cul-tural change with words : Np
 r.
@@ -710,14 +440,11 @@ Underfull \hbox (badness 1112) in paragraph at lines 126--132
 , Ramy
  []
 
-[30]) [31] (./arabic-research.aux)
+[31]) [32] (./arabic-research.aux)
 
  *File List*
   report.cls    2014/09/29 v1.4h Standard LaTeX document class
   size12.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
-guthesis.sty    2010/12/14 Georgetown University thesis style sheet
- fontenc.sty
-   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
    times.sty    2005/04/12 PSNFSS-v9.2a (SPQR) 
 latexsym.sty    1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
    color.sty    2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -737,7 +464,7 @@ csvsimple.sty    2014/07/14 version 1.12 LaTeX CSV file processing
   ifthen.sty    2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
  arabtex.sty    2003/08/22  3.11 ArabTeX main module
  arabaux.sty    2003/05/21  3.11 auxiliary macros for ArabTeX
-   t1ptm.fd    2001/06/04 font definitions for T1/ptm.
+  ot1ptm.fd    2001/06/04 font definitions for OT1/ptm.
     acmd.sty    2003/08/20  3.11 Arabic command processing 
   afonts.sty    1995/11/16  3.04 define Naskh font 
  afonts2.sty    1998/10/19  3.10 define Naskh fonts for LaTeX2e
@@ -763,6 +490,10 @@ arabchrs.sty    1998/07/11  3.07 letter token definitions
    atabg.sty    1997/01/21  3.05 LaTeX tabbing macros for Arabic
     utf8.sty    2000/06/13  3.10 UTF-8 input encoding 
  utfcode.sty    2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
+guthesis.sty    2010/12/14 Georgetown University thesis style sheet
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+   t1ptm.fd    2001/06/04 font definitions for T1/ptm.
 supp-pdf.mkii
 pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
 ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -775,9 +506,10 @@ kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
 etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 epstopdf-sys.cfg    2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
   apatch.sty    2006/07/02  3.11s last minute patches 
+  omsptm.fd    
 abstract.tex
-introduction.tex
    ulasy.fd    1998/08/17 v2.2e LaTeX symbol font definitions
+introduction.tex
    Uxnsh.fd
 literature.tex
 training.tex
@@ -796,18 +528,15 @@ conclusion.tex
 arabic-research.bbl
  ***********
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 5415 strings out of 493089
- 78662 string characters out of 6134842
- 162125 words of memory out of 5000000
- 8705 multiletter control sequences out of 15000+600000
- 23659 words of font info for 39 fonts, out of 8000000 for 9000
+ 5478 strings out of 493089
+ 79624 string characters out of 6134842
+ 163118 words of memory out of 5000000
+ 8751 multiletter control sequences out of 15000+600000
+ 27564 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,9n,46p,2140b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,9n,46p,2140b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
@@ -818,10 +547,10 @@ mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ar
 abtex/xnsh14.pfb>
-Output written on arabic-research.pdf (31 pages, 355599 bytes).
+Output written on arabic-research.pdf (39 pages, 361174 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 182 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

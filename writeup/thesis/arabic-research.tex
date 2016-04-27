@@ -1,7 +1,6 @@
 \documentclass[12pt]{report}
 
 % \usepackage{acl2016}
-\usepackage{guthesis}
 
 \usepackage{times}
 \usepackage{latexsym}
@@ -12,6 +11,8 @@
 \usepackage{csvsimple}
 \usepackage{arabtex}
 \usepackage{utf8}
+
+\usepackage{guthesis}
 
 \setcode{utf8}
 
@@ -35,17 +36,39 @@
 % 	    {\tt buttler1@llnl.gov}
 % 	    }
 
-% \date{}
+\title{Optimized Training and Evaluation of Arabic Word Embeddings}
+\author{Jordan King}
+\previousdegree{Undergraduate?}
+\thisdegree{Bachelor of Science}  % or Doctor of Philosophy, etc.
+\thisdiscipline{Computer Science}
+\thesistype{Senior Thesis}     % or Dissertation
+
+\thesisday{5}
+\thesismonth{May}
+\thesisyear{2016}
+\professor{Dr. Lisa Singh}
+\fulltitle{Optimized Training and Evaluation of Arabic Word Embeddings}
+\indexwords{Arabic, Natural Language Processing, Word Embeddings, Word Vectors, Buzz, Text Mining}
+\dean{Ed Meyertholen}
+\memberi{Dr. Jeremy Fineman}
+\memberii{Calvin Newport}
 
 \begin{document}
-
-% \maketitle
+\pagenumbering{roman}
+\maketitle   
 
 \textcolor{red}{TODO: spellcheck}
-
-\textcolor{green}{FUTURE DRAFT: Freq/DomFreq/NeighborFreq/WeightedBuzz tasks, change to thesis tex style}
+\textcolor{green}{FUTURE DRAFT: Freq/DomFreq/NeighborFreq/WeightedBuzz tasks}
 
 \input{abstract}
+
+\tableofcontents
+\listoffigures 
+\listoftables  
+
+\newpage
+\pagenumbering{arabic}  % Ordinary pages have Arabic numerals.
+
 \input{introduction}
 \input{literature}
 \input{training}

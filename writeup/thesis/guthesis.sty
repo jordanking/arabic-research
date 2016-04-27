@@ -111,16 +111,16 @@
 % Allow the author to declare degree, year, professor, etc.,
 % and provide suitable defaults.
 
-%\gdef\gupreviousdegree{(*Previous Degree Goes Here*)}
-%\def\previousdegree#1{\gdef\gupreviousdegree{#1}}
+\gdef\gupreviousdegree{(*Previous Degree Goes Here*)}
+\def\previousdegree#1{\gdef\gupreviousdegree{#1}}
 
-\gdef\guthisdegree{(Bachelor of Science)}
+\gdef\guthisdegree{(*GU Degree Goes Here*)}
 \def\thisdegree#1{\gdef\guthisdegree{#1}}
 
-\gdef\guthesistype{(Senior Honors Thesis)}
+\gdef\guthesistype{(*Thesis Type Goes Here*)}
 \def\thesistype#1{\gdef\guthesistype{#1}}
 
-\gdef\guthisdiscipline{(Computer Science)}
+\gdef\guthisdiscipline{(*Thesis Discipline Goes Here*)}
 \def\thisdiscipline#1{\gdef\guthisdiscipline{#1}}
 
 \gdef\guthesisyear{\number\year}
@@ -139,7 +139,7 @@
 \gdef\guthesisday{\number\day}
 \def\thesisday#1{\gdef\guthesisday{#1}}
 
-\gdef\guprofessor{(Dr. Lisa Singh)}
+\gdef\guprofessor{(*Major professor's name*)}
 \def\professor#1{\gdef\guprofessor{#1}}
 
 % M. Covington 2005 Feb 3
@@ -149,15 +149,15 @@
 \gdef\guindexwords{(*Index words go here*)}
 \def\indexwords#1{\gdef\guindexwords{#1}}
 
-\gdef\gufulltitle{(Optimized Training and Evaluation of Arabic Word Embeddings)}
+\gdef\gufulltitle{(*Full title, not broken by backslashes, goes here*)}
 \def\fulltitle#1{\gdef\gufulltitle{#1}}
 
 % For electronic approval page
 
-\gdef\guci{Dr. Jeremy Fineman}
+\gdef\guci{*Committee member I*}
 \def\memberi#1{\gdef\guci{#1}}
 
-\gdef\gucii{Dr. Calvin Newport}
+\gdef\gucii{*Committee member II*}
 \def\memberii#1{\gdef\gucii{#1}}
 
 \gdef\guciii{~}
@@ -177,7 +177,7 @@
 % OPTIONS -- These are obsolete. %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\newcommand{\nocopyright}{\typeout{Copyright page is no longer optional.}}
+\newcommand{\nocopyright}{\typeout{Copyright page is no longer optional.}}
 
 \newcommand{\electronic}{\gdef\guelectronic{1}}
 
@@ -653,7 +653,7 @@
    \vskip 42pt                % Vertical space after title.
    A \guthesistype\ \par
    submitted to the Faculty of the \par
-   School of Arts and Sciences \par
+   Graduate School of Arts and Sciences \par
    of Georgetown University \par
    in partial fulfillment of the requirements for the \par
    degree of \par
@@ -662,8 +662,7 @@
    \vskip 42pt
    By \par
    \vskip 42pt
-   \@author % \gupreviousdegree \par
-  \par
+   \@author, \gupreviousdegree \par
    \vfill                     % Vertical space after author.
    Washington, DC \par
    \guthesismonth~\guthesisday, \guthesisyear \par
@@ -869,8 +868,7 @@
      \vskip -30pt
      {\textbf{\textsc \@title} \par}       % Set title in small caps
      \vskip 12pt                 % Vertical space after title.
-     \@author% \gupreviousdegree
-   \par
+     \@author, \gupreviousdegree \par
      \vskip 12pt
      % 2005 Feb 3: Provision for second major professor
      \ifx\gusecondprofessor\@empty
