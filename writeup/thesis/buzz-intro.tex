@@ -1,9 +1,9 @@
 \chapter{Applying Word Embeddings to Buzz Detection}
 \label{sec:buzz}
 
-\section{Introduction to Buzz Task}
+\section{Buzz Detection Methodology}
 
-The properties of high quality word embeddings can used in unique text mining applications. In this work we apply the best models from our training experiments to a buzz detection task, where we harness the power of Arabic word embeddings in a few different ways. Our goal in the buzz task is to assign scores to months in a period over which we have Arabic news documents relevant to Iraq. These scores aim to measure how much violence is in the news each month. Our ground truth for evaluation is the publicly available Iraq Death Count data from \url{https://www.iraqbodycount.org/database/} \cite{IraqB68:online}. We will look at five methods to measure buzz to demonstrate the benefits of using Arabic word embeddings, each outlined in Table \ref{table:buzztypes}.  We score the results from each method against the ground truth by finding the Spearman correlation between the method's scores and the ground truth counts. 
+The properties of high quality word embeddings can used in unique text mining applications. In this work we apply the best models from our training experiments to a buzz detection task, where we harness the power of Arabic word embeddings in a few different ways. Our goal in the buzz task is to assign scores to months in a period over which we have Arabic news documents relevant to Iraq. These scores aim to measure how much violence is in the news each month. Our ground truth for evaluation is the publicly available Iraq Death Count data from \url{https://www.iraqbodycount.org/database/} \cite{IraqB68:online}. We will look at five methods to measure buzz to demonstrate the benefits of using Arabic word embeddings, each outlined in Table \ref{table:buzztypes}. We score the results from each method against the ground truth by finding the Spearman correlation between the method's scores and the ground truth counts. 
 \\
 The frequency method is to simply count the number of times the Arabic words for violent or violence occur per month in the corpus, and normalize this score by the total number of words in the corpus per month. The domain method is the same as the frequency method, but we use a list of violence-related Arabic words instead of just violent and violence. This list of words in the violence domain is provided by experts on social science in the Middle East. The synonym method expands this domain list by adding 5 synonyms obtained from a thesaurus (through translation) for every expert provided word. The similarity method expands the domain method by using the 5 most similar word embeddings to the word embedding for each word in the expert domain list. The weighted similarity method adds weights to each word in the similarity method by how similar it is to the word embedding for violence. Both methods that use word embeddings are evaluated with three different models to demonstrate differences between training methods. The three models are the top performing models on the Word Similarity 353 task, our similarity task, and the analogy task. This provides us with representation for each of the three preprocessing methods.
 
@@ -23,14 +23,7 @@ $weighted$ & \textit{expert domain + similar embeddings} & Yes & Yes \\
 \end{center}
 \end{table}
 
-\section{Literature Related to Buzz Task}
-\label{sec:literature-buzz}
-
-Word embeddings have been used in many tasks, from sentiment classification to semantic translation. Zhang et al. have shown that word embeddings capture enough information to classify sentiment \cite{zhang2015chinese}. Dickinson et al. have used word embeddings with neural networds to classify the sentiment of tweets related to publicly traded companies such that it correlates with stock prices \cite{dickinson2015sentiment}. By aligning words in corpuses from two languages, Wolf et al. have shown that word embeddings from multiple languages can be used for translation. Beyond these unique applications, word embeddings enable many numerical analysis tools to be applied to text.
-
-Methods to measure various qualities and phenomena of text are well researched. Our task is fairly unique in its application of word embeddings to measure buzz, but is inspired and influenced by a many well-explored text mining tasks. One of the closest related works to our application of word embeddings for buzz detection is Rekabsaz's work showing improvements in text document querying when using semantic information from word embeddings to retrieve domain specific documents \cite{rekabsazusing}. Other similar work is done in the field of event detection, where trends in text documents are identified with machine learning, data mining, and graph theory \cite{radinsky2012learning} \textcolor{red}{Cite Yifang}. The buzz application looks at the domain specific retrieval problem in a time series setting similar to event detection.
-
-\section{Buzz Task Experiments}
+\section{Buzz Detection Experiments}
 \label{sec:experiments-buzz}
 
 Table \ref{table:buzzresults} shows the correlations between each of our buzz methods and the ground truth values. \textcolor{red}{The results shown below are bad and led us to discover that the corpus did not overlap the ground truth correctly. Soon to be replaced with appropriate data from new experiments on a better corpus.}

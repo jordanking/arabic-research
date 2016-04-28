@@ -5,22 +5,21 @@
 \vspace {-3\p@ }
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Related Literature}{5}
-\contentsline {chapter}{\numberline {3}Training Word Embeddings in Arabic}{7}
-\contentsline {section}{\numberline {3.1}Preprocessing Options}{7}
-\contentsline {section}{\numberline {3.2}Normalization}{9}
-\contentsline {section}{\numberline {3.3}Parameterizations}{9}
-\contentsline {chapter}{\numberline {4}Evaluating Arabic Word Embeddings}{11}
-\contentsline {section}{\numberline {4.1}Semantic Similarity Tasks}{11}
-\contentsline {section}{\numberline {4.2}Analogy Task}{12}
-\contentsline {chapter}{\numberline {5}Word Embedding Experiments}{14}
-\contentsline {section}{\numberline {5.1}Word Similarity 353}{14}
-\contentsline {section}{\numberline {5.2}Our Similarity Task}{17}
-\contentsline {section}{\numberline {5.3}Analogy Task}{22}
-\contentsline {chapter}{\numberline {6}Recommendations for Arabic Word Embeddings}{25}
-\contentsline {chapter}{\numberline {7}Applying Word Embeddings to Buzz Detection}{27}
-\contentsline {section}{\numberline {7.1}Introduction to Buzz Task}{27}
-\contentsline {section}{\numberline {7.2}Literature Related to Buzz Task}{28}
-\contentsline {section}{\numberline {7.3}Buzz Task Experiments}{29}
+\contentsline {chapter}{\numberline {3}Training Word Embeddings in Arabic}{8}
+\contentsline {section}{\numberline {3.1}Preprocessing Options}{8}
+\contentsline {section}{\numberline {3.2}Normalization}{10}
+\contentsline {section}{\numberline {3.3}Parameterizations}{10}
+\contentsline {chapter}{\numberline {4}Evaluating Arabic Word Embeddings}{12}
+\contentsline {section}{\numberline {4.1}Semantic Similarity Tasks}{12}
+\contentsline {section}{\numberline {4.2}Analogy Task}{13}
+\contentsline {chapter}{\numberline {5}Word Embedding Experiments}{15}
+\contentsline {section}{\numberline {5.1}Word Similarity 353}{15}
+\contentsline {section}{\numberline {5.2}Our Similarity Task}{18}
+\contentsline {section}{\numberline {5.3}Analogy Task}{23}
+\contentsline {chapter}{\numberline {6}Recommendations for Arabic Word Embeddings}{26}
+\contentsline {chapter}{\numberline {7}Applying Word Embeddings to Buzz Detection}{28}
+\contentsline {section}{\numberline {7.1}Buzz Detection Methodology}{28}
+\contentsline {section}{\numberline {7.2}Buzz Detection Experiments}{29}
 \contentsline {chapter}{\numberline {8}Arabic NLP Package}{31}
 \contentsline {chapter}{\numberline {9}Conclusion and Future Directions}{33}
 \contentsline {pseudochapter}{Bibliography}{34}
