@@ -1,5 +1,5 @@
-\contentsline {pseudochapter}{List of Figures}{vi}
-\contentsline {pseudochapter}{List of Tables}{vii}
+\contentsline {pseudochapter}{List of Figures}{vii}
+\contentsline {pseudochapter}{List of Tables}{viii}
 \par \vspace {6\p@ }
 \noindent {\sc Chapter}
 \vspace {-3\p@ }
@@ -17,6 +17,10 @@
 \contentsline {section}{\numberline {5.2}Our Similarity Task}{16}
 \contentsline {section}{\numberline {5.3}Analogy Task}{21}
 \contentsline {chapter}{\numberline {6}Recommendations for Arabic Word Embeddings}{24}
-\contentsline {chapter}{\numberline {7}Arabic NLP Package}{26}
-\contentsline {chapter}{\numberline {8}Conclusion and Future Directions}{28}
-\contentsline {pseudochapter}{Bibliography}{29}
+\contentsline {chapter}{\numberline {7}Applying Word Embeddings to Buzz Detection}{26}
+\contentsline {section}{\numberline {7.1}Introduction to Buzz Task}{26}
+\contentsline {section}{\numberline {7.2}Literature Related to Buzz Task}{27}
+\contentsline {section}{\numberline {7.3}Buzz Task Experiments}{27}
+\contentsline {chapter}{\numberline {8}Arabic NLP Package}{29}
+\contentsline {chapter}{\numberline {9}Conclusion and Future Directions}{31}
+\contentsline {pseudochapter}{Bibliography}{32}
