@@ -14,31 +14,23 @@ from gensim.models.word2vec import LineSentence
 #687840
 
 def main():
-    # output
     resultsDirectory = '../buzz/results/'
-    masterOutput = '../buzz/masterOut.csv'
+    masterOutput = '../buzz/masterOut-intense.csv'
 
-    # domain input
     domainList = '../buzz/domainlist.txt'
-    synDomainList = '../buzz/syn_domainlist.txt'
     fullDomain = parseDomainList(domainList)
-    synDomain = parseDomainList(syn_domainlist)
 
-    # corpus and ground truth
+    buzztype = [5] # freq, dom, neighbors, weighted, synonyms & TODO: weight-all
+    domain = [['عنف']]
     corpus = '../buzz/corpus/'
-    deathCountFile = '../buzz/iraqDeathCount.csv'
 
-    # parameters per run
-    buzztype = [0,1,2,3,4] # freq, dom, neighbors, weighted, synonyms & TODO: weight-all
-    domain = [['عنف','عنيف'],fullDomain,fullDomain,fullDomain,synDomain]
-    expansionFactor = 5
+    deathCountFile = '../buzz/iraqDeathCount.csv'
     word2vecModel = ['../temp/controldigFalsetashFalsemod1size200wind4.txt', '../temp/tokensdigFalsetashTruemod0size200wind4.txt','../temp/lemmasdigTruetashTruemod1size200wind4.txt']
 
     # sweep over all of the options, recomputing different types of buzz
     for curr_buzz in buzztype:
         curr_domain = domain[curr_buzz]
-
-        if curr_buzz in [2,3]:
+        if curr_buzz in [5]:
             # use each model for embedding types
             for curr_mod in word2vecModel:
                 buzzOutputFile = resultsDirectory+'buzz_'+str(curr_buzz)+'_'+curr_mod.split('/')[2]+'.json'
@@ -46,18 +38,11 @@ def main():
 
                 print('Computing buzz type {} using model {}.'.format(curr_buzz, curr_mod))
                 captureBuzz(curr_buzz, curr_domain, corpus, deathCountFile, buzzOutputFile, resultsOutputFile, expansionFactor, curr_mod)
-        else:
-            # no need to use embeddings in some buzz types
-            buzzOutputFile = resultsDirectory+'buzz_'+str(curr_buzz)+'.json'
-            resultsOutputFile = resultsDirectory+'results_'+str(curr_buzz)+'.csv'
 
-            print('Computing buzz type {}.'.format(curr_buzz))
-            captureBuzz(curr_buzz, curr_domain, corpus, deathCountFile, buzzOutputFile, resultsOutputFile)
-
-    # sweep over results files and compute correlation scores
     with open(masterOutput, 'wb') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',')
         csvwriter.writerow(['method', 'bs','bp', 'ns', 'np'])
+
         for outFile in os.listdir(resultsDirectory):
             if outFile.startswith('results'):
                 df = pd.read_csv(resultsDirectory+outFile, header='infer')
@@ -69,7 +54,9 @@ def main():
                 print('Method: {} Buzz spear: {} Buzz pear: {} Norm spear: {} Norm pear: {}'.format(method, bs, bp, ns, np))
                 csvwriter.writerow([method, bs, bp, ns, np])
 
-def domainToQuery(domain, buzztype, word2vecModel=None, expansionFactor=10):
+
+def captureBuzz(buzztype, domain, corpus, deathCountFile, buzzFile, resultsFile, expansionFactor=10, word2vecModel=None):
+    # expand with embeddings
     query = {}
 
     # for all types, seed words have weight of 1
@@ -77,51 +64,15 @@ def domainToQuery(domain, buzztype, word2vecModel=None, expansionFactor=10):
         word = word.strip().decode('UTF-8', 'replace')
         query[word] = 1.0
 
-    # for types 2 and 3, add expansionFactor words to query for each word in query
-    if buzztype in [2,3]:
-
-        # collect new words with word2vec
-        newWords = {}
-
-        # load model
-        print('Loading word2vec model...')
-        model = Word2Vec.load_word2vec_format(word2vecModel.strip(), binary=True)
-        
-        print('Expanding query...')
-        for word in query:
-            try:
-                for weighted in expandQuery(word, model, expansionFactor):
-                    if weighted[0] not in newWords:
-                        newWords[weighted[0]] = [weighted[1]]
-                    else:
-                        newWords[weighted[0]].append(weighted[1])
-            except Exception:
-                continue
-
-        # average the weights of the new words for the expansion
-        for word in newWords:
-            if word not in query:
-                query[newWords[word]] = sum(newWords[word])/float(len(newWords[word]))
-
-    # if type is 2, we don't care about similarity weights, everything is 1
-    if buzztype == 2:
-        for key in query:
-            query[key] = 1.0
-
-    # print('Query: {}'.format(query))
-    return query
-
-def captureBuzz(buzztype, domain, corpus, deathCountFile, buzzFile, resultsFile, expansionFactor=10, word2vecModel=None):
-    # convert and expand domain into our query dictionary
-    query = domainToQuery(domain, buzztype, word2vecModel, expansionFactor)
-
     # compute buzz
     buzzTimeline = {}
     fileCounter = 0
 
+    print('Loading word2vec model...')
+    model = Word2Vec.load_word2vec_format(word2vecModel.strip(), binary=True)
+
     for subdir, dirs, files in os.walk(corpus):
         for file in files:
-            # logging progress
             fileCounter += 1
             sys.stdout.write('\rProcessing file: {}...'.format(fileCounter))
             sys.stdout.flush()
@@ -130,9 +81,11 @@ def captureBuzz(buzztype, domain, corpus, deathCountFile, buzzFile, resultsFile,
                 timestamp, docId, text = parseDocument(os.path.join(subdir, file))
             except Exception:
                 continue
+
             monthstamp = str(timestamp.year) + '-' + str(timestamp.month)
 
-            buzz, wordCount = domainBuzz(text, query)
+            buzz, wordCount = domainBuzzIntense(text, model, query.keys()[0])
+
             if timestamp in buzzTimeline:
                 buzzTimeline[monthstamp][0] += wordCount
                 buzzTimeline[monthstamp][1] += buzz
@@ -146,6 +99,9 @@ def captureBuzz(buzztype, domain, corpus, deathCountFile, buzzFile, resultsFile,
 
     # load ground truth
     deathCountTimeline = loadDeathCount(deathCountFile)
+
+    # print(buzzTimeline)
+    # print(deathCountTimeline)
 
     # evaluate buzz
     with open(resultsFile, 'wb') as csvfile:
@@ -185,17 +141,21 @@ def loadDeathCount(deathCountFile):
 
     return deathCountTimeline
 
-def domainBuzz(text, query):
+def domainBuzzIntense(text, model, query):
     buzz = 0.0
     wordCount = 0
     for word in text.split():
-        wordCount += 1
-        if word in query:
-            buzz += query[word]
-        else:
-            pass
-            # print('Word: {} not found in'.format(word.encode('UTF-8', 'replace')))
-            # print('query: {}.'.format(query.keys()))
+        try:
+            if word in model:
+                wordCount += 1
+                buzz += model.similarity(query)
+            else:
+                pass
+                # print('Word: {} not found in'.format(word.encode('UTF-8', 'replace')))
+                # print('query: {}.'.format(query.keys()))
+        except KeyError as e:
+            print(e)
+            continue
     return [buzz, wordCount]
 
 def parseDomainList(file):
