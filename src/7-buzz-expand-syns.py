@@ -29,8 +29,8 @@ def main():
         try:
             candidates = expandQuerySynonyms(word, expansionFactor)['syn']
             for synonym in candidates:
-                if synonym not in newWords:
-                    newWords.append(synonym)
+                if synonym.encode('utf-8') not in newWords:
+                    newWords.append(synonym.encode('utf-8'))
         except Exception as e:
             print(e)
             continue
