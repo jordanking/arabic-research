@@ -39,6 +39,11 @@ Mona Diab.
 \newblock In {\em 2nd International Conference on Arabic Language Resources and
   Tools}. Citeseer, 2009.
 
+\bibitem{dickinson2015sentiment}
+Brian Dickinson and Wei Hu.
+\newblock Sentiment analysis of investor opinions on twitter.
+\newblock {\em Social Networking}, 4(03):62, 2015.
+
 \bibitem{dos2014deep}
 C{\'\i}cero~Nogueira dos Santos and Maira Gatti.
 \newblock Deep convolutional neural networks for sentiment analysis of short
@@ -77,6 +82,12 @@ Nizar Habash, Owen Rambow, and Ryan Roth.
   morphological disambiguation, pos tagging, stemming and lemmatization.
 \newblock In {\em Proceedings of the 2nd International Conference on Arabic
   Language Resources and Tools (MEDAR), Cairo, Egypt}, pages 102--109, 2009.
+
+\bibitem{IraqB68:online}
+John~Sloboda Hamit~Dardagan.
+\newblock Iraq body count.
+\newblock \url{https://www.iraqbodycount.org/database/}, April 2016.
+\newblock (Accessed on 04/27/2016).
 
 \bibitem{hassan:2009}
 Samer Hassan and Rada Mihalcea.
@@ -135,12 +146,28 @@ Jeffrey Pennington, Richard Socher, and Christopher~D Manning.
 \newblock Glove: Global vectors for word representation.
 \newblock In {\em EMNLP}, volume~14, pages 1532--1543, 2014.
 
+\bibitem{radinsky2012learning}
+Kira Radinsky, Sagie Davidovich, and Shaul Markovitch.
+\newblock Learning causality for news events prediction.
+\newblock In {\em Proceedings of the 21st international conference on World
+  Wide Web}, pages 909--918. ACM, 2012.
+
 \bibitem{rehurek_lrec}
 Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka.
 \newblock {Software Framework for Topic Modelling with Large Corpora}.
 \newblock In {\em {Proceedings of the LREC 2010 Workshop on New Challenges for
   NLP Frameworks}}, pages 45--50, Valletta, Malta, May 2010. ELRA.
 \newblock \url{http://is.muni.cz/publication/884893/en}.
+
+\bibitem{rekabsazusing}
+Navid Rekabsaz.
+\newblock On using statistical semantic on domain specific information
+  retrieval.
+
+\bibitem{schnabel2015evaluation}
+Tobias Schnabel, Igor Labutov, David Mimno, and Thorsten Joachims.
+\newblock Evaluation methods for unsupervised word embeddings.
+\newblock In {\em Proc. of EMNLP}. Citeseer, 2015.
 
 \bibitem{Lameen:2013}
 Lameen Souag.
@@ -155,6 +182,12 @@ Lameen Souag.
 Wikipedia-Meta.
 \newblock Data dumps --- meta{,} discussion about wikimedia projects, 2016.
 \newblock [Online; accessed 5-April-2016].
+
+\bibitem{zhang2015chinese}
+Dongwen Zhang, Hua Xu, Zengcai Su, and Yunfeng Xu.
+\newblock Chinese comments sentiment classification based on word2vec and svm
+  perf.
+\newblock {\em Expert Systems with Applications}, 42(4):1857--1863, 2015.
 
 \bibitem{zirikly:2015}
 Ayah Zirikly and Mona Diab.

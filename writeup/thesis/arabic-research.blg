@@ -3,44 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: arabic-research.aux
 The style file: plain.bst
 Database file #1: arabic-research.bib
-You've used 25 entries,
+Warning--empty journal in rekabsazusing
+Warning--empty year in rekabsazusing
+You've used 31 entries,
             2118 wiz_defined-function locations,
-            637 strings with 8902 characters,
-and the built_in function-call counts, 9105 in all, are:
-= -- 910
-> -- 398
-< -- 12
-+ -- 156
-- -- 131
-* -- 534
-:= -- 1426
-add.period$ -- 88
-call.type$ -- 25
-change.case$ -- 137
+            669 strings with 9847 characters,
+and the built_in function-call counts, 11055 in all, are:
+= -- 1102
+> -- 489
+< -- 13
++ -- 192
+- -- 161
+* -- 663
+:= -- 1747
+add.period$ -- 108
+call.type$ -- 31
+change.case$ -- 170
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 389
-empty$ -- 753
-format.name$ -- 131
-if$ -- 2014
+cite$ -- 33
+duplicate$ -- 465
+empty$ -- 912
+format.name$ -- 161
+if$ -- 2428
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 18
-newline$ -- 134
-num.names$ -- 52
-pop$ -- 200
+int.to.str$ -- 31
+missing$ -- 23
+newline$ -- 164
+num.names$ -- 64
+pop$ -- 244
 preamble$ -- 1
-purify$ -- 113
+purify$ -- 140
 quote$ -- 0
-skip$ -- 304
+skip$ -- 354
 stack$ -- 0
-substring$ -- 481
-swap$ -- 136
-text.length$ -- 12
+substring$ -- 580
+swap$ -- 152
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 100
-warning$ -- 0
-while$ -- 85
-width$ -- 27
-write$ -- 288
+type$ -- 124
+warning$ -- 2
+while$ -- 103
+width$ -- 33
+write$ -- 352
+(There were 2 warnings)
