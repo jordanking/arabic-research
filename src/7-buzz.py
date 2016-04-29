@@ -22,7 +22,7 @@ def main():
     domainList = '../buzz/domainlist.txt'
     synDomainList = '../buzz/syn_domainlist.txt'
     fullDomain = parseDomainList(domainList)
-    synDomain = parseDomainList(syn_domainlist)
+    synDomain = parseDomainList(synDomainList)
 
     # corpus and ground truth
     corpus = '../buzz/corpus/'
@@ -131,6 +131,9 @@ def captureBuzz(buzztype, domain, corpus, deathCountFile, buzzFile, resultsFile,
             except Exception:
                 continue
             monthstamp = str(timestamp.year) + '-' + str(timestamp.month)
+
+            if not text:
+                continue
 
             buzz, wordCount = domainBuzz(text, query)
             if timestamp in buzzTimeline:

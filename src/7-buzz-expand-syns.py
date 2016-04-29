@@ -27,14 +27,17 @@ def main():
     print('Expanding query...')
     for word in fullDomain:
         try:
-            candidates = expandQuerySynonyms(word, expansionFactor)['syn']
+            candidates = expandQuerySynonyms(word.encode('utf-8'), expansionFactor)['syn']
             for synonym in candidates:
-                if synonym.encode('utf-8') not in newWords:
-                    newWords.append(synonym.encode('utf-8'))
+                if synonym not in newWords:
+                    newWords.append(synonym)
         except Exception as e:
             print(e)
             continue
         print("Now at {} new words.".format(len(newWords)))
+
+    print(fullDomain)
+    print(newWords)
 
     for word in newWords:
         if word not in fullDomain:
@@ -49,15 +52,16 @@ def main():
         csvwriter = csv.writer(csvfile, delimiter=',')
         for word in fullDomain:
             print(word)
-            csvwriter.writerow(word.decode('utf-8'))
+            csvwriter.writerow(word.encode('utf-8'))
 
 
 def parseDomainList(file):
     domainList = []
     with open(file, 'rb') as data:
         for line in data:
-            if line not in domainList:
-                domainList.append(line)
+            decoded = line.decode('utf-8')
+            if decoded not in domainList:
+                domainList.append(decoded)
     return domainList
 
 def expandQuerySynonyms(query, target_n):
