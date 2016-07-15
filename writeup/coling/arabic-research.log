@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUL 2016 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUL 2016 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -169,18 +169,18 @@ Conference Style for COLING 2016 -- prepared 27th Oct. 2015
 ) (ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
 \openout1 = `arabic-research.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -252,21 +252,21 @@ e
 (ArabTeX) 3.11 local stub, 26.02.2006)
 (ArabTeX) version 3.11s (02.07.2006): second phase of patching)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 92.
+(Font)              <12> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 92.
+(Font)              <8> on input line 93.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 92.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 92.
+(Font)              <6> on input line 93.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 93.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 92.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 93.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -345,17 +345,13 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 1.
 
 [7 <./results_spearman/ar_similiarity_task_4_votes_results_spearplot.png> <./re
 sults_analogy/ar_analogy_results_fixed_plot.png>]) (./arapy.tex)
-(./conclusion.tex) (./arabic-research.bbl
-Underfull \vbox (badness 1097) has occurred while \output is active []
-
- [8]
+(./conclusion.tex) (./arabic-research.bbl [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 27.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
-
-[9]
+ [9]
 Underfull \hbox (badness 2035) in paragraph at lines 194--200
 []\OT1/ptm/m/n/10 Wikipedia-Meta.  2016.  Data dumps.  $\OT1/pcr/m/n/10 https :
  / / meta\OML/cmm/m/it/10 :\OT1/pcr/m/n/10 wikimedia\OML/cmm/m/it/10 :\OT1/pcr/
@@ -453,11 +449,11 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  5210 strings out of 493089
  75809 string characters out of 6134842
- 158856 words of memory out of 5000000
+ 158814 words of memory out of 5000000
  8496 multiletter control sequences out of 15000+600000
  28140 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,46p,2160b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,8n,46p,2153b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -468,7 +464,7 @@ mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ar
 abtex/xnsh14.pfb>
-Output written on arabic-research.pdf (10 pages, 279753 bytes).
+Output written on arabic-research.pdf (10 pages, 278644 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
