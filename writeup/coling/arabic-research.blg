@@ -5,16 +5,16 @@ The style file: acl.bst
 Database file #1: arabic-research.bib
 You've used 29 entries,
             2490 wiz_defined-function locations,
-            717 strings with 10252 characters,
-and the built_in function-call counts, 12584 in all, are:
-= -- 1339
+            717 strings with 9926 characters,
+and the built_in function-call counts, 12597 in all, are:
+= -- 1342
 > -- 495
 < -- 12
-+ -- 167
++ -- 168
 - -- 165
 * -- 862
-:= -- 1965
-add.period$ -- 130
+:= -- 1968
+add.period$ -- 131
 call.type$ -- 29
 change.case$ -- 195
 chr.to.int$ -- 28
@@ -22,19 +22,19 @@ cite$ -- 29
 duplicate$ -- 550
 empty$ -- 970
 format.name$ -- 202
-if$ -- 2714
+if$ -- 2717
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 22
-newline$ -- 183
+newline$ -- 184
 num.names$ -- 89
-pop$ -- 251
+pop$ -- 250
 preamble$ -- 1
 purify$ -- 225
 quote$ -- 0
-skip$ -- 441
+skip$ -- 440
 stack$ -- 0
-substring$ -- 550
+substring$ -- 551
 swap$ -- 168
 text.length$ -- 12
 text.prefix$ -- 0
@@ -43,4 +43,4 @@ type$ -- 232
 warning$ -- 0
 while$ -- 98
 width$ -- 34
-write$ -- 424
+write$ -- 426
