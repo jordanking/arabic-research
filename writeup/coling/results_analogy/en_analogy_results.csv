@@ -1,0 +1,4 @@
+Embedding File,Hit_Percent,Scores
+/media/jordan/Media/data/word2vec/GoogleNews-vectors-negative300.bin,1.0,0.73587801882930826
+/home/jordan/Desktop/english_5mil.bin,0.0,0.04522560880627239
+/home/jordan/Desktop/english_9mil.bin,0.0,0.057798401649909771

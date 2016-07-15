@@ -1,0 +1,44 @@
+\section{Evaluating Arabic Word Embeddings}
+\label{sec:evaluation}
+
+
+It is a complex problem to evaluate the quality of word embeddings. The Word2vec methods produce unsupervised vectors that maximize the probability of predicting a word given the context that it appears near in the training corpus. We evaluate the embeddings on semantic similarity tasks as well as an analogy solving task. 
+
+\subsection{Semantic Similarity Tasks}
+
+The semantic similarity tasks consist of pairs of words associated with a human-labeled similarity value. The largest Arabic semantic similarity task that we could find is the WordSimilarity-353 task, which was developed in English and then manually translated into Arabic \cite{finkelstein:2001,hassan:2009}. 
+We also created semantic similarity tasks from a set of 1250 word pairs with similarity scores. Between 1 and 4 fluent Arabic speakers labeled each word pair with a similarity score between 0-1, where pairs with a score of 1 indicates that the words are extremely related. We distinguish three tasks, one with pairs created from 4 labels, one from pairs that have 2 or more labels, and one task consisting of all pairs given labels. To begin creating these tasks, we selected 1250 of the most common words in the Arabic Wikipedia dump \cite{wiki:xxx} at \url{https://dumps.wikimedia.org/arwiki/20150901/}, excluding words that occur in more than $5\%$ of the sentences. The remaining words were then translated into English with Google translate, queried against the Big Huge Thesaurus API for either synonyms or antonyms, and translated back to Arabic \cite{google:online,bhl:online}. The original word and the resulting synonym or antonym were then paired up. Half of the pairs are at this point synonyms, one quarter are antonyms, and one quarter are shuffled with other pairs to be randomly matched. This distribution is synonym heavy because the Big Huge Thesaurus database has more data on synonyms than antonyms. The various APIs involved introduce a large amount of noise, to the point that some synonym pairs end up as unrelated Arabic words. We take advantage of this noise to distribute the relatedness of words across the 0 to 1 scale.
+\\
+This list of 1250 word pairs was then distributed to fluent Arabic speakers. We provided simple instructions to evaluate the relatedness of the words on a scale of 0 to 5 for ease of labeling. The values that they provided were then scaled from 0 to 1 and averaged. We computed an average inter-rater reliability score of $0.7022$ using Pearson correlation between pairs of raters.
+When evaluating a model parameterization with the WordSimilarity-353 task or our similarity tasks, we perform the same preprocessing on the word pairs as we do on the training corpus for each model. Each word pair's embeddings are first obtained from the model, and then an absolute cosine similarity score is obtained between them. The cosine similarity is compared against the similarity task's score. The model is scored on both the mean absolute difference between the scores and the correlation between the task scores and model scores.
+
+
+\subsection{Analogy Task}
+
+The analogy task is a standard for evaluating word vectors first used by Mikolov et al. \cite{mikoloveffic:2013}. It consists of analogy questions each composed of three query words and one answer word, in the form of an analogy such that $query_1$ is to $query_2$ as $query_3$ is to $answer$. We used the Google Translate API to translate the 19544 English analogies to Arabic \cite{google:online}. This translated model is available with our code. For each model that we trained, we performed matching preprocessing to each item in each analogy. The first three analogy items are then coverted to two positive vectors and one negative vector and averaged to obtain a fourth result vector. A correct answer on this task is one for which the closest vector to the result in the model matches the fourth analogy item.
+This task is composed of categories of analogies, with a mix of syntactic and semantic analogies. This allows this task to evaluate the syntactic abilities of our models to complement our semantic similarity evaluations. 
+% See Table \ref{table:analogyexamples} for examples of these analogies in English taken from Mikolov's originating paper \cite{mikoloveffic:2013}.
+
+% \begin{table}
+% \begin{center}
+
+% \begin{tabular}{l|l|l|l|l}
+% \textbf{Type} & \textbf{Query 1} & \textbf{Query 2} & \textbf{Query 3} & \textbf{Answer}\\
+% \hline
+% Capital city & Athens & Greece & Oslo & Norway \\
+% Gender & brother & sister & grandson & granddaughter \\
+% Opposite & possibly & impossibly & ethical & unethical \\
+% Comparative & great & greater &  tough & tougher \\
+% Past tense & walking & walked & swimming & swam \\
+% Plural nouns & mouse & mice & dollar & dollars \\
+% \end{tabular}
+% \caption{Analogy Examples}
+% \label{table:analogyexamples}
+% \end{center}
+% \end{table}
+
+
+
+% \subsection{Syntactic Understanding Evaluation}
+
+% The syntactic understanding of the word embeddings was evaluated via a part-of-speech tagging task. A selection of Arabic documents were first tagged with part-of-speech values using Madamira's NLP analysis, once for each preprocessing method \cite{pasha:2014}. For each parameterization, a simple recurrent neural network \textcolor{red}{set up for sequence to sequence learning} is trained to predict the part-of-speech of a word using its embedding. \textcolor{red}{One document} is held out as a test set for the network, and the accuracy of the network on this set was taken as the syntactic understanding score for the parameterization.

@@ -1,0 +1,18 @@
+\chapter{Buzz Task Experiments}
+\label{sec:experiments-buzz}
+
+Table \ref{table:buzzresults} shows the correlations between each of our buzz methods and the ground truth values. \textcolor{red}{The results shown below are bad and led us to discover that the corpus did not overlap the ground truth correctly. Soon to be replaced with appropriate data from new experiments on a better corpus.}
+\\
+Here we can see that any method utilizing the expert domain list outperforms the base frequency method by the same amount. This is only because the corpus had only a few occurances of the target words in it. 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l|l|l|l}
+\bfseries Method & \bfseries Model & \bfseries Buzz & \bfseries Normalized Buzz
+\csvreader[head to column names]{results_buzz/masterPrepared.csv}{}
+{\\\hline\csvcoli&\csvcolii&\csvcoliii&\csvcoliv}
+\end{tabular}
+\caption{Correlation Scores Between Method Scores and Ground Truth}
+\label{table:buzzresults}
+\end{center}
+\end{table}

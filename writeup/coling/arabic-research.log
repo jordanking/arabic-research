@@ -1,0 +1,473 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 JUL 2016 18:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**arabic-research.tex
+(./arabic-research.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen103
+\WF@size=\dimen104
+\c@WF@wrappedlines=\count88
+\WF@box=\box26
+\WF@everypar=\toks14
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+Package: csvsimple 2014/07/14 version 1.12 LaTeX CSV file processing
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks16
+\pgfkeys@temptoks=\toks17
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks18
+))) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\csv@file=\read1
+\c@csvinputline=\count89
+\c@csvrow=\count90
+\c@csvcol=\count91
+\csv@out=\write3
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/arabtex.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/aconfig.sty
+LaTeX2e detected 
+BABEL detected
+\a@moduledate=\count92
+\a@maindate=\count93
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/arabaux.sty)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 551.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/acmd.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/afonts.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/afonts2.sty))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/ascan.sty
+(ArabTeX) scanner for code `arabtex' installed.
+(ArabTeX) input encoding set to ArabTeX standard conventions.)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/aparse.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/awrite.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/xarbsymb.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/arabskel.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/xarbskel.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/aboxes.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/arabtoks.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/arabchrs.sty))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/aligs.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/aoutput.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/abidir.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/atrans.sty
+(ArabTeX) ZDMG transliteration.)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/alatex.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/afoot.sty))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/abjad.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/apatch.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/alists.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/asect.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/atabg.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/alocal.sty
+(ArabTeX) 3.11 local stub, 26.02.2006))
+Arabic processor `ArabTeX' [20060702 patch level 3.11s (02.07.2006)]
+(ArabTeX) ... now be patient ... )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/utf8.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/utfcode.sty
+Package: utfcode 2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
+\u@lb=\count123
+\u@lq=\count124
+)
+Package: utf8 2000/06/13  3.10 UTF-8 input encoding 
+
+(ArabTeX) scanner for code UTF-8 installed.)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count125
+\float@exts=\toks39
+\float@box=\box42
+\@float@everytoks=\toks40
+\@floatcapt=\box43
+)
+(./coling2016.sty
+Conference Style for COLING 2016 -- prepared 27th Oct. 2015
+\titlebox=\skip45
+) (ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
+\openout1 = `arabic-research.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count126
+\scratchdimen=\dimen129
+\scratchbox=\box44
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen130
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks42
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/apatch.sty
+\a@lines=\count132
+\a@Lwidth=\dimen131
+\a@displaywidth=\dimen132
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/alocal.sty
+(ArabTeX) 3.11 local stub, 26.02.2006)
+(ArabTeX) version 3.11s (02.07.2006): second phase of patching)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 74.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 74.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 74.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 74.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) (./abstract.tex) (./introduction.tex) (./literature.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--1
+
+ []
+
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./training.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--1
+
+ []
+
+[2] <diagrams/Slide1.png, id=17, 722.7pt x 542.025pt>
+File: diagrams/Slide1.png Graphic file (type png)
+
+<use diagrams/Slide1.png>
+Package pdftex.def Info: diagrams/Slide1.png used on input line 6.
+(pdftex.def)             Requested size: 227.62204pt x 170.71396pt.
+ [3 <./diagrams/Slide1.png>]
+LaTeX Font Info:    Try loading font information for U+xnsh on input line 22.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/Uxnsh.fd
+File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
+)
+LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
+(Font)              scaled to size 17.28003pt on input line 22.
+
+Overfull \hbox (10.90144pt too wide) in paragraph at lines 30--43
+ [] 
+ []
+
+) (./evaluation.tex
+
+Package wrapfig Warning: Stationary wraptable forced to float on input line 1.
+
+[4]
+Underfull \hbox (badness 1248) in paragraph at lines 9--14
+\OT1/ptm/m/n/12 The se-man-tic sim-i-lar-ity tasks con-sist of
+ []
+
+[5]) (./experiments.tex
+<results_spearman/ar_similiarity_task_results_ws353_spearplot.png, id=30, 578.1
+6pt x 433.62pt>
+File: results_spearman/ar_similiarity_task_results_ws353_spearplot.png Graphic 
+file (type png)
+
+<use results_spearman/ar_similiarity_task_results_ws353_spearplot.png>
+Package pdftex.def Info: results_spearman/ar_similiarity_task_results_ws353_spe
+arplot.png used on input line 38.
+(pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 43
+.
+
+[6]
+<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=34, 578
+.16pt x 433.62pt>
+File: results_spearman/ar_similiarity_task_4_votes_results_spearplot.png Graphi
+c file (type png)
+
+<use results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>
+Package pdftex.def Info: results_spearman/ar_similiarity_task_4_votes_results_s
+pearplot.png used on input line 48.
+(pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
+
+[7 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png> <./resu
+lts_spearman/ar_similiarity_task_4_votes_results_spearplot.png>]
+<results_analogy/ar_analogy_results_fixed_plot.png, id=41, 578.16pt x 433.62pt>
+File: results_analogy/ar_analogy_results_fixed_plot.png Graphic file (type png)
+
+<use results_analogy/ar_analogy_results_fixed_plot.png>
+Package pdftex.def Info: results_analogy/ar_analogy_results_fixed_plot.png used
+ on input line 121.
+(pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
+) (./recommendations.tex
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 1.
+
+
+) (./arapy.tex [8 <./results_analogy/ar_analogy_results_fixed_plot.png>])
+(./conclusion.tex) [9] (./arabic-research.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 27.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+ [10]) [11] (./arabic-research.aux)
+
+ *File List*
+ article.cls    2014/09/29 v1.4h Standard LaTeX document class
+  size12.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+   times.sty    2005/04/12 PSNFSS-v9.2a (SPQR) 
+latexsym.sty    1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+   color.sty    2014/10/28 v1.1a Standard LaTeX Color (DPC)
+   color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+     url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
+ wrapfig.sty    2003/01/31  v 3.6
+graphicx.sty    2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+  keyval.sty    2014/10/28 v1.15 key=value parser (DPC)
+graphics.sty    2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2010/04/23 v1.9 graphics configuration of TeX Live
+csvsimple.sty    2014/07/14 version 1.12 LaTeX CSV file processing
+ pgfkeys.sty    
+ pgfkeys.code.tex
+  ifthen.sty    2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+ arabtex.sty    2003/08/22  3.11 ArabTeX main module
+ arabaux.sty    2003/05/21  3.11 auxiliary macros for ArabTeX
+  ot1ptm.fd    2001/06/04 font definitions for OT1/ptm.
+    acmd.sty    2003/08/20  3.11 Arabic command processing 
+  afonts.sty    1995/11/16  3.04 define Naskh font 
+ afonts2.sty    1998/10/19  3.10 define Naskh fonts for LaTeX2e
+   ascan.sty    2003/08/22  3.11 standard ZDMG input encoding 
+  aparse.sty    2003/05/26  3.11 get syllables 
+  awrite.sty    2003/06/05  3.11 build output word 
+xarbsymb.sty    1998/07/15  3.07 symbolic output encoding 
+arabskel.sty    2000/06/04  3.10 character skeleton definitions 
+xarbskel.sty    1999/07/17  3.09 character skeleton definitions 
+  aboxes.sty    2003/05/28  3.11 build output boxes
+arabtoks.sty    1999/07/17  3.09 ArabTeX CS token definitions 
+arabchrs.sty    1998/07/11  3.07 letter token definitions 
+   aligs.sty    2003/05/26  3.11 compute ligatures
+ aoutput.sty    2000/06/04  3.10 build output lines
+  abidir.sty    2003/08/22  3.11 bidirectional linebreaking
+  atrans.sty    2003/06/14  3.11 generate the transliteration 
+  alatex.sty    2003/05/04  3.11 ArabTeX extensions for LaTeX 
+   afoot.sty    2003/05/12  3.11 ArabTeX footnotes
+   abjad.sty    2003/04/26  3.11 abjad numerals 
+  apatch.sty    2006/07/02  3.11s last minute patches 
+  alists.sty    2003/04/26  3.11 inverted list macros
+   asect.sty    2003/04/26  3.11 section macros for Arabic
+   atabg.sty    1997/01/21  3.05 LaTeX tabbing macros for Arabic
+    utf8.sty    2000/06/13  3.10 UTF-8 input encoding 
+ utfcode.sty    2002/03/07  3.10a Arabic+Hebrew segment of UTF-8
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+coling2016.sty    
+supp-pdf.mkii
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+epstopdf-base.sty    2010/02/09 v2.5 Base part for package epstopdf
+  grfext.sty    2010/08/19 v1.1 Manage graphics extensions (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+epstopdf-sys.cfg    2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+  apatch.sty    2006/07/02  3.11s last minute patches 
+   ulasy.fd    1998/08/17 v2.2e LaTeX symbol font definitions
+  ot1pcr.fd    2001/06/04 font definitions for OT1/pcr.
+abstract.tex
+introduction.tex
+literature.tex
+training.tex
+diagrams/Slide1.png
+   Uxnsh.fd
+evaluation.tex
+experiments.tex
+results_spearman/ar_similiarity_task_results_ws353_spearplot.png
+results_spearman/ar_similiarity_task_4_votes_results_spearplot.png
+results_analogy/ar_analogy_results_fixed_plot.png
+recommendations.tex
+   arapy.tex
+conclusion.tex
+arabic-research.bbl
+ ***********
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5181 strings out of 493089
+ 75451 string characters out of 6134842
+ 164782 words of memory out of 5000000
+ 8476 multiletter control sequences out of 15000+600000
+ 18656 words of font info for 47 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,8n,46p,2160b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ara
+btex/xnsh14.pfb>
+Output written on arabic-research.pdf (11 pages, 286467 bytes).
+PDF statistics:
+ 90 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

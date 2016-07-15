@@ -1,0 +1,221 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Ahmed}2000]{ahmed2000alarge}
+Mohamed Attia Mohamed~Elaraby Ahmed.
+\newblock 2000.
+\newblock {\em ALarge-SCALE COMPUTATIONAL PROCESSOR OF THE ARABIC MORPHOLOGY,
+  AND APPLICATIONS}.
+\newblock {Ph.D.} thesis, Faculty of Engineering, Cairo University Giza, Egypt.
+
+\bibitem[\protect\citename{Al-Rfou \bgroup et al.\egroup }2013]{al:2013}
+Rami Al-Rfou, Bryan Perozzi, and Steven Skiena.
+\newblock 2013.
+\newblock Polyglot: Distributed word representations for multilingual nlp.
+\newblock {\em arXiv preprint arXiv:1307.1662}.
+
+\bibitem[\protect\citename{Belinkov}2015]{belinkov:2015}
+Yonatan Belinkov.
+\newblock 2015.
+\newblock Answer selection in arabic community question answering: A
+  feature-rich approach.
+\newblock In {\em ANLP Workshop 2015}, page 183.
+
+\bibitem[\protect\citename{Big-Huge-Labs}2016]{bhl:online}
+Big-Huge-Labs.
+\newblock 2016.
+\newblock Big huge thesaurus: Synonyms, antonyms, and rhymes (oh my!).
+\newblock \url{https://words.bighugelabs.com/}.
+\newblock (Visited on 11/30/2015).
+
+\bibitem[\protect\citename{Da'na}2012]{Muhammad:2015}
+Muhammad Da'na.
+\newblock 2012.
+\newblock (5) how many words does the arabic language have? - quora.
+\newblock
+  \url{https://www.quora.com/How-many-words-does-the-Arabic-language-have}, 12.
+\newblock (Accessed on 04/04/2016).
+
+\bibitem[\protect\citename{Diab}2009]{diab:2009}
+Mona Diab.
+\newblock 2009.
+\newblock Second generation amira tools for arabic processing: Fast and robust
+  tokenization, pos tagging, and base phrase chunking.
+\newblock In {\em 2nd International Conference on Arabic Language Resources and
+  Tools}. Citeseer.
+
+\bibitem[\protect\citename{Dickinson and Hu}2015]{dickinson2015sentiment}
+Brian Dickinson and Wei Hu.
+\newblock 2015.
+\newblock Sentiment analysis of investor opinions on twitter.
+\newblock {\em Social Networking}, 4(03):62.
+
+\bibitem[\protect\citename{dos Santos and Gatti}2014]{dos2014deep}
+C{\'\i}cero~Nogueira dos Santos and Maira Gatti.
+\newblock 2014.
+\newblock Deep convolutional neural networks for sentiment analysis of short
+  texts.
+\newblock In {\em COLING}, pages 69--78.
+
+\bibitem[\protect\citename{Farghaly and Shaalan}2009]{farghaly:2009}
+Ali Farghaly and Khaled Shaalan.
+\newblock 2009.
+\newblock Arabic natural language processing: Challenges and solutions.
+\newblock {\em ACM Transactions on Asian Language Information Processing
+  (TALIP)}, 8(4):14.
+
+\bibitem[\protect\citename{Faruqui and Dyer}2014]{faruqui:2014}
+Manaal Faruqui and Chris Dyer.
+\newblock 2014.
+\newblock Community evaluation and exchange of word vectors at wordvectors.org.
+\newblock In {\em Proceedings of the 52nd Annual Meeting of the Association for
+  Computational Linguistics: System Demonstrations}, Baltimore, USA, June.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Finkelstein \bgroup et al.\egroup
+  }2001]{finkelstein:2001}
+Lev Finkelstein, Evgeniy Gabrilovich, Yossi Matias, Ehud Rivlin, Zach Solan,
+  Gadi Wolfman, and Eytan Ruppin.
+\newblock 2001.
+\newblock Placing search in context: The concept revisited.
+\newblock In {\em Proceedings of the 10th international conference on World
+  Wide Web}, pages 406--414. ACM.
+
+\bibitem[\protect\citename{Google}2016]{google:online}
+Google.
+\newblock 2016.
+\newblock Translate api - translate api — google cloud platform.
+\newblock \url{https://cloud.google.com/translate/docs}.
+\newblock (Visited on 11/30/2015).
+
+\bibitem[\protect\citename{Habash \bgroup et al.\egroup }2009]{habash:2009}
+Nizar Habash, Owen Rambow, and Ryan Roth.
+\newblock 2009.
+\newblock Mada+ tokan: A toolkit for arabic tokenization, diacritization,
+  morphological disambiguation, pos tagging, stemming and lemmatization.
+\newblock In {\em Proceedings of the 2nd International Conference on Arabic
+  Language Resources and Tools (MEDAR), Cairo, Egypt}, pages 102--109.
+
+\bibitem[\protect\citename{Hassan and Mihalcea}2009]{hassan:2009}
+Samer Hassan and Rada Mihalcea.
+\newblock 2009.
+\newblock Cross-lingual semantic relatedness using encyclopedic knowledge.
+\newblock In {\em Proceedings of the 2009 Conference on Empirical Methods in
+  Natural Language Processing: Volume 3-Volume 3}, pages 1192--1201.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Luong \bgroup et al.\egroup }2013]{luong2013better}
+Thang Luong, Richard Socher, and Christopher~D Manning.
+\newblock 2013.
+\newblock Better word representations with recursive neural networks for
+  morphology.
+\newblock In {\em CoNLL}, pages 104--113. Citeseer.
+
+\bibitem[\protect\citename{Manning \bgroup et al.\egroup
+  }2014]{manning-EtAl:2014:P14-5}
+Christopher~D. Manning, Mihai Surdeanu, John Bauer, Jenny Finkel, Steven~J.
+  Bethard, and David McClosky.
+\newblock 2014.
+\newblock The {Stanford} {CoreNLP} natural language processing toolkit.
+\newblock In {\em Association for Computational Linguistics (ACL) System
+  Demonstrations}, pages 55--60.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013a]{mikoloveffic:2013}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock 2013a.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}.
+
+\bibitem[\protect\citename{Mikolov \bgroup et al.\egroup
+  }2013b]{mikolovdist:2013}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg~S Corrado, and Jeff Dean.
+\newblock 2013b.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In C.J.C. Burges, L.~Bottou, M.~Welling, Z.~Ghahramani, and K.Q.
+  Weinberger, editors, {\em Advances in Neural Information Processing Systems
+  26}, pages 3111--3119. Curran Associates, Inc.
+
+\bibitem[\protect\citename{Miller and Charles}1991]{miller:1991}
+George~A Miller and Walter~G Charles.
+\newblock 1991.
+\newblock Contextual correlates of semantic similarity.
+\newblock {\em Language and cognitive processes}, 6(1):1--28.
+
+\bibitem[\protect\citename{NPR}2010]{Googl96:online}
+NPR.
+\newblock 2010.
+\newblock Google book tool tracks cultural change with words : Npr.
+\newblock
+  \url{http://www.npr.org/2010/12/16/132106374/google-book-tool-tracks-cultural-change-with-words},
+  12.
+\newblock (Accessed on 04/04/2016).
+
+\bibitem[\protect\citename{Pasha \bgroup et al.\egroup }2014]{pasha:2014}
+Arfath Pasha, Mohamed Al-Badrashiny, Mona Diab, Ahmed El~Kholy, Ramy Eskander,
+  Nizar Habash, Manoj Pooleery, Owen Rambow, and Ryan~M Roth.
+\newblock 2014.
+\newblock Madamira: A fast, comprehensive tool for morphological analysis and
+  disambiguation of arabic.
+\newblock In {\em Proceedings of the Language Resources and Evaluation
+  Conference (LREC), Reykjavik, Iceland}.
+
+\bibitem[\protect\citename{Pennington \bgroup et al.\egroup
+  }2014]{pennington2014glove}
+Jeffrey Pennington, Richard Socher, and Christopher~D Manning.
+\newblock 2014.
+\newblock Glove: Global vectors for word representation.
+\newblock In {\em EMNLP}, volume~14, pages 1532--1543.
+
+\bibitem[\protect\citename{{\v R}eh{\r u}{\v r}ek and Sojka}2010]{rehurek_lrec}
+Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka.
+\newblock 2010.
+\newblock {Software Framework for Topic Modelling with Large Corpora}.
+\newblock In {\em {Proceedings of the LREC 2010 Workshop on New Challenges for
+  NLP Frameworks}}, pages 45--50, Valletta, Malta, May. ELRA.
+\newblock \url{http://is.muni.cz/publication/884893/en}.
+
+\bibitem[\protect\citename{Schnabel \bgroup et al.\egroup
+  }2015]{schnabel2015evaluation}
+Tobias Schnabel, Igor Labutov, David Mimno, and Thorsten Joachims.
+\newblock 2015.
+\newblock Evaluation methods for unsupervised word embeddings.
+\newblock In {\em Proc. of EMNLP}. Citeseer.
+
+\bibitem[\protect\citename{Souag}2013]{Lameen:2013}
+Lameen Souag.
+\newblock 2013.
+\newblock Jabal al-lughat: Does arabic have the most words? don't believe the
+  hype.
+\newblock
+  \url{http://lughat.blogspot.com/2013/12/does-arabic-have-most-words-dont.html},
+  12.
+\newblock (Accessed on 04/04/2016).
+
+\bibitem[\protect\citename{Wikipedia-Meta}2016]{wiki:xxx}
+Wikipedia-Meta.
+\newblock 2016.
+\newblock Data dumps --- meta{,} discussion about wikimedia projects.
+\newblock [Online; accessed 5-April-2016].
+
+\bibitem[\protect\citename{Wolf \bgroup et al.\egroup }2014]{wolf2014joint}
+Lior Wolf, Yair Hanani, Kfir Bar, and Nachum Dershowitz.
+\newblock 2014.
+\newblock Joint word2vec networks for bilingual semantic representations.
+\newblock {\em International Journal of Computational Linguistics and
+  Applications}, 5(1):27--44.
+
+\bibitem[\protect\citename{Zhang \bgroup et al.\egroup }2015]{zhang2015chinese}
+Dongwen Zhang, Hua Xu, Zengcai Su, and Yunfeng Xu.
+\newblock 2015.
+\newblock Chinese comments sentiment classification based on word2vec and svm
+  perf.
+\newblock {\em Expert Systems with Applications}, 42(4):1857--1863.
+
+\bibitem[\protect\citename{Zirikly and Diab}2015]{zirikly:2015}
+Ayah Zirikly and Mona Diab.
+\newblock 2015.
+\newblock Named entity recognition for arabic social media.
+\newblock In {\em Proceedings of naacl-hlt}, pages 176--185.
+
+\end{thebibliography}

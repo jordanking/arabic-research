@@ -1,0 +1,4 @@
+Embedding File,MSE,Accuracy,Hit_Percent,Correlation
+/home/jordan/Desktop/english_9mil.bin,0.109,0.282,1.0,0.524
+/home/jordan/Desktop/english_5mil.bin,0.1,0.268,1.0,0.549
+/media/jordan/Media/data/word2vec/GoogleNews-vectors-negative300.bin,0.123,0.313,1.0,0.65

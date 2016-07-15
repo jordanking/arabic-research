@@ -1,0 +1,11 @@
+Embedding File,MSE,Accuracy,Hit_Percent,Correlation,wind,size,mod,dig,tash,preprocessing
+tokensdigTruetashFalsemod1size100wind4.txt,0.1272,0.3094,1.0,0.5294,4,100,1,True,False,tokens
+tokensdigFalsetashTruemod1size100wind4.txt,0.1277,0.3126,1.0,0.5285,4,100,1,False,True,tokens
+tokensdigTruetashTruemod1size100wind4.txt,0.1268,0.31,1.0,0.5251,4,100,1,True,True,tokens
+tokensdigFalsetashFalsemod0size100wind4.txt,0.1325,0.3173,1.0,0.5219,4,100,0,False,False,tokens
+tokensdigFalsetashTruemod0size200wind4.txt,0.1846,0.3905,1.0,0.5201,4,200,0,False,True,tokens
+tokensdigFalsetashFalsemod1size100wind4.txt,0.1304,0.3117,1.0,0.5074,4,100,1,False,False,tokens
+tokensdigFalsetashFalsemod0size100wind7.txt,0.1539,0.3457,1.0,0.5048,7,100,0,False,False,tokens
+tokensdigTruetashFalsemod0size200wind4.txt,0.1827,0.3856,1.0,0.5046,4,200,0,True,False,tokens
+tokensdigTruetashFalsemod0size100wind7.txt,0.1485,0.3401,1.0,0.5037,7,100,0,True,False,tokens
+tokensdigTruetashFalsemod1size200wind4.txt,0.1691,0.3681,1.0,0.5023,4,200,1,True,False,tokens

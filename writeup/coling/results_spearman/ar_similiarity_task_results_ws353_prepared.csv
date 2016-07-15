@@ -1,0 +1,11 @@
+Embedding File,MSE,Accuracy,Hit_Percent,Correlation,Correlation Sig,Spearman,Spearman Sig,wind,size,mod,dig,tash,preprocessing,rank,index
+tokensdigFalsetashTruemod0size200wind4.txt,0.1846,0.3905,1.0,0.5201,1.40209614596e-25,0.5662,5.61257192242e-31,4,200,0,False,True,tokens,1,14
+tokensdigFalsetashTruemod1size100wind4.txt,0.1277,0.3126,1.0,0.5285,1.69712904177e-26,0.5557,1.12714577221e-29,4,100,1,False,True,tokens,2,60
+tokensdigTruetashFalsemod0size200wind4.txt,0.1827,0.3856,1.0,0.5046,6.09364626221e-24,0.5486,8.09644582172e-29,4,200,0,True,False,tokens,3,78
+tokensdigFalsetashFalsemod0size100wind4.txt,0.1325,0.3173,1.0,0.5219,8.88300614184e-26,0.5418,5.11135819283e-28,4,100,0,False,False,tokens,4,93
+controldigTruetashFalsemod1size200wind4.txt,0.1905,0.3976,0.0,0.4957,7.49621829152e-23,0.5317,1.21415607461e-26,4,200,1,True,False,base,5,84
+tokensdigTruetashFalsemod1size100wind4.txt,0.1272,0.3094,1.0,0.5294,1.32727083968e-26,0.5315,7.75440636642e-27,4,100,1,True,False,tokens,6,12
+tokensdigTruetashTruemod1size100wind4.txt,0.1268,0.31,1.0,0.5251,4.03769704867e-26,0.531,8.7934653307e-27,4,100,1,True,True,tokens,7,94
+tokensdigTruetashFalsemod0size100wind7.txt,0.1485,0.3401,1.0,0.5037,7.52406542992e-24,0.5295,1.30719961853e-26,7,100,0,True,False,tokens,8,79
+controldigFalsetashFalsemod1size200wind4.txt,0.191,0.3981,0.0,0.4964,6.36808296739e-23,0.5248,6.9608529218e-26,4,200,1,False,False,base,9,23
+tokensdigFalsetashTruemod1size200wind4.txt,0.1689,0.3692,1.0,0.4952,5.38241023531e-23,0.5248,4.30994708267e-26,4,200,1,False,True,tokens,10,77
