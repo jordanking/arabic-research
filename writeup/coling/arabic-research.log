@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 JUL 2016 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 JUL 2016 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -169,18 +169,18 @@ Conference Style for COLING 2016 -- prepared 27th Oct. 2015
 ) (ArabTeX) input encoding set to UTF-8 conventions (./arabic-research.aux)
 \openout1 = `arabic-research.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -252,66 +252,60 @@ e
 (ArabTeX) 3.11 local stub, 26.02.2006)
 (ArabTeX) version 3.11s (02.07.2006): second phase of patching)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 74.
+(Font)              <12> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 74.
+(Font)              <6> on input line 73.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 73.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 74.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 73.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (./abstract.tex) (./introduction.tex) (./literature.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--1
+) (./abstract.tex) (./introduction.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 28.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 
- []
 
+LaTeX Warning: Reference `licence' on page 1 undefined on input line 28.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 30.
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-(./training.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--1
-
- []
-
-[2] <diagrams/Slide1.png, id=17, 722.7pt x 542.025pt>
+(./literature.tex [2]) (./training.tex
+<diagrams/Slide1.png, id=17, 722.7pt x 542.025pt>
 File: diagrams/Slide1.png Graphic file (type png)
-
-<use diagrams/Slide1.png>
+ <use diagrams/Slide1.png>
 Package pdftex.def Info: diagrams/Slide1.png used on input line 6.
 (pdftex.def)             Requested size: 227.62204pt x 170.71396pt.
- [3 <./diagrams/Slide1.png>]
-LaTeX Font Info:    Try loading font information for U+xnsh on input line 22.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+LaTeX Font Info:    Try loading font information for U+xnsh on input line 20.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/arabtex/Uxnsh.fd
 File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
 )
 LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
-(Font)              scaled to size 17.28003pt on input line 22.
-
-Overfull \hbox (10.90144pt too wide) in paragraph at lines 30--43
- [] 
- []
-
-) (./evaluation.tex
+(Font)              scaled to size 15.76802pt on input line 20.
+ [3 <./diagrams/Slide1.png>]) (./evaluation.tex
 
 Package wrapfig Warning: Stationary wraptable forced to float on input line 1.
 
-[4]
-Underfull \hbox (badness 1248) in paragraph at lines 9--14
-\OT1/ptm/m/n/12 The se-man-tic sim-i-lar-ity tasks con-sist of
- []
-
-[5]) (./experiments.tex
+[4]) (./experiments.tex [5]
 <results_spearman/ar_similiarity_task_results_ws353_spearplot.png, id=30, 578.1
 6pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_results_ws353_spearplot.png Graphic 
@@ -326,45 +320,46 @@ arplot.png used on input line 38.
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 43
 .
 
-[6]
-<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=34, 578
+[6 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png>]
+<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=35, 578
 .16pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_4_votes_results_spearplot.png Graphi
 c file (type png)
 
 <use results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>
 Package pdftex.def Info: results_spearman/ar_similiarity_task_4_votes_results_s
-pearplot.png used on input line 48.
+pearplot.png used on input line 114.
 (pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
 
-[7 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png> <./resu
-lts_spearman/ar_similiarity_task_4_votes_results_spearplot.png>]
-<results_analogy/ar_analogy_results_fixed_plot.png, id=41, 578.16pt x 433.62pt>
+<results_analogy/ar_analogy_results_fixed_plot.png, id=36, 578.16pt x 433.62pt>
 File: results_analogy/ar_analogy_results_fixed_plot.png Graphic file (type png)
 
 <use results_analogy/ar_analogy_results_fixed_plot.png>
 Package pdftex.def Info: results_analogy/ar_analogy_results_fixed_plot.png used
- on input line 121.
+ on input line 122.
 (pdftex.def)             Requested size: 227.62204pt x 170.71231pt.
 ) (./recommendations.tex
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 1.
 
 
-) (./arapy.tex [8 <./results_analogy/ar_analogy_results_fixed_plot.png>])
-(./conclusion.tex) [9] (./arabic-research.bbl
+[7 <./results_spearman/ar_similiarity_task_4_votes_results_spearplot.png> <./re
+sults_analogy/ar_analogy_results_fixed_plot.png>]) (./arapy.tex)
+(./conclusion.tex) (./arabic-research.bbl
+Underfull \vbox (badness 1097) has occurred while \output is active []
+
+ [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 27.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 27.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
- [10]) [11] (./arabic-research.aux)
+
+[9]) [10] (./arabic-research.aux)
 
  *File List*
  article.cls    2014/09/29 v1.4h Standard LaTeX document class
-  size12.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
+  size11.clo    2014/09/29 v1.4h Standard LaTeX file (size option)
    times.sty    2005/04/12 PSNFSS-v9.2a (SPQR) 
 latexsym.sty    1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
    color.sty    2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -444,30 +439,32 @@ conclusion.tex
 arabic-research.bbl
  ***********
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 5181 strings out of 493089
- 75451 string characters out of 6134842
- 164782 words of memory out of 5000000
- 8476 multiletter control sequences out of 15000+600000
- 18656 words of font info for 47 fonts, out of 8000000 for 9000
+ 5209 strings out of 493089
+ 75791 string characters out of 6134842
+ 158784 words of memory out of 5000000
+ 8495 multiletter control sequences out of 15000+600000
+ 28140 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,8n,46p,2160b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,8n,46p,2160b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
-rw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ara
-btex/xnsh14.pfb>
-Output written on arabic-research.pdf (11 pages, 286467 bytes).
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ar
+abtex/xnsh14.pfb>
+Output written on arabic-research.pdf (10 pages, 280378 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
