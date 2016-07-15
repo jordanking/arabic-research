@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ARAPY_PATH = "/home/jordan/Documents/Projects/"
-# WORKING_DIRECTORY = "/home/jordan/Documents/Projects/arabic-research/temp"
-# PREPROCESSED_DIR = WORKING_DIRECTORY+"/2-preprocessed"
-# NORMALIZED_DIR = WORKING_DIRECTORY+"/3-normalized"
-
 # add the path of arapy
 from __future__ import absolute_import
 from __future__ import print_function

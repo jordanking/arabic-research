@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ARAPY_PATH = "/home/jordan/Documents/Projects/"
-# WORKING_DIRECTORY = "/home/jordan/Documents/Projects/arabic-research/temp"
-# NORMALIZED_DIR = WORKING_DIRECTORY+"/3-normalized"
-# EMBEDDING_DIR = WORKING_DIRECTORY+"/4-embeddings"
-
 # add the path of arapy
 from __future__ import absolute_import
 from __future__ import print_function
@@ -22,8 +17,6 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=log
 english_text = '/media/jordan/Media/data/enwiki/english_training_9mil'
 english_model = '/home/jordan/Desktop/english_9mil.bin'
 
-
-
 sg = [1]
 size = [100]
 window = [7]
@@ -33,7 +26,6 @@ seed = 1
 hs = 1
 negative = 0
 iterations = 5
-
 
 for model_option in sg:
     for size_option in size:

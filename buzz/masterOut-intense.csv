@@ -1,0 +1,13 @@
+method,bs,bp,ns,np
+results_0,nan,nan,nan,nan
+results_1,-1.0,-1.0,-1.0,-0.99999999999999989
+results_2_controldigFalsetashFalsemod1size200wind4,-1.0,-1.0,-1.0,-0.99999999999999989
+results_2_lemmasdigTruetashTruemod1size200wind4,-1.0,-1.0,-1.0,-0.99999999999999989
+results_2_tokensdigFalsetashTruemod0size200wind4,-1.0,-1.0,-1.0,-0.99999999999999989
+results_3_controldigFalsetashFalsemod1size200wind4,-1.0,-1.0,-1.0,-0.99999999999999989
+results_3_lemmasdigTruetashTruemod1size200wind4,-1.0,-1.0,-1.0,-0.99999999999999989
+results_3_tokensdigFalsetashTruemod0size200wind4,-1.0,-1.0,-1.0,-0.99999999999999989
+results_4,-1.0,-1.0,-1.0,-1.0
+results_5_controldigFalsetashFalsemod1size200wind4,-1.0,-1.0,-1.0,-1.0
+results_5_lemmasdigTruetashTruemod1size200wind4,-1.0,-1.0000000000000002,1.0,1.0
+results_5_tokensdigFalsetashTruemod0size200wind4,-1.0,-1.0,-1.0,-1.0

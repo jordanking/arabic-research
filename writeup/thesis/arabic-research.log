@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 APR 2016 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 MAY 2016 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -262,12 +262,12 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
  [2]
-(./abstract.tex [3]
+(./abstract.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 1.
- [4]) [5] (./arabic-research.toc
+ [3]) [4] (./arabic-research.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -282,20 +282,20 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@toc=\write6
 \openout6 = `arabic-research.toc'.
 
- [6
+ [5
 
 ]
 (./arabic-research.lof)
 \tf@lof=\write7
 \openout7 = `arabic-research.lof'.
 
- [7
+ [6
 
 ] (./arabic-research.lot)
 \tf@lot=\write8
 \openout8 = `arabic-research.lot'.
 
- [8
+ [7
 
 ] (./introduction.tex
 Chapter 1.
@@ -306,13 +306,7 @@ File: uxnsh.fd  1999/10/19 v3.10 ArabTeX Naskh extd. font definitions
 LaTeX Font Info:    Font shape `U/xnsh/m/n' will be
 (Font)              scaled to size 17.28003pt on input line 13.
 )
-(./literature.tex
-Overfull \hbox (9.22453pt too wide) in paragraph at lines 5--1
-\T1/ptm/m/n/12 Methodologies and prop-er-ties of English word embed-dings have 
-been exten-sively researched;
- []
-
-[1
+(./literature.tex [1
 
 ] [2] [3] [4]
 Chapter 2.
@@ -320,7 +314,7 @@ Chapter 2.
 
 ] [6] [7]
 Chapter 3.
-<diagrams/Slide1.png, id=58, 722.7pt x 542.025pt>
+<diagrams/Slide1.png, id=55, 722.7pt x 542.025pt>
 File: diagrams/Slide1.png Graphic file (type png)
  <use diagrams/Slide1.png>
 Package pdftex.def Info: diagrams/Slide1.png used on input line 7.
@@ -348,7 +342,7 @@ it/12 :\T1/pcr/m/n/12 wikimedia\OML/cmm/m/it/12 :\T1/pcr/m/n/12 org / arwiki /
 [15
 
 ]
-<results_spearman/ar_similiarity_task_results_ws353_spearplot.png, id=87, 578.1
+<results_spearman/ar_similiarity_task_results_ws353_spearplot.png, id=84, 578.1
 6pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_results_ws353_spearplot.png Graphic 
 file (type png)
@@ -359,7 +353,7 @@ arplot.png used on input line 38.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
  [16]
 [17 <./results_spearman/ar_similiarity_task_results_ws353_spearplot.png>]
-<results_spearman/ar_similiarity_task_results_spearplot.png, id=96, 578.16pt x 
+<results_spearman/ar_similiarity_task_results_spearplot.png, id=92, 578.16pt x 
 433.62pt>
 File: results_spearman/ar_similiarity_task_results_spearplot.png Graphic file (
 type png)
@@ -368,7 +362,7 @@ Package pdftex.def Info: results_spearman/ar_similiarity_task_results_spearplot
 .png used on input line 91.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
 
-<results_spearman/ar_similiarity_task_multi_results_spearplot.png, id=97, 578.1
+<results_spearman/ar_similiarity_task_multi_results_spearplot.png, id=93, 578.1
 6pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_multi_results_spearplot.png Graphic 
 file (type png)
@@ -378,7 +372,7 @@ Package pdftex.def Info: results_spearman/ar_similiarity_task_multi_results_spe
 arplot.png used on input line 97.
 (pdftex.def)             Requested size: 433.62pt x 325.2142pt.
 
-<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=98, 578
+<results_spearman/ar_similiarity_task_4_votes_results_spearplot.png, id=94, 578
 .16pt x 433.62pt>
 File: results_spearman/ar_similiarity_task_4_votes_results_spearplot.png Graphi
 c file (type png)
@@ -392,7 +386,7 @@ pearplot.png used on input line 103.
 [21 <./results_spearman/ar_similiarity_task_multi_results_spearplot.png>]
 [22 <./results_spearman/ar_similiarity_task_4_votes_results_spearplot.png>]
 [23]
-<results_analogy/ar_analogy_results_fixed_plot.png, id=121, 578.16pt x 433.62pt
+<results_analogy/ar_analogy_results_fixed_plot.png, id=117, 578.16pt x 433.62pt
 >
 File: results_analogy/ar_analogy_results_fixed_plot.png Graphic file (type png)
 
@@ -410,13 +404,18 @@ Chapter 6.
 Chapter 7.
 [28
 
-] [29]) (./arapy.tex [30]
-Chapter 8.
-) (./conclusion.tex [31
+]
+Overfull \hbox (13.15569pt too wide) in paragraph at lines 12--22
+ [] 
+ []
 
-] [32]
+[29] [30]) (./arapy.tex [31]
+Chapter 8.
+) (./conclusion.tex [32
+
+] [33]
 Chapter 9.
-) (./arabic-research.bbl [33
+) (./arabic-research.bbl [34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--34
@@ -425,7 +424,7 @@ it/12 :\T1/pcr/m/n/12 com / How -[] many -[] words -[] does -[] the -[] Arabic
 -[]
  []
 
-[34
+[35
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 87--91
@@ -433,31 +432,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--91
 /12 https : / /
  []
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 129--135
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 136--142
 []\T1/ptm/m/n/12 NPR.  Google book tool tracks cul-tural change with words : Np
 r.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--135
+Underfull \hbox (badness 10000) in paragraph at lines 136--142
 \T1/pcr/m/n/12 http : / / www\OML/cmm/m/it/12 :\T1/pcr/m/n/12 npr\OML/cmm/m/it/
 12 :\T1/pcr/m/n/12 org / 2010 / 12 / 16 / 132106374 / google -[] book -[]
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 129--135
+Underfull \hbox (badness 3291) in paragraph at lines 136--142
 \T1/pcr/m/n/12 tool -[] tracks -[] cultural -[] change -[] with -[] words$\T1/p
 tm/m/n/12 , 12 2010.  (Accessed
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 137--143
+Underfull \hbox (badness 1112) in paragraph at lines 144--150
 []\T1/ptm/m/n/12 Arfath Pasha, Mohamed Al-Badrashiny, Mona Diab, Ahmed El Kholy
 , Ramy
  []
 
-[36] [37]) [38] (./arabic-research.aux)
+[37] [38]) [39] (./arabic-research.aux)
 
  *File List*
   report.cls    2014/09/29 v1.4h Standard LaTeX document class
@@ -548,13 +547,13 @@ arabic-research.bbl
 
  ) 
 Here is how much of TeX's memory you used:
- 5507 strings out of 493089
- 80153 string characters out of 6134842
- 163265 words of memory out of 5000000
- 8775 multiletter control sequences out of 15000+600000
+ 5508 strings out of 493089
+ 80181 string characters out of 6134842
+ 163266 words of memory out of 5000000
+ 8776 multiletter control sequences out of 15000+600000
  27564 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,9n,46p,2140b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,9n,46p,2161b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
@@ -565,7 +564,7 @@ mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ar
 abtex/xnsh14.pfb>
-Output written on arabic-research.pdf (46 pages, 372703 bytes).
+Output written on arabic-research.pdf (46 pages, 376316 bytes).
 PDF statistics:
  204 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams

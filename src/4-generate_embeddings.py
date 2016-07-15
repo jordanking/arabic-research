@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ARAPY_PATH = "/home/jordan/Documents/Projects/"
-# WORKING_DIRECTORY = "/home/jordan/Documents/Projects/arabic-research/temp"
-# NORMALIZED_DIR = WORKING_DIRECTORY+"/3-normalized"
-# EMBEDDING_DIR = WORKING_DIRECTORY+"/4-embeddings"
-
 # add the path of arapy
 from __future__ import absolute_import
 from __future__ import print_function
@@ -17,8 +12,6 @@ from arapy.word2vec import train_embeddings
 import logging
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',level=logging.INFO)
-
-
 # EMBEDDING_DIR = '/home/jordan/Documents/Projects/arabic-research/temp/4-1-embeddings'
 
 # Word2Vec parameter options

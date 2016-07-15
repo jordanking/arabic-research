@@ -5,45 +5,45 @@ The style file: plain.bst
 Database file #1: arabic-research.bib
 Warning--empty journal in rekabsazusing
 Warning--empty year in rekabsazusing
-You've used 32 entries,
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            674 strings with 10036 characters,
-and the built_in function-call counts, 11329 in all, are:
-= -- 1128
-> -- 512
-< -- 13
-+ -- 201
-- -- 169
-* -- 684
-:= -- 1802
-add.period$ -- 111
-call.type$ -- 32
-change.case$ -- 177
+            680 strings with 10337 characters,
+and the built_in function-call counts, 11868 in all, are:
+= -- 1178
+> -- 545
+< -- 14
++ -- 215
+- -- 181
+* -- 723
+:= -- 1884
+add.period$ -- 114
+call.type$ -- 33
+change.case$ -- 186
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 471
-empty$ -- 923
-format.name$ -- 169
-if$ -- 2478
+cite$ -- 35
+duplicate$ -- 492
+empty$ -- 961
+format.name$ -- 181
+if$ -- 2594
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 23
-newline$ -- 169
-num.names$ -- 66
-pop$ -- 248
+int.to.str$ -- 33
+missing$ -- 24
+newline$ -- 174
+num.names$ -- 68
+pop$ -- 260
 preamble$ -- 1
-purify$ -- 146
+purify$ -- 154
 quote$ -- 0
-skip$ -- 359
+skip$ -- 376
 stack$ -- 0
-substring$ -- 585
-swap$ -- 152
-text.length$ -- 13
+substring$ -- 615
+swap$ -- 161
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 128
+type$ -- 132
 warning$ -- 2
-while$ -- 105
-width$ -- 34
-write$ -- 362
+while$ -- 110
+width$ -- 35
+write$ -- 373
 (There were 2 warnings)

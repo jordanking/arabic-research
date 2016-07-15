@@ -6,7 +6,7 @@ In order to better understand the effects of different parameters on the quality
 
 \section{Word Similarity 353}
 
-The results for English vectors on the semantic similarity tasks are shown in Table \ref{table:englishtask} for comparison. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under the default Word2Vec parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publicly available pre-trained model trained on a 100 billion word Google News Corpus \cite{mikolovdist:2013}. The metric that we choose to base our evaluations on is the Spearman correlation between the model similarity estimates the evaluation task similarity values. Both models show a high correlation with the evaluation task scores. The Google News vectors display an impressive $.6979$ Spearman correlation score to the task, providing a high score to aim for. We consider the $0.5458$ correlation score of the default English task to be the baseline for our Arabic word embeddings because it is the same size training corpus as  the Arabic one.
+The results for English vectors on the semantic similarity tasks are shown in Table \ref{table:englishtask} for comparison. There are two models shown, each evaluated on the WS353 English word similarity task. The first is an English model trained under the default Word2vec parameterization (skipgram, window of 7, 100 dimensions) on the same number of words as our Arabic models. The second is the publicly available pre-trained model trained on a 100 billion word Google News Corpus \cite{mikolovdist:2013}. The metric that we choose to base our evaluations on is the Spearman correlation between the model similarity estimates and the evaluation task similarity values. Both models show a high correlation with the evaluation task scores. The Google News vectors display an impressive $.6979$ Spearman correlation score to the task, providing a high score to aim for. We consider the $0.5458$ correlation score of the default English task to be the baseline for our Arabic word embeddings because it is the same size training corpus as  the Arabic one.
 
 \begin{table}
 \begin{center}
@@ -111,7 +111,7 @@ These similarity task experiments have shown that certain preprocessing and trai
 
 \section{Analogy Task}
 
-Table \ref{table:englishanalogy} shows the baseline results of the English embeddings on the Analogy task. These results demonstrate the extreme difference in quality between vectors trained on 5 million words and 100 billion words. The lower accuracy of the 5 million word model at $0.04522$, or 4.522 percent correct of the $19544$ analogies, will be used as a comparitive baseline for this task. We leave trying a larger model as future work.
+Table \ref{table:englishanalogy} shows the baseline results of the English embeddings on the Analogy task. These results demonstrate the extreme difference in quality between vectors trained on 5 million words and 100 billion words. The lower accuracy of the 5 million word model at $0.04522$, or 4.522 percent correct of the $19544$ analogies, will be used as a comparitive baseline for this task. While this seems like a small percentage to attempt to improve, improving on this smaller scale is significant for a few reasons. First, word embeddings have been shown to directly improve with data, so obtaining improvements without more data demonstrates an improvement in methodology, provided the improvements are not random luck \cite{mikolovdist:2013}. Secondly, improvements on the analogy task are nearly impossible to obtain through chance. To correctly solve just one of the hundreds of analogies, the embeddings must exactly guess the fourth word given the other three. This means the model must choose on word correctly from its entire Arabic vocabulary. Finally, as the results show, we examine a number of similar models and find results to be fairly consistent across a single parameter. While a larger set of training data would surely increase our percentages, we are confident that improvements on the smaller models will scale to larger training data. For these reasons, we leave training on a larger model as future work and continue our discussion of Arabic word embeddings in general terms.
 
 
 \begin{table}
@@ -136,7 +136,7 @@ Table \ref{table:aranalogy} shows the top 10 analogy task results from the Arabi
 \begin{tabular}{l|l|l|l|l}
 \bfseries Rank & \bfseries Preprocessing & \bfseries Window & \bfseries Size & \bfseries Accuracy
 \csvreader[head to column names]{results_analogy/ar_analogy_results_fixed_prepared.csv}{}
-{\\\hline\rank&\csvcolix&\csvcoliv&\csvcolx&\csvcoliii}
+{\\\hline\rank&\csvcolix&\csvcoliv&\csvcolv&\csvcoliii}
 \end{tabular}
 \caption{Top Results on Arabic Analogy Task}
 \label{table:aranalogy}

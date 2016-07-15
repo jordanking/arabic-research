@@ -2,13 +2,13 @@
 \label{sec:evaluation}
 
 
-It is a complex problem to evaluate the quality of word embeddings. The word2vec methods produce unsupervised vectors that maximize the probability of predicting a word given the context that it appears near in the training corpus. We evaluate the embeddings on semantic similarity tasks as well as an analogy solving task. 
+It is a complex problem to evaluate the quality of word embeddings. The Word2vec methods produce unsupervised vectors that maximize the probability of predicting a word given the context that it appears near in the training corpus. We evaluate the embeddings on semantic similarity tasks as well as an analogy solving task. 
 
 \section{Semantic Similarity Tasks}
 
 The semantic similarity tasks consist of pairs of words associated with a human-labeled similarity value. The largest Arabic semantic similarity task that we could find is the WordSimilarity-353 task, which was developed in English and then manually translated into Arabic \cite{finkelstein:2001,hassan:2009}. 
 \\
-We also created semantic similarity tasks from a set of 1250 word pairs with similarity scores. Between 1 and 4 fluent Arabic speakers labeled each word pair with a similarity score between 0-1, where pairs with a score of 1 indicates that the words are extremely related. We distinguish three tasks, one with pairs created from 4 labels, on from pairs that have 2 or more labels, and one task consisting of all pairs given labels. To begin creating these tasks, we selected 1250 of the most common words in the Arabic Wikipedia dump \cite{wiki:xxx} at \url{https://dumps.wikimedia.org/arwiki/20150901/}, excluding words that occur in more than $5\%$ of the sentences. The remaining words were then translated into English with Google translate, queried against the Big Huge Thesaurus API for either synonyms or antonyms, and translated back to Arabic \cite{google:online,bhl:online}. The original word and the resulting synonym or antonym were then paired up. Half of the pairs are at this point synonyms, one quarter are antonyms, and one quarter are shuffled with other pairs to be randomly matched. This distribution is synonym heavy because the Big Huge Thesaurus database has more data on synonyms than antonyms. The various APIs involved introduce a large amount of noise, to the point that some synonym pairs end up as unrelated Arabic words. We take advantage of this noise to distribute the relatedness of words across the 0 to 1 scale.
+We also created semantic similarity tasks from a set of 1250 word pairs with similarity scores. Between 1 and 4 fluent Arabic speakers labeled each word pair with a similarity score between 0-1, where pairs with a score of 1 indicates that the words are extremely related. We distinguish three tasks, one with pairs created from 4 labels, one from pairs that have 2 or more labels, and one task consisting of all pairs given labels. To begin creating these tasks, we selected 1250 of the most common words in the Arabic Wikipedia dump \cite{wiki:xxx} at \url{https://dumps.wikimedia.org/arwiki/20150901/}, excluding words that occur in more than $5\%$ of the sentences. The remaining words were then translated into English with Google translate, queried against the Big Huge Thesaurus API for either synonyms or antonyms, and translated back to Arabic \cite{google:online,bhl:online}. The original word and the resulting synonym or antonym were then paired up. Half of the pairs are at this point synonyms, one quarter are antonyms, and one quarter are shuffled with other pairs to be randomly matched. This distribution is synonym heavy because the Big Huge Thesaurus database has more data on synonyms than antonyms. The various APIs involved introduce a large amount of noise, to the point that some synonym pairs end up as unrelated Arabic words. We take advantage of this noise to distribute the relatedness of words across the 0 to 1 scale.
 \\
 This list of 1250 word pairs was then distributed to fluent Arabic speakers. We provided simple instructions to evaluate the relatedness of the words on a scale of 0 to 5 for ease of labeling. The values that they provided were then scaled from 0 to 1 and averaged. We computed an average inter-rater reliability score of $0.7022$ using Pearson correlation between pairs of raters.
 \\
@@ -25,7 +25,7 @@ This task is composed of categories of analogies, with a mix of syntactic and se
 \begin{center}
 
 \begin{tabular}{l|l|l|l|l}
-\textbf{Type} & \textbf{Query} & \textbf{Query} & \textbf{Query} & \textbf{Answer}\\
+\textbf{Type} & \textbf{Query 1} & \textbf{Query 2} & \textbf{Query 3} & \textbf{Answer}\\
 \hline
 Capital city & Athens & Greece & Oslo & Norway \\
 Gender & brother & sister & grandson & granddaughter \\

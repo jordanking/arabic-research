@@ -1,5 +1,5 @@
-\contentsline {pseudochapter}{List of Figures}{vii}
-\contentsline {pseudochapter}{List of Tables}{viii}
+\contentsline {pseudochapter}{List of Figures}{vi}
+\contentsline {pseudochapter}{List of Tables}{vii}
 \par \vspace {6\p@ }
 \noindent {\sc Chapter}
 \vspace {-3\p@ }
@@ -20,6 +20,6 @@
 \contentsline {chapter}{\numberline {7}Applying Word Embeddings to Buzz Detection}{28}
 \contentsline {section}{\numberline {7.1}Buzz Detection Methodology}{28}
 \contentsline {section}{\numberline {7.2}Buzz Detection Experiments}{30}
-\contentsline {chapter}{\numberline {8}Arabic NLP Package}{31}
-\contentsline {chapter}{\numberline {9}Conclusion and Future Directions}{33}
-\contentsline {pseudochapter}{Bibliography}{34}
+\contentsline {chapter}{\numberline {8}Arabic NLP Package}{32}
+\contentsline {chapter}{\numberline {9}Conclusion and Future Directions}{34}
+\contentsline {pseudochapter}{Bibliography}{35}

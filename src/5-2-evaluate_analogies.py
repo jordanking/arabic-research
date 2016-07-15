@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
-
 # add the path of arapy
 from __future__ import absolute_import
 from __future__ import print_function
@@ -101,30 +99,10 @@ def preprocessKey(inkey, params, mada):
 
 def analogyTest(key1, key2, key3, key4, model, params, mada):
 
-    # keyseta = set([key1])
-    # keysetb = set([key2])
-    # keysetc = set([key3])
-    # keysetd = set([key4])
-    # key1 = [key1]
-    # key2 = [key2]
-    # key3 = [key3]
-    # key4 = [key4]
-    # print('test Analogy: %s %s %s %s' % (key1, key2, key3, key4))
-
     key1 = key1.split(' ')
     key2 = key2.split(' ')
     key3 = key3.split(' ')
     key4 = key4.split(' ')
-
-    # key1 = key1.decode('UTF-8', 'replace').split(' ')
-    # key2 = key2.decode('UTF-8', 'replace').split(' ')
-    # key3 = key3.decode('UTF-8', 'replace').split(' ')
-    # key4 = key4.decode('UTF-8', 'replace').split(' ')
-
-    # key1 = [part.encode('utf-8') for part in key1.decode('UTF-8', 'replace').split(' ')]
-    # key2 = [part.encode('utf-8') for part in key2.decode('UTF-8', 'replace').split(' ')]
-    # key3 = [part.encode('utf-8') for part in key3.decode('UTF-8', 'replace').split(' ')]
-    # key4 = [part.encode('utf-8') for part in key4.decode('UTF-8', 'replace').split(' ')]
 
     pos = [part.decode('utf-8', 'replace') for part in (key2 + key3)]
     neg = [part.decode('utf-8', 'replace') for part in key1]
@@ -133,12 +111,6 @@ def analogyTest(key1, key2, key3, key4, model, params, mada):
     for index in matutils.argsort(sims, reverse=True):
 
         word = model.index2word[index].encode('utf-8')
-        
-        # print("Test result: %s and %s" % (word, repr(key4).decode('string-escape')))
-
-        # word = [word]
-        # if ARABIC:
-        #     word = preprocessKey(word, params, mada).decode('UTF-8', 'replace').split(' ')
         
         if word not in set(key1+key2+key3):
             # print("Accepted result: %s and %s" % (word, key4))
@@ -155,6 +127,7 @@ else:
                   '/home/jordan/Desktop/english_5mil.bin',
                   '/home/jordan/Desktop/english_9mil.bin',
                   '/home/jordan/Desktop/english_20mil.bin']#,
+
 # load base task
 analogies = []
 delim = ' '
@@ -182,12 +155,6 @@ with Madamira() as mada:
             params = parseParameters(modelfile)
             modelfile = EMBEDDING_DIR + '/' + modelfile
 
-
-        # if params['preprocessing'] != 'control':
-        #     continue
-
-
-
         # load word2vec model
         model = Word2Vec.load_word2vec_format(modelfile, binary=True)
 
@@ -202,8 +169,6 @@ with Madamira() as mada:
                 key2 = analogy[1]
                 key3 = analogy[2]
                 key4 = analogy[3]
-
-
 
                 if ARABIC:
                     key1 = preprocessKey(analogy[0], params, mada)

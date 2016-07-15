@@ -102,6 +102,13 @@ Thang Luong, Richard Socher, and Christopher~D Manning.
   morphology.
 \newblock In {\em CoNLL}, pages 104--113. Citeseer, 2013.
 
+\bibitem{manning-EtAl:2014:P14-5}
+Christopher~D. Manning, Mihai Surdeanu, John Bauer, Jenny Finkel, Steven~J.
+  Bethard, and David McClosky.
+\newblock The {Stanford} {CoreNLP} natural language processing toolkit.
+\newblock In {\em Association for Computational Linguistics (ACL) System
+  Demonstrations}, pages 55--60, 2014.
+
 \bibitem{mikoloveffic:2013}
 Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
 \newblock Efficient estimation of word representations in vector space.

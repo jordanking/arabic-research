@@ -1,17 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ARAPY_PATH = "/home/jordan/Documents/Projects/"
-# WORKING_DIRECTORY = "/home/jordan/Documents/Projects/arabic-research/temp"
-# EMBEDDINGS_DIR = WORKING_DIRECTORY+"/4-embeddings"
-# RESULTS_DIR = WORKING_DIRECTORY+"/5-semantic_results"
-# TASKS = ['/home/jordan/Documents/Projects/arabic-research/pairs/similarity_task_merged.csv',
-#          '/home/jordan/Documents/Projects/arabic-research/CLSR-EK/WS353_ar.csv']
-# TASK_FILE = TASKS[0]
-# OUTPUT_FILE = RESULTS_DIR+'/similiarity_task_results.csv'
-# IN_HEADER = ['Word 1', 'Word 2', 'Similarity']
-# OUT_HEADER = ['Embedding File', 'Accuracy']
-
 # add the path of arapy
 from __future__ import absolute_import
 from __future__ import print_function
@@ -165,8 +154,6 @@ with Madamira() as mada:
         for key in pairs:
             try:
                 print('\n')
-                # logging.info("pre-Key1: " + str(key[0]))
-                # logging.info("pre-Key2: " + str(key[1]))
                 
                 # TODO preprocess the keys with the parameters
                 key1 = preprocessKey(key[0], params, mada)

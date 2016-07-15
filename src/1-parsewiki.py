@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ARAPY_PATH = "/home/jordan/Documents/Projects/"
-# WORKING_DIRECTORY = "/home/jordan/Documents/Projects/arabic-research/temp"
-# WIKI_FILE = WORKING_DIRECTORY+"/0-wiki/arwiki-20150901-pages-articles.xml"
-# PARSE_FILE = WORKING_DIRECTORY+"/1-parsed/parsed.txt"
-
 # add the path of arapy
 from __future__ import absolute_import
 from __future__ import print_function

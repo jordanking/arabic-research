@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+
 import pandas as pd
 import os
 import csv
@@ -21,9 +22,9 @@ def main():
     fullDomain = parseDomainList(domainList)
 
     buzztype = [5] # freq, dom, neighbors, weighted, synonyms & TODO: weight-all
-    domain = [['عنف']]
+    domain = [0,0,0,0,0,['عنف']]
     corpus = '../buzz/corpus/'
-
+    expansionFactor = 1
     deathCountFile = '../buzz/iraqDeathCount.csv'
     word2vecModel = ['../temp/controldigFalsetashFalsemod1size200wind4.txt', '../temp/tokensdigFalsetashTruemod0size200wind4.txt','../temp/lemmasdigTruetashTruemod1size200wind4.txt']
 
@@ -82,6 +83,9 @@ def captureBuzz(buzztype, domain, corpus, deathCountFile, buzzFile, resultsFile,
             except Exception:
                 continue
 
+            if not text:
+                continue
+
             monthstamp = str(timestamp.year) + '-' + str(timestamp.month)
 
             buzz, wordCount = domainBuzzIntense(text, model, query.keys()[0])
@@ -111,7 +115,7 @@ def captureBuzz(buzztype, domain, corpus, deathCountFile, buzzFile, resultsFile,
         for period in deathCountTimeline:
             if period in buzzTimeline:
                 # print('Period: {}, deaths: {}, buzz: {}'.format(period, deathCountTimeline[period], buzzTimeline[period][1]))
-                buzzwriter.writerow([period, deathCountTimeline[period], buzzTimeline[period][0], buzzTimeline[period][1], buzzTimeline[period][1]/buzzTimeline[period][0]])
+                buzzwriter.writerow([period, deathCountTimeline[period], buzzTimeline[period][0], buzzTimeline[period][1], buzzTimeline[period][1]/max(1,buzzTimeline[period][0])])
             else:
                 pass
                 # print('Period: {} was not found in the buzz timeline.'.format(period))
@@ -148,7 +152,7 @@ def domainBuzzIntense(text, model, query):
         try:
             if word in model:
                 wordCount += 1
-                buzz += model.similarity(query)
+                buzz += model.similarity(query,word)
             else:
                 pass
                 # print('Word: {} not found in'.format(word.encode('UTF-8', 'replace')))
